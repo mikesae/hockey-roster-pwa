@@ -1,25 +1,14 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
+  "name": "2019-20 Shen Varsity Hockey Roster",
+  "short_name": "Shen Hockey",
   "start_url": ".",
+  "background_color": "#CCCCCC",
+  "theme_color": "#CCCCCC",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "icons": [{
+    "src": "maskable_icon.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "maskable"
+  }]
 }
