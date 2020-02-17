@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
         <div className="jumbotron jumbotron-fluid">
-            <h2>2019-20 Shen Varsity Hockey</h2>
+            <h3>2019-20 Shen Varsity Hockey</h3>
         </div>
         <Roster></Roster>
     </div>
