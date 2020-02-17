@@ -1,0 +1,33 @@
+.row:first-child {
+  background-color: #CCCCCC !important;
+  font-weight: bold;
+}
+.row:nth-child(even){
+  background-color: #E2EFD9;
+}
+.row:nth-child(odd){
+  background-color: #DDDDDD;
+}
+
+.col-1, .col-2 {
+  text-align: center;
+}
+
+.row {
+  opacity: 0.90;
+}
+
+@media (prefers-color-scheme: dark) {
+  .row:first-child {
+    background-color: #333333 !important;
+    font-weight: bold;
+  }
+  .row:nth-child(even){
+    background-color: darkgreen;
+    color: white;
+  }
+  .row:nth-child(odd){
+    background-color: black;
+    color: white;
+  }
+}
