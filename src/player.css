@@ -23,7 +23,7 @@
     font-weight: bold;
   }
   .row:nth-child(even){
-    background-color: darkgreen;
+    background-color: #04920A;
     color: white;
   }
   .row:nth-child(odd){
