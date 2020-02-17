@@ -6,7 +6,7 @@ function Roster() {
     let roster:any[] = [];
 
     players.forEach(player => {
-        roster.push(<Player
+        roster.push(<Player {...player}
             key={player.Number}
             uniformNumber={player.Number}
             name={player.Name}
