@@ -1,140 +1,140 @@
 [
   {
-    "Number": 1,
-    "Name": "John Sassone",
-    "Position": "G",
-    "Year": "2020"
+    "uniformNumber": 1,
+    "name": "John Sassone",
+    "position": "G",
+    "year": "2020"
   },
   {
-    "Number": 2,
-    "Name": "Anthony Sassone",
-    "Position": "F",
-    "Year": "2021"
+    "uniformNumber": 2,
+    "name": "Anthony Sassone",
+    "position": "F",
+    "year": "2021"
   },
   {
-    "Number": 3,
-    "Name": "Lucas Lasher",
-    "Position": "G",
-    "Year": "2021"
+    "uniformNumber": 3,
+    "name": "Lucas Lasher",
+    "position": "G",
+    "year": "2021"
   },
   {
-    "Number": 4,
-    "Name": "Marty Magaletta",
-    "Position": "D",
-    "Year": "2023"
+    "uniformNumber": 4,
+    "name": "Marty Magaletta",
+    "position": "D",
+    "year": "2023"
   },
   {
-    "Number": 5,
-    "Name": "Austin Haldane",
-    "Position": "F",
-    "Year": "2023"
+    "uniformNumber": 5,
+    "name": "Austin Haldane",
+    "position": "F",
+    "year": "2023"
   },
   {
-    "Number": 6,
-    "Name": "Justin Mayo",
-    "Position": "F",
-    "Year": "2021"
+    "uniformNumber": 6,
+    "name": "Justin Mayo",
+    "position": "F",
+    "year": "2021"
   },
   {
-    "Number": 8,
-    "Name": "Tyler Sullivan",
-    "Position": "F",
-    "Year": "2020"
+    "uniformNumber": 8,
+    "name": "Tyler Sullivan",
+    "position": "F",
+    "year": "2020"
   },
   {
-    "Number": 9,
-    "Name": "Justin Miazga",
-    "Position": "F/D",
-    "Year": "2021"
+    "uniformNumber": 9,
+    "name": "Justin Miazga",
+    "position": "F/D",
+    "year": "2021"
   },
   {
-    "Number": 10,
-    "Name": "Cole Haldane",
-    "Position": "F",
-    "Year": "2020"
+    "uniformNumber": 10,
+    "name": "Cole Haldane",
+    "position": "F",
+    "year": "2020"
   },
   {
-    "Number": 12,
-    "Name": "Jack Christian",
-    "Position": "F",
-    "Year": "2020"
+    "uniformNumber": 12,
+    "name": "Jack Christian",
+    "position": "F",
+    "year": "2020"
   },
   {
-    "Number": 14,
-    "Name": "Jacob Mayo",
-    "Position": "F",
-    "Year": "2020"
+    "uniformNumber": 14,
+    "name": "Jacob Mayo",
+    "position": "F",
+    "year": "2020"
   },
   {
-    "Number": 16,
-    "Name": "Ryan Haug",
-    "Position": "F",
-    "Year": "2021"
+    "uniformNumber": 16,
+    "name": "Ryan Haug",
+    "position": "F",
+    "year": "2021"
   },
   {
-    "Number": 17,
-    "Name": "Ryan Saelens",
-    "Position": "F",
-    "Year": "2021"
+    "uniformNumber": 17,
+    "name": "Ryan Saelens",
+    "position": "F",
+    "year": "2021"
   },
   {
-    "Number": 19,
-    "Name": "David Feygin",
-    "Position": "F",
-    "Year": "2022"
+    "uniformNumber": 19,
+    "name": "David Feygin",
+    "position": "F",
+    "year": "2022"
   },
   {
-    "Number": 21,
-    "Name": "Nolan Sullivan",
-    "Position": "F",
-    "Year": "2022"
+    "uniformNumber": 21,
+    "name": "Nolan Sullivan",
+    "position": "F",
+    "year": "2022"
   },
   {
-    "Number": 22,
-    "Name": "Joe Celtruda",
-    "Position": "D",
-    "Year": "2022"
+    "uniformNumber": 22,
+    "name": "Joe Celtruda",
+    "position": "D",
+    "year": "2022"
   },
   {
-    "Number": 23,
-    "Name": "Calvin Hicks",
-    "Position": "D",
-    "Year": "2022"
+    "uniformNumber": 23,
+    "name": "Calvin Hicks",
+    "position": "D",
+    "year": "2022"
   },
   {
-    "Number": 24,
-    "Name": "Chris Lasher",
-    "Position": "D",
-    "Year": "2020"
+    "uniformNumber": 24,
+    "name": "Chris Lasher",
+    "position": "D",
+    "year": "2020"
   },
   {
-    "Number": 25,
-    "Name": "Colin Palmer",
-    "Position": "D",
-    "Year": "2022"
+    "uniformNumber": 25,
+    "name": "Colin Palmer",
+    "position": "D",
+    "year": "2022"
   },
   {
-    "Number": 26,
-    "Name": "Nick Rex",
-    "Position": "F",
-    "Year": "2021"
+    "uniformNumber": 26,
+    "name": "Nick Rex",
+    "position": "F",
+    "year": "2021"
   },
   {
-    "Number": 27,
-    "Name": "Nate Hutchens",
-    "Position": "D",
-    "Year": "2022"
+    "uniformNumber": 27,
+    "name": "Nate Hutchens",
+    "position": "D",
+    "year": "2022"
   },
   {
-    "Number": 30,
-    "Name": "Leo Coons",
-    "Position": "G",
-    "Year": "2021"
+    "uniformNumber": 30,
+    "name": "Leo Coons",
+    "position": "G",
+    "year": "2021"
   },
   {
-    "Number": 31,
-    "Name": "Kent Leighton",
-    "Position": "G",
-    "Year": "2020"
+    "uniformNumber": 31,
+    "name": "Kent Leighton",
+    "position": "G",
+    "year": "2020"
   }
 ]

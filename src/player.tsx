@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './player.css';
 
 interface PlayerProps {
@@ -8,20 +8,22 @@ interface PlayerProps {
     year: string;
 }
 
-const YearMap = new Map([
-    ['2020', 'Sr.'],
-    ['2021', 'Jr.'],
-    ['2022', 'So.'],
-    ['2023', 'Fr.']
-]);
+export default class Player extends Component<PlayerProps> {
+    private YearMap = new Map([
+        ['2020', 'Sr.'],
+        ['2021', 'Jr.'],
+        ['2022', 'So.'],
+        ['2023', 'Fr.']
+    ]);
 
-
-export const Player = (props: PlayerProps) =>
-    <div className="row">
-        <div className="col-1">{props.uniformNumber}</div>
-        <div className="col-7">{props.name}</div>
-        <div className="col-2">{props.position}</div>
-        <div className="col-2">{YearMap.get(props.year)}</div>
-    </div>;
-
-export default Player;
+    render() {
+        return (
+            <div className="row">
+                <div className="col-1">{this.props.uniformNumber}</div>
+                <div className="col-7">{this.props.name}</div>
+                <div className="col-2">{this.props.position}</div>
+                <div className="col-2">{this.YearMap.get(this.props.year)}</div>
+            </div>
+        );
+    }
+}
