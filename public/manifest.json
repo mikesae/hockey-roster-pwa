@@ -1,14 +1,20 @@
 {
   "name": "Shen Hockey",
   "short_name": "Shen Hockey",
-  "start_url": ".",
+  "start_url": "/",
   "background_color": "#CCCCCC",
   "theme_color": "#CCCCCC",
   "display": "standalone",
   "icons": [{
-    "src": "maskable_icon.png",
-    "sizes": "192x192",
-    "type": "image/png",
-    "purpose": "maskable"
-  }]
+      "src": "maskable_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "maskable_icon512X512.png",
+      "sizes": "512X512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }]
 }

@@ -7,7 +7,7 @@ class App extends Component {
         const userAgent = navigator.userAgent.toLowerCase();
         return userAgent.indexOf('android') !== -1;
     };
-    componentWillMount() {
+    componentDidMount() {
         if (this.isAndroid()) {
             document.body.classList.add('android-text-adjust');
         }
