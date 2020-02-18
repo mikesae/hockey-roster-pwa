@@ -1,13 +1,8 @@
 body {
-  font-size: 2.5em;
   background-color: #DDDDDD;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
-}
-
-body.android-text-adjust {
-  font-size: 1em;
 }
 
 .container-table {
