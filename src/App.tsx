@@ -9,7 +9,7 @@ class App extends Component {
     };
     componentWillMount() {
         if (this.isAndroid()) {
-            require('./android.css');
+            document.body.classList.add('android-text-adjust');
         }
     }
 

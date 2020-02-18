@@ -6,6 +6,10 @@ body {
   -webkit-touch-callout: none;
 }
 
+body.android-text-adjust {
+  font-size: 1em;
+}
+
 .container-table {
   background-image: url('logo.jpg');
   background-repeat: no-repeat;
