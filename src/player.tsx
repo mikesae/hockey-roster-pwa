@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import './player.css';
 
-interface PlayerProps {
+export interface IPlayerProps {
     uniformNumber: number,
     name: string,
     position: string,
     year: string;
 }
 
-export default class Player extends Component<PlayerProps> {
+export class Player extends Component<IPlayerProps> {
     private YearMap = new Map([
         ['2020', 'Sr.'],
         ['2021', 'Jr.'],
