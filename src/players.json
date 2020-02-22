@@ -3,138 +3,161 @@
     "uniformNumber": 1,
     "name": "John Sassone",
     "position": "G",
-    "year": "2020"
+    "year": "2020",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player572467.jpg"
   },
   {
     "uniformNumber": 2,
     "name": "Anthony Sassone",
     "position": "F",
-    "year": "2021"
+    "year": "2021",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player613254.jpg"
   },
   {
     "uniformNumber": 3,
     "name": "Lucas Lasher",
     "position": "G",
-    "year": "2021"
+    "year": "2021",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player613258.jpg"
   },
   {
     "uniformNumber": 4,
     "name": "Marty Magaletta",
     "position": "D",
-    "year": "2023"
+    "year": "2023",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player1574044110081.jpg"
   },
   {
     "uniformNumber": 5,
     "name": "Austin Haldane",
     "position": "F",
-    "year": "2023"
+    "year": "2023",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player1573918659067.jpg"
   },
   {
     "uniformNumber": 6,
     "name": "Justin Mayo",
     "position": "F",
-    "year": "2021"
+    "year": "2021",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player613259.jpg"
   },
   {
     "uniformNumber": 8,
     "name": "Tyler Sullivan",
     "position": "F",
-    "year": "2020"
+    "year": "2020",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player613255.jpg"
   },
   {
     "uniformNumber": 9,
     "name": "Justin Miazga",
     "position": "F/D",
-    "year": "2021"
+    "year": "2021",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player647949.jpg"
   },
   {
     "uniformNumber": 10,
     "name": "Cole Haldane",
     "position": "F",
-    "year": "2020"
+    "year": "2020",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player572406.jpg"
   },
   {
     "uniformNumber": 12,
     "name": "Jack Christian",
     "position": "F",
-    "year": "2020"
+    "year": "2020",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player647948.jpg"
   },
   {
     "uniformNumber": 14,
     "name": "Jacob Mayo",
     "position": "F",
-    "year": "2020"
+    "year": "2020",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player572529.jpg"
   },
   {
     "uniformNumber": 16,
     "name": "Ryan Haug",
     "position": "F",
-    "year": "2021"
+    "year": "2021",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player647952.jpg"
   },
   {
     "uniformNumber": 17,
     "name": "Ryan Saelens",
     "position": "F",
-    "year": "2021"
+    "year": "2021",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player647947.jpg"
   },
   {
     "uniformNumber": 19,
     "name": "David Feygin",
     "position": "F",
-    "year": "2022"
+    "year": "2022",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player647951.jpg"
   },
   {
     "uniformNumber": 21,
     "name": "Nolan Sullivan",
     "position": "F",
-    "year": "2022"
+    "year": "2022",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player1574044187540.jpg"
   },
   {
     "uniformNumber": 22,
     "name": "Joe Celtruda",
     "position": "D",
-    "year": "2022"
+    "year": "2022",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player647954.jpg"
   },
   {
     "uniformNumber": 23,
     "name": "Calvin Hicks",
     "position": "D",
-    "year": "2022"
+    "year": "2022",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player647950.jpg"
   },
   {
     "uniformNumber": 24,
     "name": "Chris Lasher",
     "position": "D",
-    "year": "2020"
+    "year": "2020",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player572407.jpg"
   },
   {
     "uniformNumber": 25,
     "name": "Colin Palmer",
     "position": "D",
-    "year": "2022"
+    "year": "2022",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player613260.jpg"
   },
   {
     "uniformNumber": 26,
     "name": "Nick Rex",
     "position": "F",
-    "year": "2021"
+    "year": "2021",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player647953.jpg"
   },
   {
     "uniformNumber": 27,
     "name": "Nate Hutchens",
     "position": "D",
-    "year": "2022"
+    "year": "2022",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player1574044339899.jpg"
   },
   {
     "uniformNumber": 30,
     "name": "Leo Coons",
     "position": "G",
-    "year": "2021"
+    "year": "2021",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player613257.jpg"
   },
   {
     "uniformNumber": 31,
     "name": "Kent Leighton",
     "position": "G",
-    "year": "2020"
+    "year": "2020",
+    "imageUrl": "https://media.hometeamsonline.com/photos/hockey/CDHSHL/player572532.jpg"
   }
 ]
