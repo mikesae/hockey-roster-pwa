@@ -14,7 +14,32 @@
 }
 
 .row {
-  opacity: 0.90;
+  opacity: 1.0;
+}
+
+.detail-content {
+  width: 100% !important;
+  height: 100%;
+  background: gray !important;
+}
+
+.detail-content .player-name {
+  margin: 10px;
+  text-align: center;
+}
+
+.popup-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.popup-content .close {
+  color: black;
+  float: right;
+  font-size: 2em;
+  margin-top: -12px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,12 +47,22 @@
     background-color: #333333 !important;
     font-weight: bold;
   }
+
   .row:nth-child(even){
     background-color: #04920A;
     color: white;
   }
+
   .row:nth-child(odd){
     background-color: black;
+    color: white;
+  }
+
+  .detail-content {
+    background: black !important;
+  }
+
+  .popup-content .close {
     color: white;
   }
 }
