@@ -21,6 +21,7 @@
   width: 100% !important;
   height: 100%;
   background: gray !important;
+  border-color: gray !important;
 }
 
 .detail-content .player-name {
@@ -60,6 +61,7 @@
 
   .detail-content {
     background: black !important;
+    border-color: black !important;
   }
 
   .popup-content .close {
