@@ -29,13 +29,17 @@ export class Player extends Component<IPlayerProps> {
                     className="detail">
                     {close => (
                         <div>
-                            <a className="close" onClick={close}>
-                                &times;
-                            </a>
+                            <div className="detail-header">
+                                <h3>2019-20 Shen Varsity Hockey</h3>
+                                <a className="close" onClick={close}>
+                                    &times;
+                                </a>
+                            </div>
+
                             <br/>
                             <br/>
                             <img src={this.props.imageUrl} alt={this.props.name}/>
-                            <div className="player-name">{this.props.name}</div>
+                            <h4 className="player-name">{this.props.name}</h4>
                         </div>
                     )}
 

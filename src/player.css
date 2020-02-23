@@ -24,6 +24,10 @@
   border-color: gray !important;
 }
 
+.detail-header {
+  margin-top: 15px;
+}
+
 .detail-content .player-name {
   margin: 10px;
   text-align: center;
@@ -40,7 +44,8 @@
   color: black;
   float: right;
   font-size: 2em;
-  margin-top: -12px;
+  margin-top: -68px;
+  margin-right: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
