@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Popup from 'reactjs-popup';
-import './player.css';
+import './player.scss';
 
 export interface IPlayerProps {
     uniformNumber: number,
@@ -21,9 +21,9 @@ export class Player extends Component<IPlayerProps> {
     render() {
         return (
             <div className="row">
-                <div className="col-1">{this.props.uniformNumber}</div>
+                <div className="col-2">{this.props.uniformNumber}</div>
                 <Popup
-                    trigger={<div className="col-7">{this.props.name}</div>}
+                    trigger={<div className="col-6">{this.props.name}</div>}
                     modal
                     lockScroll={true}
                     className="detail">
