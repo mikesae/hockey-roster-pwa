@@ -15,8 +15,18 @@
   text-align: center;
 }
 
+.img-col {
+  padding: 0;
+}
+
 .row {
   opacity: 1.0;
+}
+
+.img-thumbnail {
+  height: 3em;
+  background: none;
+  border: none;
 }
 
 .detail-content {
@@ -47,7 +57,7 @@
     color: black;
     float: right;
     font-size: 2em;
-    margin-top: -68px;
+    margin-top: -6px;
     margin-right: 5px;
   }
 }

@@ -16,8 +16,9 @@ export default class Roster extends Component {
         return (
             <div className="container-fluid container-table">
                 <div className="row">
+                    <div className="col-2"></div>
                     <div className="col-2">#</div>
-                    <div className="col-6">Name</div>
+                    <div className="col-4">Name</div>
                     <div className="col-2">Pos.</div>
                     <div className="col-2">Year</div>
                 </div>
