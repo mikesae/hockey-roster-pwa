@@ -3,6 +3,7 @@ import Popup from 'reactjs-popup';
 import './player.scss';
 import Image from 'react-bootstrap/Image';
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export interface IPlayerProps {
     uniformNumber: number,
@@ -22,34 +23,34 @@ export class Player extends Component<IPlayerProps> {
 
     render() {
         return (
-            <Row>
-                <Popup
-                    trigger={
-                        <div className="col-2 img-col"><Image roundedCircle thumbnail src={this.props.imageUrl} alt={this.props.name}/></div>
-                    }
-                    modal
-                    lockScroll={true}
-                    className="detail">
-                    {close => (
-                        <div>
-                            <a className="close" onClick={close}>
-                                &times;
-                            </a>
-                            <div className="detail-header">
-                                <h3>2019-20 Shen Varsity Hockey</h3>
-                            </div>
-                            <br/>
-                            <br/>
-                            <img src={this.props.imageUrl} alt={this.props.name}/>
-                            <h4 className="player-name">{this.props.name}</h4>
+            <Popup
+                trigger={
+                    <Row>
+                        <Col className="col-2 img-col my-auto"><Image roundedCircle thumbnail src={this.props.imageUrl} alt={this.props.name}/></Col>
+                        <Col className="col-2 my-auto">{this.props.uniformNumber}</Col>
+                        <Col className="col-4 my-auto">{this.props.name}</Col>
+                        <Col className="col-2 my-auto">{this.props.position}</Col>
+                        <Col className="col-2 my-auto">{this.YearMap.get(this.props.year)}</Col>
+                    </Row>
+                }
+                modal
+                lockScroll
+                className="detail">
+                {close => (
+                    <div>
+                        <a className="close" onClick={close}>
+                            &times;
+                        </a>
+                        <div className="detail-header">
+                            <h4>2019-20 Shen Varsity Hockey</h4>
                         </div>
-                    )}
-                </Popup>
-                <div className="col-2">{this.props.uniformNumber}</div>
-                <div className="col-4">{this.props.name}</div>
-                <div className="col-2">{this.props.position}</div>
-                <div className="col-2">{this.YearMap.get(this.props.year)}</div>
-            </Row>
+                        <br/>
+                        <br/>
+                        <img src={this.props.imageUrl} alt={this.props.name}/>
+                        <h4 className="player-name">{this.props.name}</h4>
+                    </div>
+                )}
+            </Popup>
         );
     }
 }

@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import players from './players.json';
 import {Player, IPlayerProps} from "./player";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default class Roster extends Component {
     render() {
@@ -14,16 +17,16 @@ export default class Roster extends Component {
         });
 
         return (
-            <div className="container-fluid container-table">
-                <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-2">#</div>
-                    <div className="col-4">Name</div>
-                    <div className="col-2">Pos.</div>
-                    <div className="col-2">Year</div>
-                </div>
+            <Container className="container-fluid container-table">
+                <Row>
+                    <Col className="col-2"></Col>
+                    <Col className="col-2">#</Col>
+                    <Col className="col-4">Name</Col>
+                    <Col className="col-2">Pos.</Col>
+                    <Col className="col-2">Year</Col>
+                </Row>
                 {roster}
-            </div>
+            </Container>
         );
     }
 }
