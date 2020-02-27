@@ -8,12 +8,12 @@ body {
 .container-table {
   background-image: url('logo.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: 100%;
 }
 
-h3, h4 {
-  text-align: center;
+.title {
+  font-weight: bold;
 }
 
 .jumbotron {

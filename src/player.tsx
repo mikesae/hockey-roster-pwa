@@ -26,11 +26,11 @@ export class Player extends Component<IPlayerProps> {
             <Popup
                 trigger={
                     <Row>
-                        <Col className="col-2 img-col my-auto"><Image roundedCircle thumbnail src={this.props.imageUrl} alt={this.props.name}/></Col>
-                        <Col className="col-2 my-auto">{this.props.uniformNumber}</Col>
-                        <Col className="col-4 my-auto">{this.props.name}</Col>
-                        <Col className="col-2 my-auto">{this.props.position}</Col>
-                        <Col className="col-2 my-auto">{this.YearMap.get(this.props.year)}</Col>
+                        <Col className="col-2 px-0 mx-auto"><Image roundedCircle thumbnail src={this.props.imageUrl} alt={this.props.name}/></Col>
+                        <Col className="col-2 px-0 my-auto">{this.props.uniformNumber}</Col>
+                        <Col className="col-4 px-0 my-auto">{this.props.name}</Col>
+                        <Col className="col-2 px-0 my-auto">{this.props.position}</Col>
+                        <Col className="col-2 px-0 my-auto">{this.YearMap.get(this.props.year)}</Col>
                     </Row>
                 }
                 modal

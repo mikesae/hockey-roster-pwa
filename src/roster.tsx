@@ -19,11 +19,11 @@ export default class Roster extends Component {
         return (
             <Container className="container-fluid container-table">
                 <Row>
-                    <Col className="col-2"></Col>
-                    <Col className="col-2">#</Col>
-                    <Col className="col-4">Name</Col>
-                    <Col className="col-2">Pos.</Col>
-                    <Col className="col-2">Year</Col>
+                    <Col className="col-2 px-0"></Col>
+                    <Col className="col-2 px-0">#</Col>
+                    <Col className="col-4 px-0">Name</Col>
+                    <Col className="col-2 px-0">Pos.</Col>
+                    <Col className="col-2 px-0">Year</Col>
                 </Row>
                 {roster}
             </Container>
