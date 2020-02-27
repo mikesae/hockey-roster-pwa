@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import players from './players.json';
-import {Player, IPlayerProps} from "./player";
-import Container from "react-bootstrap/Container";
+import {IPlayerProps, Player} from "./player";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -17,7 +16,7 @@ export default class Roster extends Component {
         });
 
         return (
-            <Container className="container-fluid container-table">
+            <>
                 <Row>
                     <Col className="col-2 px-0"></Col>
                     <Col className="col-2 px-0">#</Col>
@@ -26,7 +25,7 @@ export default class Roster extends Component {
                     <Col className="col-2 px-0">Year</Col>
                 </Row>
                 {roster}
-            </Container>
+            </>
         );
     }
 }
