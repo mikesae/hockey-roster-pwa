@@ -9,7 +9,7 @@ class App extends Component {
     render() {
         return (
             <>
-                <Navbar className="jumbotron" sticky="top">
+                <Navbar className="jumbotron jumbotron-fluid" sticky="top">
                     <Navbar.Brand href="#home">
                         <Image thumbnail fluid src="shen-hockey-logo.png" className="d-inline-block"/>{' '}
                         <span>2019-20 Shen Varsity Hockey</span>
