@@ -4,6 +4,8 @@ import './player.scss';
 import Image from 'react-bootstrap/Image';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 
 export interface IPlayerProps {
     uniformNumber: number,
@@ -28,10 +30,13 @@ export class Player extends Component<IPlayerProps> {
                     <Row>
                         <Col className="col-2 px-0 my-auto"><Image roundedCircle thumbnail src={this.props.imageUrl}
                                                                    alt={this.props.name}/></Col>
-                        <Col className="col-2 px-0 my-auto">{this.props.uniformNumber}</Col>
-                        <Col className="col-4 px-0 my-auto">{this.props.name}</Col>
+                        <Col className="col-1 px-0 my-auto">{this.props.uniformNumber}</Col>
+                        <Col className="col-5 px-0 my-auto">{this.props.name}</Col>
                         <Col className="col-2 px-0 my-auto">{this.props.position}</Col>
-                        <Col className="col-2 px-0 my-auto">{this.YearMap.get(this.props.year)}</Col>
+                        <Col className="col-1 px-0 my-auto">{this.YearMap.get(this.props.year)}</Col>
+                        <Col className="col-1 px-0 my-auto">
+                            <FontAwesomeIcon icon={faChevronRight}/>
+                        </Col>
                     </Row>
                 }
                 modal

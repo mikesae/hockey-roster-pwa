@@ -19,10 +19,10 @@ export default class Roster extends Component {
             <>
                 <Row>
                     <Col className="col-2 px-0"></Col>
-                    <Col className="col-2 px-0">#</Col>
-                    <Col className="col-4 px-0">Name</Col>
+                    <Col className="col-1 px-0">#</Col>
+                    <Col className="col-5 px-0">Name</Col>
                     <Col className="col-2 px-0">Pos.</Col>
-                    <Col className="col-2 px-0">Year</Col>
+                    <Col className="col-1 px-0">Year</Col>
                 </Row>
                 {roster}
             </>
