@@ -8,9 +8,7 @@ export default class Roster extends Component {
     render() {
         let roster: any[] = [];
 
-        //sort it.
         players.sort((a:IPlayerProps, b:IPlayerProps) => a.uniformNumber - b.uniformNumber);
-
         players.forEach(player => {
             roster.push(<Player {...player} key={player.uniformNumber}/>)
         });

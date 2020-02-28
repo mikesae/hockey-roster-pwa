@@ -1,25 +1,24 @@
 import React, {Component} from 'react';
 import './App.scss';
-import Roster from "./roster";
-import Image from "react-bootstrap/Image";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Roster from './roster';
+import Image from 'react-bootstrap/Image';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
 class App extends Component {
     render() {
         return (
-            <Container className="App container-fluid">
-                <Row className="jumbotron-fluid">
-                    <Col className="col-2 px-0 my-auto">
-                        <Image fluid src="shen-hockey-logo.png"/>
-                    </Col>
-                    <Col className="col-10 px-0 my-auto">
-                        <div className="title">2019-20 Shen Varsity Hockey</div>
-                    </Col>
-                </Row>
-                <Roster/>
-            </Container>
+            <>
+                <Navbar className="jumbotron" sticky="top">
+                    <Navbar.Brand href="#home">
+                        <Image thumbnail fluid src="shen-hockey-logo.png" className="d-inline-block"/>{' '}
+                        <span>2019-20 Shen Varsity Hockey</span>
+                    </Navbar.Brand>
+                </Navbar>
+                <Container className="App container-fluid">
+                    <Roster/>
+                </Container>
+            </>
         );
     }
 }
