@@ -12,7 +12,7 @@ class App extends Component {
             <Container className="App container-fluid">
                 <Row>
                     <Col className="col-2 px-0 my-auto">
-                        <Image roundedCircle thumbnail src="maskable_icon.png"/>
+                        <Image thumbnail src="shen-hockey-logo.png"/>
                     </Col>
                     <Col className="col-10 px-0 my-auto">
                         <div className="title">2019-20 Shen Varsity Hockey</div>
