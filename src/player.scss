@@ -1,3 +1,5 @@
+  $shen-green: #00400e;
+
 .row:first-child {
   background-color: #CCCCCC !important;
   font-weight: bold;
@@ -68,7 +70,7 @@ h3, h4 {
   }
 
   .row:nth-child(even) {
-    background-color: #04920A;
+    background-color: $shen-green;
     color: white;
   }
 
