@@ -1,3 +1,6 @@
+// TODO: move colors to theme module.
+$shen-green: #00400e;
+
 body {
   background-color: transparent;
   -webkit-user-select: none;
@@ -23,6 +26,9 @@ body {
 
 .nav-item {
   padding: 0 10px;
+  a {
+    color: $shen-green;
+  }
 }
 
 .navbar-content {
