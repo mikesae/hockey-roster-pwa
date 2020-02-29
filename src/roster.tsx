@@ -25,6 +25,9 @@ export default class Roster extends Component {
                     <Col className="col-1 px-0">Year</Col>
                 </Row>
                 {roster}
+                <div className="bottom-spacer">
+                    <div>Bottom</div>
+                </div>
             </Container>
         );
     }
