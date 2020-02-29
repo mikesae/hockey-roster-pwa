@@ -19,14 +19,17 @@ export class PlayerSummary extends Component<IPlayerProps> {
     render() {
         return (
             <Row>
-                <Col className="col-2 px-0 my-auto"><Image roundedCircle thumbnail src={this.props.imageUrl}
-                                                           alt={this.props.name}/></Col>
+                <Col className="col-2 px-0 my-auto">
+                    <Link to={{pathname: `/player/${this.props.uniformNumber}`}}>
+                        <Image roundedCircle thumbnail src={this.props.imageUrl} alt={this.props.name}/>
+                    </Link>
+                </Col>
                 <Col className="col-1 px-0 my-auto">{this.props.uniformNumber}</Col>
                 <Col className="col-5 px-0 my-auto">{this.props.name}</Col>
                 <Col className="col-2 px-0 my-auto">{this.props.position}</Col>
                 <Col className="col-1 px-0 my-auto">{this.YearMap.get(this.props.year as string)}</Col>
                 <Col className="col-1 px-0 my-auto">
-                    <Link to={{ pathname: `/player/${this.props.uniformNumber}`}}>
+                    <Link to={{pathname: `/player/${this.props.uniformNumber}`}}>
                         <FontAwesomeIcon icon={faChevronRight}/>
                     </Link>
                 </Col>
