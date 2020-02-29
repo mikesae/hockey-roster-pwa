@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import players from './players.json';
-import {IPlayerProps, Player} from "./player";
+import {PlayerSummary} from "./PlayerSummary";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import {IPlayerProps} from "./IPlayerProps";
+import Container from "react-bootstrap/Container";
 
 export default class Roster extends Component {
     render() {
@@ -10,11 +12,11 @@ export default class Roster extends Component {
 
         players.sort((a:IPlayerProps, b:IPlayerProps) => a.uniformNumber - b.uniformNumber);
         players.forEach(player => {
-            roster.push(<Player {...player} key={player.uniformNumber}/>)
+            roster.push(<PlayerSummary {...player} key={player.uniformNumber}/>)
         });
 
         return (
-            <>
+            <Container>
                 <Row>
                     <Col className="col-2 px-0"></Col>
                     <Col className="col-1 px-0">#</Col>
@@ -23,7 +25,7 @@ export default class Roster extends Component {
                     <Col className="col-1 px-0">Year</Col>
                 </Row>
                 {roster}
-            </>
+            </Container>
         );
     }
 }
