@@ -25,7 +25,11 @@ export class PlayerSummary extends Component<IPlayerProps> {
                     </Link>
                 </Col>
                 <Col className="col-1 px-0 my-auto">{this.props.uniformNumber}</Col>
-                <Col className="col-5 px-0 my-auto">{this.props.name}</Col>
+                <Col className="col-5 px-0 my-auto">
+                    <Link to={{pathname: `/player/${this.props.uniformNumber}`}}>
+                        {this.props.name}
+                    </Link>
+                </Col>
                 <Col className="col-2 px-0 my-auto">{this.props.position}</Col>
                 <Col className="col-1 px-0 my-auto">{this.YearMap.get(this.props.year as string)}</Col>
                 <Col className="col-1 px-0 my-auto">

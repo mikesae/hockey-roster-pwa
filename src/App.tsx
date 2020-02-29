@@ -11,7 +11,7 @@ class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <Navbar className="jumbotron jumbotron-fluid" sticky="top">
+                <Navbar className="jumbotron-fluid" sticky="top">
                     <Navbar.Brand>
                         <Link to="/">
                             <Image thumbnail fluid src="shen-hockey-logo.png" className="d-inline-block"/>

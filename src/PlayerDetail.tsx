@@ -3,6 +3,7 @@ import './PlayerDetail.scss';
 import players from './players.json';
 import Container from "react-bootstrap/Container";
 import Image from 'react-bootstrap/Image';
+import FormLabel from "react-bootstrap/FormLabel";
 
 export class PlayerDetail extends Component {
     private readonly uniformNumber:number;
@@ -17,8 +18,13 @@ export class PlayerDetail extends Component {
 
         return (
             <Container>
-                <h4 className="player-name">#{player.uniformNumber} {player.name}</h4>
                 <Image src={player.imageUrl} alt={player.name}/>
+                <h4 className="player-name">#{player.uniformNumber} {player.name}</h4>
+                <FormLabel>Graduation Year: </FormLabel>
+                <span>{player.year}</span>
+                <br/>
+                <FormLabel>Position: </FormLabel>
+                <span>{player.position}</span>
             </Container>
         );
     }
