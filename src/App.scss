@@ -1,5 +1,6 @@
 // TODO: move colors to theme module.
 $shen-green: #00400e;
+$icon-color: black;
 $dark-mode-icon-color: #cccccc;
 
 body {
@@ -29,7 +30,7 @@ body {
   padding: 0 10px;
 
   a {
-    color: $shen-green;
+    color: $icon-color;
   }
 }
 
