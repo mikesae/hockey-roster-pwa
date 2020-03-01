@@ -7,9 +7,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import {PlayerDetail} from "./PlayerDetail";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHome} from "@fortawesome/free-solid-svg-icons/faHome";
 import {faCalendarAlt} from "@fortawesome/free-solid-svg-icons";
 import NavItem from "react-bootstrap/NavItem";
+import {faThList} from "@fortawesome/free-solid-svg-icons/faThList";
 
 class App extends Component {
     render() {
@@ -32,15 +32,17 @@ class App extends Component {
                     <Route path="/player/:number" component={PlayerDetail}/>
                     <Route path="/" component={Roster}/>
                 </Switch>
-                <Navbar className="jumbotron-fluid border-top" fixed="bottom">
-                    <NavItem>
+                <Navbar className="jumbotron-fluid border-top justify-content-center navbar-bottom" fixed="bottom">
+                    <NavItem className="text-center">
                         <Link to="/">
-                            <FontAwesomeIcon size="1x" icon={faHome}/>
+                            <FontAwesomeIcon className="link-icon" icon={faThList}/>
+                            <div className="icon-label">Roster</div>
                         </Link>
                     </NavItem>
-                    <NavItem>
-                        <Link to="/schedule">
-                            <FontAwesomeIcon size="1x" icon={faCalendarAlt}/>
+                    <NavItem className="text-center">
+                        <Link to="schedule">
+                            <FontAwesomeIcon className="link-icon" icon={faCalendarAlt}/>
+                            <div className="icon-label">Schedule</div>
                         </Link>
                     </NavItem>
                 </Navbar>

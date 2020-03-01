@@ -41,12 +41,28 @@ body {
   padding: 0;
 }
 
+.navbar-bottom {
+  padding: 2px;
+}
+
 a {
   color: black;
   &:hover {
     color: black;
     font-weight: bold;
     text-decoration: none;
+  }
+}
+
+.nav-item {
+  .link-icon {
+    font-size: 1em;
+    vertical-align: -0.25em;
+  }
+
+  .icon-label {
+    margin-top: 0;
+    font-size: 0.75em;
   }
 }
 
@@ -72,5 +88,9 @@ a {
       font-weight: bold;
     }
   }
+  .bottom-spacer {
+    background-color: black;
+  }
+
 }
 
