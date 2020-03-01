@@ -1,5 +1,6 @@
 // TODO: move colors to theme module.
 $shen-green: #00400e;
+$dark-mode-icon-color: #cccccc;
 
 body {
   background-color: transparent;
@@ -26,6 +27,7 @@ body {
 
 .nav-item {
   padding: 0 10px;
+
   a {
     color: $shen-green;
   }
@@ -47,6 +49,7 @@ body {
 
 a {
   color: black;
+
   &:hover {
     color: black;
     font-weight: bold;
@@ -80,6 +83,12 @@ a {
     background-color: black;
   }
 
+  .nav-item {
+    a {
+      color: $dark-mode-icon-color;
+    }
+  }
+
   a {
     color: white;
 
@@ -88,6 +97,7 @@ a {
       font-weight: bold;
     }
   }
+
   .bottom-spacer {
     background-color: black;
   }
