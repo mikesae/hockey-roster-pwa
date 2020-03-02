@@ -84,6 +84,14 @@ a {
     background-color: black;
   }
 
+  .jumbotron-fluid.border-bottom {
+    border-bottom-color: #333333 !important;
+  }
+
+  .jumbotron-fluid.border-top {
+    border-top-color: #333333 !important;
+  }
+
   .nav-item {
     a {
       color: $dark-mode-icon-color;
