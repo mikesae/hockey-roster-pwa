@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {IPlayerProps} from "./IPlayerProps";
 import Container from "react-bootstrap/Container";
+import './Roster.scss';
 
 export default class Roster extends Component {
     render() {
@@ -16,7 +17,7 @@ export default class Roster extends Component {
         });
 
         return (
-            <Container>
+            <Container className="no-bounce">
                 <Row>
                     <Col className="col-2 px-0"></Col>
                     <Col className="col-1 px-0">#</Col>
