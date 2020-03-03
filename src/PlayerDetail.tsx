@@ -18,22 +18,26 @@ export class PlayerDetail extends Component {
         const player: any = players.find(p => p.uniformNumber === this.uniformNumber);
 
         return (
-            <Container className="container">
-                <h5 className="player-name">#{player.uniformNumber} {player.name}</h5>
-                <FormGroup>
-                    <Image src={player.imageUrl} alt={player.name}/>
-                </FormGroup>
-                <FormGroup>
-                    <div>
-                        <FormLabel>Graduation Year: </FormLabel>
-                        <span>{player.year}</span>
-                    </div>
-                    <div>
-                        <FormLabel>Position: </FormLabel>
-                        <span>{player.position}</span>
-                    </div>
-                </FormGroup>
-            </Container>
+            <>
+                <div className="spacer"/>
+                <Container className="container">
+                    <h5 className="player-name">#{player.uniformNumber} {player.name}</h5>
+                    <FormGroup>
+                        <Image src={player.imageUrl} alt={player.name}/>
+                    </FormGroup>
+                    <FormGroup>
+                        <div>
+                            <FormLabel>Graduation Year: </FormLabel>
+                            <span>{player.year}</span>
+                        </div>
+                        <div>
+                            <FormLabel>Position: </FormLabel>
+                            <span>{player.position}</span>
+                        </div>
+                    </FormGroup>
+                </Container>
+                <div className="spacer"/>
+            </>
         );
     }
 }

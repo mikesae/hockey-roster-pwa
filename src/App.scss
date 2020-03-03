@@ -21,9 +21,15 @@ body {
   background-color: white;
 }
 
-.bottom-spacer {
+.no-bounce {
+  height: 3em;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.spacer {
   background-color: white;
-  height: 2.5em;
+  height: 3em;
 }
 
 .nav-item {
@@ -107,7 +113,7 @@ a {
     }
   }
 
-  .bottom-spacer {
+  .spacer {
     background-color: black;
   }
 
