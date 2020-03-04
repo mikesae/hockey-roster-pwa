@@ -10,18 +10,24 @@ import {faCalendarAlt} from "@fortawesome/free-solid-svg-icons";
 import NavItem from "react-bootstrap/NavItem";
 import {faThList} from "@fortawesome/free-solid-svg-icons/faThList";
 import {Schedule} from "./Schedule";
+import {faChevronLeft} from "@fortawesome/free-solid-svg-icons/faChevronLeft";
 
 class App extends Component {
     render() {
         return (
             <BrowserRouter>
                 <Navbar className="jumbotron-fluid border-bottom navbar-top" fixed="top">
-                    <span className="navbar-content">
+                    <div className="container">
+                        <Link to="/" className="navbar-left-link">
+                            <FontAwesomeIcon className="link-icon" icon={faChevronLeft}/>
+                        </Link>
+                        <span className="navbar-content">
                         <Link to="/">
                             <Image thumbnail fluid src="shen-hockey-logo.png" className="d-inline-block"/>
                             <span>2019-20 Shen Hockey</span>
                         </Link>
                     </span>
+                    </div>
                 </Navbar>
                 <Switch>
                     <Route exact path="/schedule" component={Schedule}/>
