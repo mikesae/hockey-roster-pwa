@@ -23,7 +23,7 @@ export class PlayerDetail extends Component {
                 <Container className="container">
                     <h5 className="player-name">#{player.uniformNumber} {player.name}</h5>
                     <FormGroup>
-                        <Image src={player.imageUrl} alt={player.name}/>
+                        <Image roundedCircle src={player.imageUrl} alt={player.name}/>
                     </FormGroup>
                     <FormGroup>
                         <div>
