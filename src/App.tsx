@@ -10,13 +10,11 @@ import NavItem from "react-bootstrap/NavItem";
 import {faThList} from "@fortawesome/free-solid-svg-icons/faThList";
 import {Schedule} from "./Schedule";
 import {BrowserRouter} from "react-router-dom";
-import {TopNavbar} from "./TopNavbar";
 
 class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <TopNavbar showBackNav={false}/>
                 <Switch>
                     <Route exact path="/schedule" component={Schedule}/>
                     <Route path="/player/:number" component={PlayerDetail}/>
