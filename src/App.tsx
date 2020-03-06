@@ -2,14 +2,15 @@ import React, {Component} from 'react';
 import './App.scss';
 import Roster from './roster';
 import Navbar from 'react-bootstrap/Navbar';
-import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
+import {Link, Route, Switch} from 'react-router-dom';
 import {PlayerDetail} from "./PlayerDetail";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendarAlt} from "@fortawesome/free-solid-svg-icons";
 import NavItem from "react-bootstrap/NavItem";
 import {faThList} from "@fortawesome/free-solid-svg-icons/faThList";
 import {Schedule} from "./Schedule";
-import {faChevronLeft} from "@fortawesome/free-solid-svg-icons/faChevronLeft";
+import {BrowserRouter} from "react-router-dom";
+import {TopNavbar} from "./TopNavbar";
 
 class App extends Component {
     render() {
