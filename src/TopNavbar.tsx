@@ -10,7 +10,7 @@ export interface ITopNavBarProps {
     showBackNav: boolean;
 }
 
-export default class TopNavbar extends Component<ITopNavBarProps> {
+export class TopNavbar extends Component<ITopNavBarProps> {
     render() {
         return (
             <Navbar className="jumbotron-fluid border-bottom navbar-top" fixed="top">

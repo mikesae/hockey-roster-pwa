@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Image from 'react-bootstrap/Image';
 import FormLabel from "react-bootstrap/FormLabel";
 import FormGroup from "react-bootstrap/esm/FormGroup";
-import TopNavbar from "./TopNavbar";
+import {TopNavbar} from "./TopNavbar";
 
 export class PlayerDetail extends Component {
     private readonly uniformNumber: number;

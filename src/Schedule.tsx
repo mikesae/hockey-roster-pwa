@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Container from "react-bootstrap/Container";
-import TopNavbar from "./TopNavbar";
+import {TopNavbar} from "./TopNavbar";
 
 export class Schedule extends Component {
     render() {
