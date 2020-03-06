@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Roster.scss';
 import players from './players.json';
 import {PlayerSummary} from "./PlayerSummary";
 import Row from "react-bootstrap/Row";
@@ -20,8 +21,9 @@ export default class Roster extends Component {
             <>
                 <TopNavbar showBackNav={false}/>
                 <div className="spacer"/>
+                <div className="spacer-for-header"/>
                 <Container>
-                    <Row>
+                    <Row className="header-row fixed-top">
                         <Col className="col-2 px-0"></Col>
                         <Col className="col-1 px-0">#</Col>
                         <Col className="col-5 px-0">Name</Col>
