@@ -1,16 +1,18 @@
 $shen-green: #00400e;
 
-.row:first-child {
-  background-color: #CCCCCC !important;
-  font-weight: bold;
-}
+.roster-container {
+  .row:first-child {
+    background-color: #CCCCCC !important;
+    font-weight: bold;
+  }
 
-.row:nth-child(even) {
-  background-color: #E2EFD9;
-}
+  .row:nth-child(even) {
+    background-color: #E2EFD9;
+  }
 
-.row:nth-child(odd) {
-  background-color: #DDDDDD;
+  .row:nth-child(odd) {
+    background-color: #DDDDDD;
+  }
 }
 
 .col-1, .col-2 {
@@ -44,19 +46,21 @@ h3, h4 {
 }
 
 @media (prefers-color-scheme: dark) {
-  .row:first-child {
-    background-color: #333333 !important;
-    font-weight: bold;
-  }
+  .roster-container {
+    .row:first-child {
+      background-color: #333333 !important;
+      font-weight: bold;
+    }
 
-  .row:nth-child(even) {
-    background-color: $shen-green;
-    color: white;
-  }
+    .row:nth-child(even) {
+      background-color: $shen-green;
+      color: white;
+    }
 
-  .row:nth-child(odd) {
-    background-color: black;
-    color: white;
+    .row:nth-child(odd) {
+      background-color: black;
+      color: white;
+    }
   }
 
   .detail-content {
@@ -64,7 +68,4 @@ h3, h4 {
     border-color: black !important;
   }
 
-  .popup-content .close {
-    color: white;
-  }
 }

@@ -20,10 +20,10 @@ export class PlayerDetail extends Component {
 
         return (
             <>
-                <TopNavbar showBackNav={true}/>
+                <TopNavbar title={player.name} showBackNav={true}/>
+                <div className="spacer"/>
                 <div className="spacer"/>
                 <Container className="container">
-                    <h5 className="player-name">#{player.uniformNumber} {player.name}</h5>
                     <FormGroup>
                         <Image roundedCircle src={player.imageUrl} alt={player.name}/>
                     </FormGroup>

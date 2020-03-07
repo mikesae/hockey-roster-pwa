@@ -6,10 +6,10 @@ export class Schedule extends Component {
     render() {
         return (
             <>
-                <TopNavbar showBackNav={true}/>
+                <TopNavbar title="Schedule" showBackNav={true}/>
                 <div className="spacer"/>
                 <Container className="App container-fluid">
-                    <h4>Schedule TBD</h4>
+                    <h4>TBD</h4>
                 </Container>
                 <div className="spacer"/>
             </>

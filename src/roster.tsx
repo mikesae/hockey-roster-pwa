@@ -19,10 +19,10 @@ export default class Roster extends Component {
 
         return (
             <>
-                <TopNavbar showBackNav={false}/>
+                <TopNavbar title="2019-20 Roster" showBackNav={false}/>
                 <div className="spacer"/>
                 <div className="spacer-for-header"/>
-                <Container>
+                <Container className="roster-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-2 px-0"></Col>
                         <Col className="col-1 px-0">#</Col>

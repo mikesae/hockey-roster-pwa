@@ -4,4 +4,17 @@
 
 .navbar-top {
   padding: 0;
+  .img-thumbnail {
+    padding: 0;
+  }
+}
+
+.navbar-content {
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar-top {
+    background-color: black;
+  }
 }
