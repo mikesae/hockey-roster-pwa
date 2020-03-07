@@ -1,7 +1,4 @@
-// TODO: move colors to theme module.
-$shen-green: #00400e;
-$icon-color: black;
-$dark-mode-icon-color: #cccccc;
+@import 'theme';
 
 body {
   background-color: transparent;
@@ -19,12 +16,6 @@ body {
 
 .jumbotron-fluid {
   background-color: white;
-}
-
-.no-bounce {
-  height: 3em;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .spacer {
@@ -86,11 +77,11 @@ a {
   }
 
   .jumbotron-fluid.border-bottom {
-    border-bottom-color: #333333 !important;
+    border-bottom-color: $navbar-separator-color !important;
   }
 
   .jumbotron-fluid.border-top {
-    border-top-color: #333333 !important;
+    border-top-color: $navbar-separator-color !important;
   }
 
   .nav-item {
@@ -100,10 +91,10 @@ a {
   }
 
   a {
-    color: white;
+    color: $link-color;
 
     &:hover {
-      color: white;
+      color: $link-color;
       font-weight: bold;
     }
   }
@@ -111,6 +102,5 @@ a {
   .spacer, .spacer-for-header {
     background-color: black;
   }
-
 }
 

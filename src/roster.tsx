@@ -6,7 +6,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {IPlayerProps} from "./IPlayerProps";
 import Container from "react-bootstrap/Container";
-import {TopNavbar} from "./TopNavbar";
+import TopNavbar from "./TopNavbar";
+import BottomNavbar from "./BottomNavbar";
 
 export default class Roster extends Component {
     render() {
@@ -20,7 +21,6 @@ export default class Roster extends Component {
         return (
             <>
                 <TopNavbar title="2019-20 Roster" showBackNav={false}/>
-                <div className="spacer"/>
                 <div className="spacer-for-header"/>
                 <Container className="roster-container">
                     <Row className="header-row fixed-top">
@@ -32,7 +32,7 @@ export default class Roster extends Component {
                     </Row>
                     {roster}
                 </Container>
-                <div className="spacer"/>
+                <BottomNavbar/>
             </>
         );
     }

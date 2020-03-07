@@ -13,9 +13,10 @@ export interface ITopNavBarProps {
     showBackNav: boolean;
 }
 
-export class TopNavbar extends Component<ITopNavBarProps> {
+export default class TopNavbar extends Component<ITopNavBarProps> {
     render() {
         return (
+            <>
             <Navbar className="jumbotron-fluid border-bottom navbar-top" fixed="top">
                 <Row className="container-fluid no-gutters">
                     <Col className="col-3">
@@ -33,6 +34,8 @@ export class TopNavbar extends Component<ITopNavBarProps> {
                     </Col>
                 </Row>
             </Navbar>
+            <div className="spacer"/>
+            </>
         );
     }
 }
