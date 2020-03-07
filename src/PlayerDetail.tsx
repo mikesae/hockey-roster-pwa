@@ -22,7 +22,6 @@ export class PlayerDetail extends Component {
             <>
                 <TopNavbar title={player.name} showBackNav={true}/>
                 <div className="spacer"/>
-                <div className="spacer"/>
                 <Container className="container">
                     <FormGroup>
                         <Image roundedCircle src={player.imageUrl} alt={player.name}/>
