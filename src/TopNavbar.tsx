@@ -19,16 +19,14 @@ export class TopNavbar extends Component<ITopNavBarProps> {
             <Navbar className="jumbotron-fluid border-bottom navbar-top" fixed="top">
                 <Row className="container-fluid no-gutters">
                     <Col className="col-3">
-                        { this.props.showBackNav &&
-                            <Link to="/" className="navbar-left-link">
-                                <FontAwesomeIcon className="link-icon" icon={faChevronLeft}/>
-                            </Link>
+                        {this.props.showBackNav &&
+                        <Link to="/" className="navbar-left-link">
+                            <FontAwesomeIcon className="link-icon" icon={faChevronLeft}/>
+                        </Link>
                         }
                     </Col>
                     <Col className="col-6 navbar-content">
-                        <Link to="/">
-                            <span>{this.props.title}</span>
-                        </Link>
+                        <span>{this.props.title}</span>
                     </Col>
                     <Col className="col-3">
                         <Image thumbnail fluid src="/shen-hockey-logo.png"/>
