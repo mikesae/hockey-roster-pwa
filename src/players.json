@@ -11,7 +11,8 @@
     "name": "Anthony Sassone",
     "position": "F",
     "year": "2021",
-    "imageUrl": "/images/player613254.png"
+    "imageUrl": "/images/player613254.png",
+    "detailImageUrl": "/images/detail/anthony-sassone-1.jpg"
   },
   {
     "uniformNumber": 3,
@@ -39,14 +40,16 @@
     "name": "Justin Mayo",
     "position": "F",
     "year": "2021",
-    "imageUrl": "/images/player613259.png"
+    "imageUrl": "/images/player613259.png",
+    "detailImageUrl": "/images/detail/justin-mayo-1.jpg"
   },
   {
     "uniformNumber": 8,
     "name": "Tyler Sullivan",
     "position": "F",
     "year": "2020",
-    "imageUrl": "/images/player613255.png"
+    "imageUrl": "/images/player613255.png",
+    "detailImageUrl": "/images/detail/tyler-sullivan-2.jpg"
   },
   {
     "uniformNumber": 9,
@@ -60,7 +63,8 @@
     "name": "Cole Haldane",
     "position": "F",
     "year": "2020",
-    "imageUrl": "/images/player572406.png"
+    "imageUrl": "/images/player572406.png",
+    "detailImageUrl": "/images/detail/cole-haldane-1.jpg"
   },
   {
     "uniformNumber": 12,
@@ -81,7 +85,8 @@
     "name": "Ryan Haug",
     "position": "F",
     "year": "2021",
-    "imageUrl": "/images/player647952.png"
+    "imageUrl": "/images/player647952.png",
+    "detailImageUrl": "/images/detail/ryan-haug-1.jpg"
   },
   {
     "uniformNumber": 17,
@@ -89,6 +94,7 @@
     "position": "F",
     "year": "2021",
     "imageUrl": "/images/player647947.png",
+    "detailImageUrl": "/images/detail/ryan-saelens-1.jpg",
     "wordsOfWisdom": "You miss 100% of the shots you don't take.",
     "wordsOfWisdomAttribute": "Wayne Gretzky",
     "favoriteFood": "Chipotle",

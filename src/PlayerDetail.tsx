@@ -22,9 +22,15 @@ export class PlayerDetail extends Component {
             <>
                 <TopNavbar title={`#${player.uniformNumber}  ${player.name}`} showBackNav={true}/>
                 <Container className="container container-player-detail">
-                    <FormGroup>
-                        <Image roundedCircle src={player.imageUrl} alt={player.name}/>
-                    </FormGroup>
+                    <div>
+                        {player.detailImageUrl &&
+                            <Image className="player-detail" src={player.detailImageUrl} alt={player.name + "-detail"}/>
+                        }
+                        {!player.detailImageUrl &&
+                            <div className="spacer"/>
+                        }
+                        <Image className="player-head-shot" roundedCircle src={player.imageUrl} alt={player.name}/>
+                    </div>
                     <FormGroup>
                         {player.pumpUpSong &&
                             <div>

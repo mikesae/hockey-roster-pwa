@@ -1,3 +1,4 @@
+@import 'theme';
 
 .container-player-detail {
   .player-name {
@@ -9,7 +10,18 @@
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
-    height: 10em;
+  }
+
+  img.player-head-shot {
+    margin-top: -1em;
+    height: 4em;
+    background-color: #aaaaaa;
+    border: 2px solid $navbar-separator-color;
+    z-index: 1060;
+  }
+
+  img.player-detail {
+    width: 100%;
   }
 
   .player-form-label {
