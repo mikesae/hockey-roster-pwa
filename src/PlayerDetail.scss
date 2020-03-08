@@ -1,9 +1,19 @@
 
-.player-name {
-  text-align: center;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.container-player-detail {
+  .player-name {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10em;
+  }
+
+  .player-form-label {
+    font-weight: bold;
+    margin-top: 1em;
+  }
 }
