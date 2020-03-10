@@ -1,27 +1,26 @@
 @import 'theme';
 
-.container-player-detail {
-  .player-name {
-    text-align: center;
-  }
-
-  img {
+.player-detail-image-container {
+  img.player-head-shot {
     display: block;
-    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  img.player-head-shot {
-    margin-top: -1em;
-    height: 4em;
-    background-color: #aaaaaa;
+    margin-top: -2.5em;
+    height: 5em;
+    background-color: $player-thumbnail-background-color;
     border: 2px solid $navbar-separator-color;
     z-index: 1060;
   }
 
   img.player-detail {
+    height: 25%;
     width: 100%;
+  }
+}
+
+.container-player-detail {
+  .player-name {
+    text-align: center;
   }
 
   .player-form-label {

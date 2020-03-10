@@ -29,7 +29,7 @@ export default class TopNavbar extends Component<ITopNavBarProps> {
                     <Col className="col-6 navbar-content">
                         <span>{this.props.title}</span>
                     </Col>
-                    <Col className="col-3">
+                    <Col className="col-3 col-image">
                         <Image thumbnail fluid src="/shen-hockey-logo.png"/>
                     </Col>
                 </Row>
