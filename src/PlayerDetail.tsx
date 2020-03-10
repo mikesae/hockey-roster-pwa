@@ -6,6 +6,8 @@ import Image from 'react-bootstrap/Image';
 import FormGroup from "react-bootstrap/esm/FormGroup";
 import TopNavbar from "./TopNavbar";
 import BottomNavbar from "./BottomNavbar";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMusic} from "@fortawesome/free-solid-svg-icons/faMusic";
 
 export class PlayerDetail extends Component {
     private readonly uniformNumber: number;
@@ -35,7 +37,11 @@ export class PlayerDetail extends Component {
                         {player.pumpUpSong &&
                             <div>
                                 <div className="player-form-label">Pump-Up Song</div>
-                                <div><q>{player.pumpUpSong}</q> by {player.pumpUpSongArtist}</div>
+                                <div><q>{player.pumpUpSong}</q> by {player.pumpUpSongArtist}
+                                    <a href={player.pumpUpSongUrl}>
+                                        <FontAwesomeIcon className="link-icon" icon={faMusic}/>
+                                    </a>
+                                </div>
                             </div>
                         }
                         {player.favoriteFood &&
