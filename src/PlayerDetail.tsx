@@ -10,6 +10,20 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMusic} from "@fortawesome/free-solid-svg-icons/faMusic";
 
 export class PlayerDetail extends Component {
+    private YearMap = new Map([
+        ['2020', 'Senior'],
+        ['2021', 'Junior'],
+        ['2022', 'Sophomore'],
+        ['2023', 'Freshman']
+    ]);
+
+    private PositionMap = new Map([
+        ['G', 'Goalie'],
+        ['D', 'Defenseman'],
+        ['F', 'Forward'],
+        ['F/D', 'Forward/Defenseman']
+    ]);
+
     private readonly uniformNumber: number;
 
     constructor(props: any) {
@@ -34,16 +48,25 @@ export class PlayerDetail extends Component {
                 </div>
                 <Container className="container container-player-detail">
                     <FormGroup>
+                        <div className="text-center">
+                            <span>{this.YearMap.get(player.year)} | {this.PositionMap.get(player.position)} </span>
+                        </div>
+                        {player.nickname &&
+                        <div>
+                            <div className="player-form-label">A.K.A.</div>
+                            <div>"{player.nickname}"</div>
+                        </div>
+                        }
                         {player.pumpUpSong &&
-                            <div>
-                                <div className="player-form-label">Pump-Up Song</div>
-                                <div><q>{player.pumpUpSong}</q> by {player.pumpUpSongArtist}
-                                    <a href={player.pumpUpSongUrl}>
-                                        <Image className="image-music" src="/spotify-icon.png"/>
-                                    </a>
-                                    <a href={player.pumpUpSongItunesUrl}>
-                                        <FontAwesomeIcon className="image-music" icon={faMusic}/>
-                                    </a>
+                        <div>
+                            <div className="player-form-label">Pump-Up Song</div>
+                            <div><q>{player.pumpUpSong}</q> by {player.pumpUpSongArtist}
+                                <a href={player.pumpUpSongUrl}>
+                                    <Image className="image-music" src="/spotify-icon.png"/>
+                                </a>
+                                <a href={player.pumpUpSongItunesUrl}>
+                                    <FontAwesomeIcon className="image-music" icon={faMusic}/>
+                                </a>
                                 </div>
                             </div>
                         }
