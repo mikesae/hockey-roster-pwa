@@ -36,7 +36,7 @@ export default class BottomNavbar extends Component {
                             }
                             return match.isExact;
                         }}
-                    >
+                     >
                         <FontAwesomeIcon className="link-icon" icon={faCalendarAlt}/>
                         <div className="icon-label">Schedule</div>
                     </NavLink>
