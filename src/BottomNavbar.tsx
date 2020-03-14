@@ -6,6 +6,7 @@ import { faThList } from '@fortawesome/free-solid-svg-icons/faThList';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import './BottomNavbar.scss';
+import Button from 'react-bootstrap/Button';
 
 export default class BottomNavbar extends Component {
     render() {
@@ -16,29 +17,33 @@ export default class BottomNavbar extends Component {
                     <NavItem className="text-center">
                         <NavLink
                             to="/"
-                            isActive={(match, location) => {
+                            isActive={match => {
                                 if (!match) {
                                     return false;
                                 }
                                 return match.isExact;
                             }}
                         >
-                            <FontAwesomeIcon className="link-icon" icon={faThList}/>
-                            <div className="icon-label">Roster</div>
+                            <Button>
+                                <FontAwesomeIcon className="link-icon" icon={faThList}/>
+                                <div className="icon-label">Roster</div>
+                            </Button>
                         </NavLink>
                     </NavItem>
                     <NavItem className="text-center">
                         <NavLink
                             to="/schedule"
-                            isActive={(match, location) => {
+                            isActive={match => {
                                 if (!match) {
                                     return false;
                                 }
                                 return match.isExact;
                             }}
                         >
-                            <FontAwesomeIcon className="link-icon" icon={faCalendarAlt}/>
-                            <div className="icon-label">Schedule</div>
+                            <Button>
+                                <FontAwesomeIcon className="link-icon" icon={faCalendarAlt}/>
+                                <div className="icon-label">Schedule</div>
+                            </Button>
                         </NavLink>
                     </NavItem>
                 </Navbar>
