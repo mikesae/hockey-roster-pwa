@@ -14,14 +14,16 @@ export class PlayerDetail extends Component {
         ['2020', 'Senior'],
         ['2021', 'Junior'],
         ['2022', 'Sophomore'],
-        ['2023', 'Freshman']
+        ['2023', 'Freshman'],
+        ['1983', 'Hockey Dad']
     ]);
 
     private PositionMap = new Map([
         ['G', 'Goalie'],
         ['D', 'Defenseman'],
         ['F', 'Forward'],
-        ['F/D', 'Forward/Defenseman']
+        ['F/D', 'Forward/Defenseman'],
+        [ 'A', 'Web App Designer']
     ]);
 
     private readonly uniformNumber: number;
@@ -33,10 +35,11 @@ export class PlayerDetail extends Component {
 
     render() {
         const player: any = players.find(p => p.uniformNumber === this.uniformNumber);
+        const title = player.uniformNumber > 0 ? `#${player.uniformNumber}  ${player.name}` : `${player.name}`;
 
         return (
             <>
-                <TopNavbar title={`#${player.uniformNumber}  ${player.name}`} showBackNav={true}/>
+                <TopNavbar title={title} showBackNav={true}/>
                 <div className="player-detail-image-container">
                     {player.detailImageUrl &&
                     <Image className="player-detail" src={player.detailImageUrl} alt={player.name + "-detail"}/>
@@ -76,7 +79,7 @@ export class PlayerDetail extends Component {
                                 <div>{player.favoriteFood}</div>
                             </div>
                         }
-                        { player.favorteTVShow &&
+                        { player.favoriteTVShow &&
                             <div>
                                 <div className="player-form-label">Favorite TV Show/Movie</div>
                                 <div>{player.favoriteTVShow}</div>
