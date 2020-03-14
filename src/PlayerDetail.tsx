@@ -8,6 +8,8 @@ import TopNavbar from "./TopNavbar";
 import BottomNavbar from "./BottomNavbar";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMusic} from "@fortawesome/free-solid-svg-icons/faMusic";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export class PlayerDetail extends Component {
     private YearMap = new Map([
@@ -37,26 +39,32 @@ export class PlayerDetail extends Component {
         return (
             <>
                 <TopNavbar title={`#${player.uniformNumber}  ${player.name}`} showBackNav={true}/>
-                <div className="player-detail-image-container">
-                    {player.detailImageUrl &&
-                    <Image className="player-detail" src={player.detailImageUrl} alt={player.name + "-detail"}/>
-                    }
-                    {!player.detailImageUrl &&
-                    <div className="spacer"/>
-                    }
-                    <Image className="player-head-shot" roundedCircle src={player.imageUrl} alt={player.name}/>
-                </div>
                 <Container className="container container-player-detail">
                     <FormGroup>
-                        <div className="text-center">
-                            <span>{this.YearMap.get(player.year)} | {this.PositionMap.get(player.position)} </span>
+                        <div className="player-detail-image-container">
+                            {player.detailImageUrl &&
+                            <Image className="player-detail" src={player.detailImageUrl} alt={player.name + "-detail"}/>
+                            }
+                            {!player.detailImageUrl &&
+                            <div className="spacer"/>
+                            }
                         </div>
-                        {player.nickname &&
-                        <div>
-                            <div className="player-form-label">A.K.A.</div>
-                            <div>"{player.nickname}"</div>
-                        </div>
-                        }
+                        <Row>
+                            <Col className="col-3 my-auto">
+                                <Image className="player-head-shot" roundedCircle src={player.imageUrl} alt={player.name}/>
+                            </Col>
+                            <Col className="col-9 my-auto px-1">
+                                <div>{this.YearMap.get(player.year)} {this.PositionMap.get(player.position)}</div>
+                                    { player.heightFt && player.heightIn && player.weight &&
+                                        <div>{player.heightFt}' {player.heightIn}" {player.weight} lb.</div>
+                                    }
+                                {player.nickname &&
+                                <div>
+                                    <span><i>{player.nickname}</i></span>
+                                </div>
+                                }
+                            </Col>
+                        </Row>
                         {player.pumpUpSong &&
                         <div>
                             <div className="player-form-label">Pump-Up Song</div>
@@ -99,6 +107,9 @@ export class PlayerDetail extends Component {
                                 <div className="player-form-label">Words of Gratitude</div>
                                 <div>{player.wordsOfGratitude}</div>
                             </div>
+                        }
+                        { player.detailImageCredit &&
+                            <div className="mt-2 small">Photo by: {player.detailImageCredit}</div>
                         }
                     </FormGroup>
                 </Container>
