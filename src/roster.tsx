@@ -60,7 +60,7 @@ export default class Roster extends Component<any, any> {
                 <div className="spacer-for-header"/>
                 <Container className="roster-container">
                     <Row className="header-row fixed-top">
-                        <Col className="col-2 my-auto px-0">  </Col>
+                        <Col className="col-2 my-auto px-0"></Col>
                         <Col className="col-1 my-auto px-0">
                             <Button onClick={() =>this.sortBy('Number')}>#</Button>
                         </Col>

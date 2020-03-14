@@ -62,6 +62,16 @@ a {
   }
 }
 
+.btn {
+  color: black;
+  background: none;
+  border: none;
+  &:hover {
+    color: white;
+    background: black;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
@@ -101,6 +111,14 @@ a {
 
   .spacer, .spacer-for-header {
     background-color: black;
+  }
+
+  .btn {
+    color: white;
+    &:hover {
+      color: white;
+      background: black;
+    }
   }
 }
 

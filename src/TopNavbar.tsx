@@ -7,6 +7,7 @@ import {faChevronLeft} from "@fortawesome/free-solid-svg-icons/faChevronLeft";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from 'react-bootstrap/Button';
 
 export interface ITopNavBarProps {
     title: string;
@@ -22,7 +23,9 @@ export default class TopNavbar extends Component<ITopNavBarProps> {
                     <Col className="col-3">
                         {this.props.showBackNav &&
                         <Link to="/" className="navbar-left-link">
-                            <FontAwesomeIcon className="link-icon" icon={faChevronLeft}/>
+                            <Button>
+                                <FontAwesomeIcon className="link-icon" icon={faChevronLeft}/>
+                            </Button>
                         </Link>
                         }
                     </Col>
