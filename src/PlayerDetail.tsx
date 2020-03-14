@@ -100,6 +100,12 @@ export class PlayerDetail extends Component {
                                 <div>{player.wordsOfGratitude}</div>
                             </div>
                         }
+                        { player.detailImageCredit &&
+                            <span className="mt-2 small">Photo credit: {player.detailImageCredit}</span>
+                        }
+                        { player.detailImageCreditUrl && player.detailImageCreditUrlTag &&
+                            <span className="mt-2 small">Photo credit: <a className="btn-link" href={player.detailImageCreditUrl}>{player.detailImageCreditUrlTag}</a></span>
+                        }
                     </FormGroup>
                 </Container>
                 <BottomNavbar/>
