@@ -8,8 +8,7 @@ export default class Credits extends Component {
     render() {
         return (
         <>
-            <TopNavbar title="2019-20 Roster" showBackNav={false}/>
-            <div className="spacer-for-header"/>
+            <TopNavbar title="Credits" showBackNav={false}/>
             <Container className="container">
                 <FormGroup>
                     <div className="form-label">Web Design</div>
