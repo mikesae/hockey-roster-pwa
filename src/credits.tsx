@@ -11,7 +11,7 @@ export default class Credits extends Component {
             <TopNavbar title="Credits" showBackNav={false}/>
             <Container className="container">
                 <FormGroup>
-                    <div className="form-label">Web Design</div>
+                    <div className="form-label">App Design</div>
                     <div>Mike Saelens</div>
                 </FormGroup>
                 <FormGroup>
