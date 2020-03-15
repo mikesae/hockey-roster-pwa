@@ -38,16 +38,16 @@ export class PlayerDetail extends Component {
         return (
             <>
                 <TopNavbar title={title} showBackNav={true}/>
-                <div className="player-detail-image-container">
-                    {player.detailImageUrl &&
-                    <Image className="player-detail" src={player.detailImageUrl} alt={player.name + "-detail"}/>
-                    }
-                    {!player.detailImageUrl &&
-                    <div className="spacer"/>
-                    }
-                    <Image className="player-head-shot" roundedCircle src={player.imageUrl} alt={player.name}/>
-                </div>
                 <Container className="container container-player-detail">
+                    <div className="player-detail-image-container">
+                        {player.detailImageUrl &&
+                        <Image className="player-detail" src={player.detailImageUrl} alt={player.name + "-detail"}/>
+                        }
+                        {!player.detailImageUrl &&
+                        <div className="spacer"/>
+                        }
+                        <Image className="player-head-shot" roundedCircle src={player.imageUrl} alt={player.name}/>
+                    </div>
                     <FormGroup>
                         <div className="text-center">
                             <span>{this.YearMap.get(player.year)} | {this.PositionMap.get(player.position)} </span>
