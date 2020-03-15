@@ -437,24 +437,5 @@
     "spiritAnimal": "",
     "favoriteTVShow": "",
     "wordsOfGratitude": ""
-  },
-
-  {
-    "uniformNumber": 0,
-    "name": "Mike Saelens",
-    "position": "A",
-    "year": "1983",
-    "nickname": "Mikesae",
-    "imageUrl": "/images/P1030979-2.png",
-    "wordsOfWisdom": "No matter where you go, there you are.",
-    "wordsOfWisdomAttribute": "Buckaroo Bonzai",
-    "favoriteFood": "French Bistro",
-    "pumpUpSong": "Fresh Tendrils",
-    "pumpUpSongArtist": "Soundgarden",
-    "pumpUpSongUrl": "https://open.spotify.com/track/0Wa4gt3f3g9hPX0ypT6Zfq",
-    "pumpUpSongItunesUrl": "https://geo.music.apple.com/us/album/fresh-tendrils/1440811129?i=1440812205&mt=1&app=music",
-    "spiritAnimal": "Possum",
-    "favoriteTVShow": "Old School",
-    "wordsOfGratitude": ""
   }
 ]

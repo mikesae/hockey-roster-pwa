@@ -7,7 +7,7 @@ import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 import './BottomNavbar.scss';
 import Button from 'react-bootstrap/Button';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
+import { faFilm } from '@fortawesome/free-solid-svg-icons/faFilm';
 
 export default class BottomNavbar extends Component {
     render() {
@@ -48,10 +48,10 @@ export default class BottomNavbar extends Component {
                         </NavLink>
                     </NavItem>
                     <NavItem className="text-center">
-                        <Link to="/player/0">
+                        <Link to="/credits">
                             <Button>
-                                <FontAwesomeIcon className="link-icon" icon={faLaptopCode}/>
-                                <div className="icon-label">Designer</div>
+                                <FontAwesomeIcon className="link-icon" icon={faFilm}/>
+                                <div className="icon-label">Credits</div>
                             </Button>
                         </Link>
                     </NavItem>

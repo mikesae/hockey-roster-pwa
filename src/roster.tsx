@@ -25,14 +25,13 @@ export default class Roster extends Component<any, any> {
     }
 
     sortPlayers() {
-        let result = players.filter(p => p.uniformNumber !== 0);
-
+        let result = players;
         switch (this.state.sortColumn) {
             case 'Number':
-                result = result.sort((a, b) => a.uniformNumber - b.uniformNumber);
+                result = players.sort((a, b) => a.uniformNumber - b.uniformNumber);
                 break;
             case 'Name':
-                result = result.sort((a, b) => a.name.localeCompare(b.name));
+                result = players.sort((a, b) => a.name.localeCompare(b.name));
                 break;
             case 'Position':
                 result = players.sort((a, b) => a.position.localeCompare(b.position));
@@ -63,7 +62,7 @@ export default class Roster extends Component<any, any> {
                 <div className="spacer-for-header"/>
                 <Container className="roster-container">
                     <Row className="header-row fixed-top">
-                        <Col className="col-2 my-auto px-0"/>
+                        <Col className="col-2 my-auto px-0"></Col>
                         <Col className="col-1 my-auto px-0">
                             <Button onClick={() =>this.sortBy('Number')}>#</Button>
                         </Col>

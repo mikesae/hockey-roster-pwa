@@ -14,16 +14,14 @@ export class PlayerDetail extends Component {
         ['2020', 'Senior'],
         ['2021', 'Junior'],
         ['2022', 'Sophomore'],
-        ['2023', 'Freshman'],
-        ['1983', 'Hockey Dad']
+        ['2023', 'Freshman']
     ]);
 
     private PositionMap = new Map([
         ['G', 'Goalie'],
         ['D', 'Defenseman'],
         ['F', 'Forward'],
-        ['F/D', 'Forward/Defenseman'],
-        [ 'A', 'Web App Designer']
+        ['F/D', 'Forward/Defenseman']
     ]);
 
     private readonly uniformNumber: number;
@@ -35,7 +33,7 @@ export class PlayerDetail extends Component {
 
     render() {
         const player: any = players.find(p => p.uniformNumber === this.uniformNumber);
-        const title = player.uniformNumber > 0 ? `#${player.uniformNumber}  ${player.name}` : `${player.name}`;
+        const title = `#${player.uniformNumber}  ${player.name}`;
 
         return (
             <>
