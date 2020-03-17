@@ -1,5 +1,7 @@
+@import 'theme';
+
 .header-row {
-  top: 3em;
+  top: $navbar-height;
   width: 100%;
   margin: 0;
   height: 3em;

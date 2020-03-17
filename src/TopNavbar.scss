@@ -1,12 +1,17 @@
+@import 'theme';
+
 .navbar-left-link {
   margin-left: 0.5em;
 }
 
 .navbar-top {
-  padding: 0;
+  font-size: 1.25em;
+  padding-top: 0;
   .col-image {
-    text-align: right;
     padding-right: 1em;
+  }
+  img {
+    margin-top: -0.25em;
   }
 }
 

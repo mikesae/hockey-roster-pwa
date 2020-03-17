@@ -20,12 +20,12 @@ body {
 
 .spacer {
   background-color: white;
-  height: 3em;
+  height: $navbar-height;
 }
 
 .spacer-for-header {
   background-color: white;
-  height: 3em;
+  height: $header-height;
 }
 
 .nav-item {
@@ -34,10 +34,6 @@ body {
   a {
     color: $icon-color;
   }
-}
-
-.navbar-bottom {
-  padding: 2px;
 }
 
 a {
