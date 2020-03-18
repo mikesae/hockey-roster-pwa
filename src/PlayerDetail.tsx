@@ -101,11 +101,17 @@ export class PlayerDetail extends Component {
                                 <div>{player.wordsOfGratitude}</div>
                             </div>
                         }
+                        {player.parents &&
+                        <div className="mb-2">
+                            <div className="player-form-label">Parents' Names</div>
+                            <div>{player.parents}</div>
+                        </div>
+                        }
                         { player.detailImageCredit &&
-                            <span className="mt-2 small">Photo credit: {player.detailImageCredit}</span>
+                            <span className="small">Photo credit: {player.detailImageCredit}</span>
                         }
                         { player.detailImageCreditUrl && player.detailImageCreditUrlTag &&
-                            <span className="mt-2 small">Photo credit: <a className="btn-link" href={player.detailImageCreditUrl}>{player.detailImageCreditUrlTag}</a></span>
+                            <span className="small">Photo credit: <a className="btn-link" href={player.detailImageCreditUrl}>{player.detailImageCreditUrlTag}</a></span>
                         }
                     </FormGroup>
                 </Container>
