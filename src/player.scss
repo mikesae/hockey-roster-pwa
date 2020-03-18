@@ -13,6 +13,11 @@ $shen-green: #00400e;
   .row:nth-child(odd) {
     background-color: #DDDDDD;
   }
+  .row {
+    a {
+      font-size: 1.25em;
+    }
+  }
 }
 
 .col-1, .col-2 {
