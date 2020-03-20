@@ -68,6 +68,14 @@ a {
   }
 }
 
+.page {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  width: 100vw;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
