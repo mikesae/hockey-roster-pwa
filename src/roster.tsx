@@ -6,7 +6,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
-import BottomNavbar from "./BottomNavbar";
 import Button from "react-bootstrap/Button";
 
 export default class Roster extends Component<any, any> {
@@ -57,7 +56,7 @@ export default class Roster extends Component<any, any> {
         });
 
         return (
-            <>
+            <div className="page">
                 <TopNavbar title="2019-20 Roster" showBackNav={false}/>
                 <div className="spacer-for-header"/>
                 <Container className="roster-container">
@@ -78,8 +77,7 @@ export default class Roster extends Component<any, any> {
                     </Row>
                     {roster}
                 </Container>
-                <BottomNavbar/>
-            </>
+            </div>
         );
     }
 }

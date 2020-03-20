@@ -3,14 +3,13 @@ import TopNavbar from './TopNavbar';
 import FormGroup from 'react-bootstrap/esm/FormGroup';
 import Container from 'react-bootstrap/Container';
 import './credits.scss';
-import BottomNavbar from './BottomNavbar';
 
 export default class Credits extends Component {
     render() {
         return (
         <>
             <TopNavbar title="Credits" showBackNav={true}/>
-            <Container className="container">
+            <Container className="container page">
                 <FormGroup>
                     <div className="form-label">App Design</div>
                     <div>Mike Saelens</div>
@@ -28,7 +27,6 @@ export default class Credits extends Component {
                     <div><a className="btn-link" href="https://www.netlify.com">Netlify</a></div>
                 </FormGroup>
             </Container>
-            <BottomNavbar/>
         </>
         );
     }

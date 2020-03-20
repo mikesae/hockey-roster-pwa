@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import Image from 'react-bootstrap/Image';
 import FormGroup from "react-bootstrap/esm/FormGroup";
 import TopNavbar from "./TopNavbar";
-import BottomNavbar from "./BottomNavbar";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMusic} from "@fortawesome/free-solid-svg-icons/faMusic";
 
@@ -36,7 +35,7 @@ export class PlayerDetail extends Component {
         const title = `#${player.uniformNumber}  ${player.name}`;
 
         return (
-            <>
+            <div className="page">
                 <TopNavbar title={title} showBackNav={true}/>
                 <Container className="container container-player-detail">
                     <div className="player-detail-image-container">
@@ -115,8 +114,7 @@ export class PlayerDetail extends Component {
                         }
                     </FormGroup>
                 </Container>
-                <BottomNavbar/>
-            </>
+            </div>
         );
     }
 }
