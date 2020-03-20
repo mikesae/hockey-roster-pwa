@@ -6,13 +6,13 @@ import './Schedule.scss';
 export class Schedule extends Component {
     render() {
         return (
-            <div className="page">
+            <>
                 <TopNavbar title="Schedule" showBackNav={true}/>
-                <Container className="container">
+                <Container className="page container">
                     <h4>TBD</h4>
                 </Container>
                 <div className="spacer"/>
-            </div>
+            </>
         )
     };
 }
