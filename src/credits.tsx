@@ -11,7 +11,7 @@ export default class Credits extends Component {
             <TopNavbar title="Credits" showBackNav={true}/>
             <Container className="container page">
                 <FormGroup>
-                    <div className="form-label">App Design</div>
+                    <div className="form-label">App</div>
                     <div>Mike Saelens</div>
                 </FormGroup>
                 <FormGroup>
@@ -26,6 +26,10 @@ export default class Credits extends Component {
                     <div className="form-label">Deployment and Hosting</div>
                     <div><a className="btn-link" href="https://www.netlify.com">Netlify</a></div>
                 </FormGroup>
+                <FormGroup>
+                    <div className="form-label">Built With</div>
+                    <a className="btn-link" href="https://reactjs.org/">React</a>
+            </FormGroup>
             </Container>
         </>
         );
