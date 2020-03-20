@@ -56,10 +56,10 @@ export default class Roster extends Component<any, any> {
         });
 
         return (
-            <>
+            <div className="page">
                 <TopNavbar title="2019-20 Roster" showBackNav={false}/>
                 <div className="spacer-for-header"/>
-                <Container className="page roster-container">
+                <Container className="roster-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-2 my-auto px-0"></Col>
                         <Col className="col-1 my-auto px-0">
@@ -78,7 +78,7 @@ export default class Roster extends Component<any, any> {
                     {roster}
                     <div className="spacer"/>
                 </Container>
-            </>
+            </div>
         );
     }
 }

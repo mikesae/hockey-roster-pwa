@@ -35,9 +35,9 @@ export class PlayerDetail extends Component {
         const title = `#${player.uniformNumber}  ${player.name}`;
 
         return (
-            <>
+            <div className="page">
                 <TopNavbar title={title} showBackNav={true}/>
-                <Container className="page container container-player-detail">
+                <Container className="container container-player-detail">
                     <div className="player-detail-image-container">
                         {player.detailImageUrl &&
                         <Image className="player-detail" src={player.detailImageUrl} alt={player.name + "-detail"}/>
@@ -115,7 +115,7 @@ export class PlayerDetail extends Component {
                     </FormGroup>
                 </Container>
                 <div className="spacer"/>
-            </>
+            </div>
         );
     }
 }
