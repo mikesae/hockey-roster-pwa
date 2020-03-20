@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import NavItem from 'react-bootstrap/NavItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThList } from '@fortawesome/free-solid-svg-icons/faThList';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 import './BottomNavbar.scss';
 import Button from 'react-bootstrap/Button';
 import { faFilm } from '@fortawesome/free-solid-svg-icons/faFilm';
+import { faUsers } from '@fortawesome/free-solid-svg-icons/faUsers';
 
 export default class BottomNavbar extends Component {
     render() {
@@ -26,7 +26,7 @@ export default class BottomNavbar extends Component {
                             }}
                         >
                             <Button>
-                                <FontAwesomeIcon className="link-icon" icon={faThList}/>
+                                <FontAwesomeIcon className="link-icon" icon={faUsers}/>
                                 <div className="icon-label">Roster</div>
                             </Button>
                         </NavLink>
