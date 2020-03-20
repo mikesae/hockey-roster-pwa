@@ -76,6 +76,7 @@ export default class Roster extends Component<any, any> {
                         </Col>
                     </Row>
                     {roster}
+                    <div className="spacer"/>
                 </Container>
             </div>
         );

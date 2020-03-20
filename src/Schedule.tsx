@@ -11,6 +11,7 @@ export class Schedule extends Component {
                 <Container className="container">
                     <h4>TBD</h4>
                 </Container>
+                <div className="spacer"/>
             </div>
         )
     };
