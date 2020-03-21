@@ -7,9 +7,9 @@ import './credits.scss';
 export default class Credits extends Component {
     render() {
         return (
-        <>
+        <div className="page">
             <TopNavbar title="Credits" showBackNav={true}/>
-            <Container className="container page">
+            <Container className="container">
                 <FormGroup>
                     <div className="form-label">App</div>
                     <div>Mike Saelens</div>
@@ -31,7 +31,7 @@ export default class Credits extends Component {
                     <a className="btn-link" href="https://reactjs.org/">React</a>
             </FormGroup>
             </Container>
-        </>
+        </div>
         );
     }
 }
