@@ -37,11 +37,10 @@ body {
 }
 
 a {
-  color: black;
+  color: $link-color;
 
   &:hover {
-    color: black;
-    font-weight: bold;
+    color: $invert-link-color;
     text-decoration: none;
   }
 }
@@ -105,11 +104,10 @@ a {
   }
 
   a {
-    color: $link-color;
+    color: $invert-link-color;
 
     &:hover {
       color: $link-color;
-      font-weight: bold;
     }
   }
 
