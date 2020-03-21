@@ -114,6 +114,7 @@ export class PlayerDetail extends Component {
                         }
                     </FormGroup>
                 </Container>
+                <div className="spacer"/>
             </div>
         );
     }
