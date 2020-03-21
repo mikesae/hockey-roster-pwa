@@ -8,8 +8,9 @@
 }
 
 .navbar-top {
-  font-size: 1.25em;
-  padding-top: 0;
+  padding: 0 1em;
+  height: $navbar-height;
+  text-align: center;
   .col-image {
     text-align: right;
     img {
@@ -20,6 +21,8 @@
 
 .navbar-content {
   text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,9 +1,9 @@
 @import 'theme';
 
 .header-row {
-  top: 4em;
+  top: $navbar-height;
   margin: 0;
-  height: 2.5em;
+  height: $header-height;
 
   .btn {
     padding: 0 0.5em;
