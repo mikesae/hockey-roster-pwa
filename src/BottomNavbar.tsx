@@ -1,13 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import NavItem from 'react-bootstrap/NavItem';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCalendarAlt} from '@fortawesome/free-solid-svg-icons';
-import {Link, NavLink} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 import './BottomNavbar.scss';
-import Button from 'react-bootstrap/Button';
-import {faFilm} from '@fortawesome/free-solid-svg-icons/faFilm';
-import {faUsers} from '@fortawesome/free-solid-svg-icons/faUsers';
+import { faFilm } from '@fortawesome/free-solid-svg-icons/faFilm';
+import { faUsers } from '@fortawesome/free-solid-svg-icons/faUsers';
 
 export default class BottomNavbar extends Component {
     render() {
@@ -22,11 +21,12 @@ export default class BottomNavbar extends Component {
                             }
                             return match.isExact;
                         }}
+                        activeClassName="active"
                     >
-                        <Button>
-                            <FontAwesomeIcon className="link-icon" icon={faUsers}/>
+                        <div className="btn">
+                            <FontAwesomeIcon icon={faUsers} className="link-icon"/>
                             <div className="icon-label">Roster</div>
-                        </Button>
+                        </div>
                     </NavLink>
                 </NavItem>
                 <NavItem className="text-center">
@@ -38,20 +38,30 @@ export default class BottomNavbar extends Component {
                             }
                             return match.isExact;
                         }}
+                        activeClassName="active"
                     >
-                        <Button>
+                        <div className="btn">
                             <FontAwesomeIcon className="link-icon" icon={faCalendarAlt}/>
                             <div className="icon-label">Schedule</div>
-                        </Button>
+                        </div>
                     </NavLink>
                 </NavItem>
                 <NavItem className="text-center">
-                    <Link to="/credits">
-                        <Button>
+                    <NavLink
+                         to="/credits"
+                         isActive={match => {
+                             if (!match) {
+                                 return false;
+                             }
+                             return match.isExact;
+                         }}
+                         activeClassName="active"
+                    >
+                        <div className="btn">
                             <FontAwesomeIcon className="link-icon" icon={faFilm}/>
                             <div className="icon-label">Credits</div>
-                        </Button>
-                    </Link>
+                        </div>
+                    </NavLink>
                 </NavItem>
             </Navbar>
         );

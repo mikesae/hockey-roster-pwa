@@ -1,8 +1,23 @@
 @import 'theme';
 
 .nav-item {
+  .link-icon {
+    -webkit-filter: drop-shadow( 1px 1px rgba(0, 0, 0, 1.0));
+    filter: drop-shadow( 1px 1px rgba(0, 0, 0, 1.0));
+    -webkit-filter: drop-shadow( -1px -1px rgba(0, 0, 0, 1.0));
+    filter: drop-shadow( -1px -1px rgba(0, 0, 0, 1.0));
+    color: white;
+  }
   a.active {
-    color: $shen-green;
+    .link-icon {
+      -webkit-filter: none;
+      filter: none;
+      color: black;
+    }
+    .btn:hover {
+      color: black;
+      background: white;
+    }
   }
 }
 
