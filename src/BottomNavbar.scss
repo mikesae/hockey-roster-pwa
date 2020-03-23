@@ -2,21 +2,19 @@
 
 .nav-item {
   .link-icon {
-    -webkit-filter: drop-shadow( 1px 1px rgba(0, 0, 0, 1.0));
-    filter: drop-shadow( 1px 1px rgba(0, 0, 0, 1.0));
-    -webkit-filter: drop-shadow( -1px -1px rgba(0, 0, 0, 1.0));
-    filter: drop-shadow( -1px -1px rgba(0, 0, 0, 1.0));
-    color: white;
+    -webkit-filter: drop-shadow(1px 1px $link-color) drop-shadow(-1px -1px $link-color);
+    filter: drop-shadow(1px 1px $link-color) drop-shadow(-1px -1px $link-color);
+    color: $invert-link-color;
   }
   a.active {
     .link-icon {
       -webkit-filter: none;
       filter: none;
-      color: black;
+      color: $link-color;
     }
     .btn:hover {
-      color: black;
-      background: white;
+      color: $link-color;
+      background: $invert-link-color;
     }
   }
 }
@@ -25,5 +23,28 @@
   .btn {
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-item {
+    .link-icon {
+      -webkit-filter: drop-shadow(1px 1px $invert-link-color) drop-shadow(-1px -1px $invert-link-color);
+      filter: drop-shadow(1px 1px $invert-link-color) drop-shadow(-1px -1px $invert-link-color);
+      color: $link-color;
+    }
+
+    a.active {
+      .link-icon {
+        -webkit-filter: none;
+        filter: none;
+        color: $invert-link-color;
+      }
+
+      .btn:hover {
+        color: $invert-link-color;
+        background: $link-color;
+      }
+    }
   }
 }
