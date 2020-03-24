@@ -1,5 +1,11 @@
 @import 'theme';
 
+
+.btn:hover {
+  color: $link-color;
+  background: none;
+}
+
 .nav-item {
   .link-icon {
     -webkit-filter: drop-shadow(1px 1px $link-color) drop-shadow(-1px -1px $link-color);
@@ -14,11 +20,6 @@
       color: $link-color;
       font-size: 1.25em;
     }
-  }
-
-  .btn:hover {
-    color: $link-color;
-    background: $shen-green;
   }
 }
 
