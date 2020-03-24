@@ -7,18 +7,18 @@
 }
 
 .nav-item {
-  .link-icon {
-    -webkit-filter: drop-shadow(1px 1px $link-color) drop-shadow(-1px -1px $link-color);
-    filter: drop-shadow(1px 1px $link-color) drop-shadow(-1px -1px $link-color);
-    color: $invert-link-color;
+  .link-icon, .icon-label {
+    color: rgba(0, 0, 0, 0.66);
   }
 
   a.active {
-    .link-icon {
-      -webkit-filter: none;
-      filter: none;
-      color: $link-color;
-      font-size: 1.25em;
+    .link-icon, .icon-label {
+      font-weight: bold;
+      color: rgba(0, 0, 0, 1.0);
+    }
+
+    .btn:hover {
+      color: rgba(255, 255, 255, 1.0);
     }
   }
 }
@@ -32,17 +32,13 @@
 
 @media (prefers-color-scheme: dark) {
   .nav-item {
-    .link-icon {
-      -webkit-filter: drop-shadow(1px 1px $invert-link-color) drop-shadow(-1px -1px $invert-link-color);
-      filter: drop-shadow(1px 1px $invert-link-color) drop-shadow(-1px -1px $invert-link-color);
-      color: $link-color;
+    .link-icon, .icon-label {
+      color: rgba(255, 255, 255, 0.6);
     }
 
     a.active {
-      .link-icon {
-        -webkit-filter: none;
-        filter: none;
-        color: $invert-link-color;
+      .link-icon, .icon-label {
+        color: rgba(255, 255, 255, 1.0);
       }
 
       .btn:hover {
