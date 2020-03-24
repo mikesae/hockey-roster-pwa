@@ -1,20 +1,18 @@
 @import 'theme';
 
 .navbar-left-link {
-  margin-left: 0.5em;
   .btn {
     font-size: 1.25em;
   }
 }
 
 .navbar-top {
-  padding: 0 1em;
+  padding-right: 1em;
   height: $navbar-height;
-  text-align: center;
   .col-image {
-    text-align: right;
     img {
-      margin-right: 1em;
+      height: 4.5em;
+      margin-bottom: 10px;
     }
   }
 }
