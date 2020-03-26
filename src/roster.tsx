@@ -6,7 +6,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
-import Button from "react-bootstrap/Button";
 
 export default class Roster extends Component<any, any> {
     constructor(props:any) {
@@ -63,16 +62,16 @@ export default class Roster extends Component<any, any> {
                     <Row className="header-row fixed-top">
                         <Col className="col-2 my-auto px-0"></Col>
                         <Col className="col-1 my-auto px-0">
-                            <Button onClick={() =>this.sortBy('Number')}>#</Button>
+                            <div className="btn" onClick={() => this.sortBy('Number')}>#</div>
                         </Col>
                         <Col className="col-5 my-auto px-0">
-                            <Button onClick={() => this.sortBy('Name')}>Name</Button>
+                            <div className="btn" onClick={() => this.sortBy('Name')}>Name</div>
                         </Col>
                         <Col className="col-2 my-auto px-0">
-                            <Button onClick={() => this.sortBy('Position')}>Pos.</Button>
+                            <div className="btn" onClick={() => this.sortBy('Position')}>Pos.</div>
                         </Col>
                         <Col className="col-1 my-auto px-0">
-                            <Button onClick={() => this.sortBy('Year')}>Year</Button>
+                            <div className="btn" onClick={() => this.sortBy('Year')}>Year</div>
                         </Col>
                     </Row>
                     {roster}
