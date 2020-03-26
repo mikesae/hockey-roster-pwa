@@ -4,8 +4,7 @@
   .btn {
     font-size: 1.25em;
 
-    &:hover {
-      background: none;
+    &:hover, &:active {
       color: $highlight-color;
     }
   }
