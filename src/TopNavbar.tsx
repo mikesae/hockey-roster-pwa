@@ -22,7 +22,7 @@ export default class TopNavbar extends Component<ITopNavBarProps> {
                     <Col className="col-2">
                         {this.props.showBackNav &&
                         <Link to="/" className="navbar-left-link">
-                            <div>
+                            <div className="btn">
                                 <FontAwesomeIcon className="link-icon" icon={faChevronLeft}/>
                             </div>
                         </Link>
