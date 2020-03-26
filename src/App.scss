@@ -37,6 +37,8 @@ body {
 }
 
 a {
+  color: $link-color;
+
   &.btn-link {
     color: $highlight-color;
     text-decoration: none;
