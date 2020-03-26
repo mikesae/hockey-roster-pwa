@@ -3,6 +3,11 @@
 .navbar-left-link {
   .btn {
     font-size: 1.25em;
+
+    &:hover {
+      background: none;
+      color: $highlight-color;
+    }
   }
 }
 
