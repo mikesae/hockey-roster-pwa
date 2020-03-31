@@ -64,7 +64,7 @@ export default class Roster extends Component<any, any> {
                         <Col className="col-1 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Number')}>#</div>
                         </Col>
-                        <Col className="col-5 my-auto px-0">
+                        <Col className="col-4 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Name')}>Name</div>
                         </Col>
                         <Col className="col-2 my-auto px-0">

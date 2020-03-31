@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, withRouter } from "react-router-dom";
+import PlayerStatSheet from "./PlayerStatSheet";
 import { AnimatedSwitch } from "./AnimatedSwitch";
 import Credits from './credits';
 import { PlayerDetail } from './PlayerDetail';
@@ -18,6 +19,10 @@ const routes = [
     {
         component: PlayerDetail,
         path: "/player/:number"
+    },
+    {
+        component: PlayerStatSheet,
+        path: "/player-stat-sheet/:number"
     },
     {
         component: Schedule,
