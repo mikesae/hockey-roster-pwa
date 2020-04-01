@@ -23,7 +23,7 @@ export default class Schedule extends Component<any, any> {
         this.setState({sortColumn: sortColumn, sortDescending: sortDescending});
     }
 
-    sort(items: IScheduleItemProps[]) {
+    sortItems(items: IScheduleItemProps[]) {
         let result;
 
         switch (this.state.sortColumn) {
@@ -49,13 +49,11 @@ export default class Schedule extends Component<any, any> {
     }
 
     render() {
-        let schedule: any[] = [];
+        const schedule: any[] = [];
+        const sortedItems = this.sortItems(scheduleItems);
 
-        const sortedItems = this.sort(scheduleItems);
         sortedItems.forEach(item => {
-            if (item.date) {
-                schedule.push(<ScheduleItem {...item} key={item.date}/>);
-            }
+            schedule.push(<ScheduleItem {...item} key={item.date}/>);
         });
 
         return (
