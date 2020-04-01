@@ -6,11 +6,12 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
 import {ScheduleItem} from "./ScheduleItem";
+import {IScheduleItemProps} from "./IScheduleItemProps";
 
 export default class Schedule extends Component<any, any> {
     constructor(props: any) {
         super(props);
-        this.state = {sortColumn: 'Number', sortDescending: true};
+        this.state = {sortColumn: 'Date', sortDescending: true};
     }
 
     sortBy(sortColumn: string) {
@@ -22,21 +23,24 @@ export default class Schedule extends Component<any, any> {
         this.setState({sortColumn: sortColumn, sortDescending: sortDescending});
     }
 
-    sort() {
-        let result = scheduleItems;
+    sort(items: IScheduleItemProps[]) {
+        let result;
+
         switch (this.state.sortColumn) {
             case 'Date':
-                result = scheduleItems.sort((a, b) => a.date.localeCompare(b.date));
-                break;
-            case 'Day':
-                result = scheduleItems.sort((a, b) => a.day.localeCompare(b.day));
-                break;
-            case 'Time':
-                result = scheduleItems.sort((a, b) => a.time.localeCompare(b.time));
+                result = items.sort((a, b) => a.date.localeCompare(b.date));
                 break;
             case 'Opponent':
-                result = scheduleItems.sort((a, b) => a.opponent.localeCompare(b.opponent));
+                result = items.sort((a, b) => a.opponent.localeCompare(b.opponent));
                 break;
+            case 'Location':
+                result = items.sort((a, b) => a.location.localeCompare(b.location));
+                break;
+            case 'Result':
+                result = items.sort((a, b) => a.result.localeCompare(b.result));
+                break;
+            default:
+                result = items;
         }
         if (!this.state.sortDescending) {
             result = result.reverse();
@@ -45,18 +49,18 @@ export default class Schedule extends Component<any, any> {
     }
 
     render() {
-        let Schedule: any[] = [];
+        let schedule: any[] = [];
 
-        const sortedItems = this.sort();
+        const sortedItems = this.sort(scheduleItems);
         sortedItems.forEach(item => {
             if (item.date) {
-                Schedule.push(<ScheduleItem {...item} key={item.date}/>);
+                schedule.push(<ScheduleItem {...item} key={item.date}/>);
             }
         });
 
         return (
             <div className="page">
-                <TopNavbar title="2019-20 Schedule" showBackNav={false}/>
+                <TopNavbar title="2019-20 Schedule" showBackNav={true}/>
                 <div className="spacer-for-header"/>
                 <Container className="schedule-container">
                     <Row className="header-row fixed-top">
@@ -73,7 +77,7 @@ export default class Schedule extends Component<any, any> {
                             <div className="btn" onClick={() => this.sortBy('Result')}>Result</div>
                         </Col>
                     </Row>
-                    {Schedule}
+                    {schedule}
                     <div className="spacer"/>
                 </Container>
             </div>
