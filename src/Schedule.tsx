@@ -60,23 +60,17 @@ export default class Schedule extends Component<any, any> {
                 <div className="spacer-for-header"/>
                 <Container className="schedule-container">
                     <Row className="header-row fixed-top">
-                        <Col className="col-1 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Day')}>Day</div>
-                        </Col>
-                        <Col className="col-2 my-auto px-0">
+                        <Col className="col-3 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Date')}>Date</div>
                         </Col>
-                        <Col className="col-1 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Time')}>Time</div>
-                        </Col>
-                        <Col className="col-3 my-auto px-0">
+                        <Col className="col-4 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Opponent')}>Opponent</div>
-                        </Col>
-                        <Col className="col-2 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Result')}>Result</div>
                         </Col>
                         <Col className="col-3 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Location')}>Location</div>
+                        </Col>
+                        <Col className="col-2 my-auto px-0">
+                            <div className="btn" onClick={() => this.sortBy('Result')}>Result</div>
                         </Col>
                     </Row>
                     {Schedule}
