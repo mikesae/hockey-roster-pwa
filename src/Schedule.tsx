@@ -25,6 +25,8 @@ export default class Schedule extends Component<any, any> {
 
     sortItems(items: IScheduleItemProps[]) {
         let result;
+        // TODO: We shunt this until we figure out why items are rendered multiple times when sort buttons are pushed.
+        return items;
 
         switch (this.state.sortColumn) {
             case 'Date':
@@ -45,7 +47,7 @@ export default class Schedule extends Component<any, any> {
         if (!this.state.sortDescending) {
             result = result.reverse();
         }
-        return result;
+
     }
 
     render() {
@@ -65,11 +67,8 @@ export default class Schedule extends Component<any, any> {
                         <Col className="col-3 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Date')}>Date</div>
                         </Col>
-                        <Col className="col-4 my-auto px-0">
+                        <Col className="col-7 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Opponent')}>Opponent</div>
-                        </Col>
-                        <Col className="col-3 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Location')}>Location</div>
                         </Col>
                         <Col className="col-2 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Result')}>Result</div>

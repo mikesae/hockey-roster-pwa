@@ -1,6 +1,6 @@
 [
   {
-    "day": "Wed",
+    "day": "W",
     "date": "11/20/19",
     "time": "3:30 PM",
     "opponent": "G/M/S/S/V",
@@ -16,7 +16,7 @@
     "location": "Clifton Park Arena"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "11/23/19",
     "time": "7:35 PM",
     "opponent": "@ Saratoga",
@@ -24,7 +24,7 @@
     "location": "Union College"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "11/23/19",
     "time": "8:55 PM",
     "opponent": "CBA",
@@ -32,7 +32,7 @@
     "location": "Union College"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "11/23/19",
     "time": "9:30 PM",
     "opponent": "BHBL/BS",
@@ -40,7 +40,7 @@
     "location": "Union College"
   },
   {
-    "day": "Wed",
+    "day": "W",
     "date": "11/27/19",
     "time": "12:15 PM",
     "opponent": "@ Albany Academy",
@@ -56,7 +56,7 @@
     "location": "Clifton Park Arena"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "12/7/19",
     "time": "12:45 PM",
     "opponent": "Williamsville North (Sec. VI)",
@@ -64,7 +64,7 @@
     "location": "Weibel Ave Rink (Saratoga)"
   },
   {
-    "day": "Wed",
+    "day": "W",
     "date": "12/11/19",
     "time": "5:15 PM",
     "opponent": "@ Queensbury (D2)",
@@ -80,7 +80,7 @@
     "location": "Clifton Park Arena"
   },
   {
-    "day": "Wed",
+    "day": "W",
     "date": "12/18/19",
     "time": "7:30 PM",
     "opponent": "Saratoga",
@@ -104,7 +104,7 @@
     "location": "JM McDonald Sports Complex"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "12/28/19",
     "time": "1:00 PM",
     "opponent": "@ Cortland Homer (Sec. III)",
@@ -120,7 +120,7 @@
     "location": "Albany County Hockey Training Facility"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "1/4/20",
     "time": "5:45 PM",
     "opponent": "@ N/S/A",
@@ -128,7 +128,7 @@
     "location": "Union College"
   },
   {
-    "day": "Wed",
+    "day": "W",
     "date": "1/8/20",
     "time": "7:30 PM",
     "opponent": "G/M/S/S/V",
@@ -152,7 +152,7 @@
     "location": "Bethlehem Area YMCA"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "1/18/20",
     "time": "3:45 PM",
     "opponent": "Ithaca (Sec. IV)",
@@ -160,7 +160,7 @@
     "location": "Clifton Park Arena"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "1/25/20",
     "time": "4:10 PM",
     "opponent": "@ CBA",
@@ -168,7 +168,7 @@
     "location": "Albany County Hockey Training Facility"
   },
   {
-    "day": "Wed",
+    "day": "W",
     "date": "1/29/20",
     "time": "7:30 PM",
     "opponent": "Albany Academy",
@@ -184,7 +184,7 @@
     "location": "Clifton Park Arena"
   },
   {
-    "day": "Wed",
+    "day": "W",
     "date": "2/5/20",
     "time": "7:40 PM",
     "opponent": "@ Adirondack",
@@ -192,7 +192,7 @@
     "location": "Glens Falls Recreational Center"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "2/8/20",
     "time": "7:00 PM",
     "opponent": "@ Saratoga",
@@ -208,7 +208,7 @@
     "location": "Clifton Park Arena"
   },
   {
-    "day": "Sat",
+    "day": "Sa",
     "date": "2/22/20",
     "time": "7:15 PM",
     "opponent": "CD Jets",
@@ -216,7 +216,7 @@
     "location": "Clifton Park Arena"
   },
   {
-    "day": "Wed",
+    "day": "W",
     "date": "2/26/20",
     "time": "6:45 PM",
     "opponent": "@ Saratoga",
