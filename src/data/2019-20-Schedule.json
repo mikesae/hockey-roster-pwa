@@ -5,7 +5,8 @@
     "time": "3:30 PM",
     "opponent": "G/M/S/S/V",
     "result": "",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Fri",
@@ -13,7 +14,8 @@
     "time": "3:30 PM",
     "opponent": "N/S/A",
     "result": "",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Sa",
@@ -21,7 +23,8 @@
     "time": "7:35 PM",
     "opponent": "@ Saratoga",
     "result": "",
-    "location": "Union College"
+    "location": "Union College",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8181,-73.9252"
   },
   {
     "day": "Sa",
@@ -29,7 +32,8 @@
     "time": "8:55 PM",
     "opponent": "CBA",
     "result": "",
-    "location": "Union College"
+    "location": "Union College",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8181,-73.9252"
   },
   {
     "day": "Sa",
@@ -37,7 +41,8 @@
     "time": "9:30 PM",
     "opponent": "BHBL/BS",
     "result": "",
-    "location": "Union College"
+    "location": "Union College",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8181,-73.9252"
   },
   {
     "day": "W",
@@ -53,7 +58,8 @@
     "time": "8:00 PM",
     "opponent": "Mamaroneck (Sec. I)",
     "result": "W 1-5",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Sa",
@@ -77,7 +83,8 @@
     "time": "8:00 PM",
     "opponent": "Adirondack",
     "result": "L 4-2",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "W",
@@ -85,7 +92,8 @@
     "time": "7:30 PM",
     "opponent": "Saratoga",
     "result": "L 6-1",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Fri",
@@ -93,7 +101,8 @@
     "time": "8:00 PM",
     "opponent": "Fayetteville-Manlius (Sec. III)",
     "result": "L 4-3",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Fri",
@@ -133,7 +142,8 @@
     "time": "7:30 PM",
     "opponent": "G/M/S/S/V",
     "result": "L 2-1",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Fri",
@@ -141,7 +151,8 @@
     "time": "8:00 PM",
     "opponent": "BHBL/BS",
     "result": "W 0-4",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Fri",
@@ -157,7 +168,8 @@
     "time": "3:45 PM",
     "opponent": "Ithaca (Sec. IV)",
     "result": "T 3-3",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Sa",
@@ -173,7 +185,8 @@
     "time": "7:30 PM",
     "opponent": "Albany Academy",
     "result": "L 5-4",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Fri",
@@ -181,7 +194,8 @@
     "time": "8:00 PM",
     "opponent": "La Salle",
     "result": "W 1-4",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "W",
@@ -205,7 +219,8 @@
     "time": "8:00 PM",
     "opponent": "Queensbury (D2)",
     "result": "T 2-2",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "Sa",
@@ -213,7 +228,8 @@
     "time": "7:15 PM",
     "opponent": "CD Jets",
     "result": "W 2-8",
-    "location": "Clifton Park Arena"
+    "location": "Clifton Park Arena",
+    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
   },
   {
     "day": "W",

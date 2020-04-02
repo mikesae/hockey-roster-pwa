@@ -4,5 +4,6 @@ export interface IScheduleItemProps {
     time: string,
     opponent: string,
     result: string,
-    location: string
+    location: string,
+    locationUrl?: string
 }

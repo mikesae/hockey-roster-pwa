@@ -13,7 +13,9 @@ export class ScheduleItem extends Component<IScheduleItemProps> {
                 </Col>
                 <Col className="col-7 px-1 my-auto">
                     <div>{this.props.opponent}</div>
-                    <div className="small"><a className="btn-link">{this.props.location}</a></div>
+                    <div className="small">
+                        <a className="btn-link" href={this.props.locationUrl}>{this.props.location}</a>
+                    </div>
                 </Col>
                 <Col className="col-2 px-0 my-auto">{this.props.result}</Col>
             </Row>
