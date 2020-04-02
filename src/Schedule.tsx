@@ -25,8 +25,6 @@ export default class Schedule extends Component<any, any> {
 
     sortItems(items: IScheduleItemProps[]) {
         let result;
-        // TODO: We shunt this until we figure out why items are rendered multiple times when sort buttons are pushed.
-        return items;
 
         switch (this.state.sortColumn) {
             case 'Date':
@@ -47,7 +45,7 @@ export default class Schedule extends Component<any, any> {
         if (!this.state.sortDescending) {
             result = result.reverse();
         }
-
+        return result;
     }
 
     render() {
@@ -55,7 +53,7 @@ export default class Schedule extends Component<any, any> {
         const sortedItems = this.sortItems(scheduleItems);
 
         sortedItems.forEach(item => {
-            schedule.push(<ScheduleItem {...item} key={item.date}/>);
+            schedule.push(<ScheduleItem {...item} key={item.date + item.time}/>);
         });
 
         return (
