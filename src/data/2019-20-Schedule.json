@@ -69,7 +69,7 @@
     "section": "II",
     "result": "",
     "location": "Picotte Field House",
-    "locationUrl": "https://maps.apple.com/?q=Albany+Academy+Rink"
+    "locationUrl": "https://maps.apple.com/?q=Picotte+Field+House&address=135+Academy+Road+12208"
   },
   {
     "day": "Fri",
@@ -93,7 +93,7 @@
     "section": "VI",
     "result": "L 5-2",
     "location": "Vernon Ice Rink",
-    "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink"
+    "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink&address=30+Weibel+Ave+12866"
   },
   {
     "day": "W",
@@ -105,7 +105,7 @@
     "section": "D2",
     "result": "L 2-4",
     "location": "Glens Falls Recreation Ice Center",
-    "locationUrl": "https://maps.apple.com/?q=Glens+Falls+Recreation+Ice+Center"
+    "locationUrl": "https://maps.apple.com/?q=Glens+Falls+Recreational+Ice+Center&address=Fire+Rd+12801"
   },
   {
     "day": "Fri",
@@ -284,7 +284,7 @@
     "section": "II",
     "result": "W 2-1",
     "location": "Glens Falls Recreation Ice Center",
-    "locationUrl": "https://maps.apple.com/?q=Glens+Falls+Recreation+Ice+Cente"
+    "locationUrl": "https://maps.apple.com/?q=Glens+Falls+Recreational+Ice+Center&address=Fire+Rd+12801"
   },
   {
     "day": "Sa",
@@ -296,7 +296,7 @@
     "section": "II",
     "result": "L 0-4",
     "location": "Vernon Ice Rink",
-    "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink"
+    "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink&address=30+Weibel+Ave+12866"
   },
   {
     "day": "Fri",
@@ -332,6 +332,6 @@
     "section": "II",
     "result": "L 0-3",
     "location": "Vernon Ice Rink",
-    "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink"
+    "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink&address=30+Weibel+Ave+12866"
   }
 ]
