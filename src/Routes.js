@@ -1,11 +1,11 @@
 import React from "react";
-import { Route, withRouter } from "react-router-dom";
+import {Route, withRouter} from "react-router-dom";
 import PlayerStatSheet from "./PlayerStatSheet";
-import { AnimatedSwitch } from "./AnimatedSwitch";
+import {AnimatedSwitch} from "./AnimatedSwitch";
 import Credits from './credits';
-import { PlayerDetail } from './PlayerDetail';
+import {PlayerDetail} from './PlayerDetail';
 import Roster from './roster';
-import { Schedule } from './Schedule';
+import Schedule from './Schedule';
 
 const routes = [
     {
