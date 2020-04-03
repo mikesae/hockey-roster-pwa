@@ -9,7 +9,7 @@
     "section": "II",
     "result": "",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Fri",
@@ -21,7 +21,7 @@
     "section": "II",
     "result": "",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Sa",
@@ -33,7 +33,7 @@
     "section": "II",
     "result": "",
     "location": "Union College",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8181,-73.9252"
+    "locationUrl": "https://maps.apple.com/?q=Frank+L+Messa+Rink"
   },
   {
     "day": "Sa",
@@ -45,7 +45,7 @@
     "section": "II",
     "result": "",
     "location": "Union College",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8181,-73.9252"
+    "locationUrl": "https://maps.apple.com/?q=Frank+L+Messa+Rink"
   },
   {
     "day": "Sa",
@@ -57,7 +57,7 @@
     "section": "II",
     "result": "",
     "location": "Union College",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8181,-73.9252"
+    "locationUrl": "https://maps.apple.com/?q=Frank+L+Messa+Rink"
   },
   {
     "day": "W",
@@ -80,7 +80,7 @@
     "section": "I",
     "result": "W 1-5",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Sa",
@@ -114,7 +114,7 @@
     "section": "II",
     "result": "L 4-2",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "W",
@@ -126,7 +126,7 @@
     "section": "II",
     "result": "L 6-1",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Fri",
@@ -138,7 +138,7 @@
     "section": "III",
     "result": "L 4-3",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Fri",
@@ -194,7 +194,7 @@
     "section": "II",
     "result": "L 2-1",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Fri",
@@ -206,7 +206,7 @@
     "section": "II",
     "result": "W 0-4",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Fri",
@@ -229,7 +229,7 @@
     "section": "IV",
     "result": "T 3-3",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Sa",
@@ -252,7 +252,7 @@
     "section": "II",
     "result": "L 5-4",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Fri",
@@ -264,7 +264,7 @@
     "section": "II",
     "result": "W 1-4",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "W",
@@ -298,7 +298,7 @@
     "section": "D2",
     "result": "T 2-2",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "Sa",
@@ -310,7 +310,7 @@
     "section": "II",
     "result": "W 2-8",
     "location": "Clifton Park Arena",
-    "locationUrl": "https://maps.apple.com/?daddr=42.8624,-73.8178"
+    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
   },
   {
     "day": "W",
