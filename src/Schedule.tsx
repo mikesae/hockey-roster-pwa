@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import './Schedule.scss';
 import scheduleItems from './data/2019-20-Schedule.json';
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import TopNavbar from "./TopNavbar";
-import {ScheduleItem} from "./ScheduleItem";
-import {IScheduleItemProps} from "./IScheduleItemProps";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import TopNavbar from './TopNavbar';
+import {ScheduleItem} from './ScheduleItem';
+import {IScheduleItemProps} from './IScheduleItemProps';
+import moment from 'moment';
 
 export default class Schedule extends Component<any, any> {
     constructor(props: any) {
@@ -23,18 +24,24 @@ export default class Schedule extends Component<any, any> {
         this.setState({sortColumn: sortColumn, sortDescending: sortDescending});
     }
 
+    getMoment(date: string, time: string) {
+        return moment(`${date} ${time}`, 'MM/DD/YY hh:mm a');
+    }
+
     sortItems(items: IScheduleItemProps[]) {
         let result;
 
         switch (this.state.sortColumn) {
             case 'Date':
-                result = items.sort((a, b) => a.date.localeCompare(b.date));
+                result = items.sort(
+                    (a, b) => {
+                        const aMoment = this.getMoment(a.date, a.time);
+                        const bMoment = this.getMoment(b.date, b.time);
+                        return aMoment.diff(bMoment);
+                    });
                 break;
             case 'Opponent':
                 result = items.sort((a, b) => a.opponent.localeCompare(b.opponent));
-                break;
-            case 'Location':
-                result = items.sort((a, b) => a.location.localeCompare(b.location));
                 break;
             case 'Result':
                 result = items.sort((a, b) => a.result.localeCompare(b.result));
