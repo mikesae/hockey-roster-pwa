@@ -68,7 +68,8 @@
     "home": false,
     "section": "II",
     "result": "",
-    "location": "Albany Academy"
+    "location": "Picotte Field House",
+    "locationUrl": "https://maps.apple.com/?q=Albany+Academy+Rink"
   },
   {
     "day": "Fri",
@@ -91,7 +92,8 @@
     "home": false,
     "section": "VI",
     "result": "L 5-2",
-    "location": "Weibel Ave Rink (Saratoga)"
+    "location": "Vernon Ice Rink",
+    "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink"
   },
   {
     "day": "W",
@@ -102,7 +104,8 @@
     "home": false,
     "section": "D2",
     "result": "L 2-4",
-    "location": "Glens Falls Recreational Center"
+    "location": "Glens Falls Recreation Ice Center",
+    "locationUrl": "https://maps.apple.com/?q=Glens+Falls+Recreation+Ice+Center"
   },
   {
     "day": "Fri",
@@ -149,7 +152,8 @@
     "home": false,
     "section": "III",
     "result": "W 4-1",
-    "location": "JM McDonald Sports Complex"
+    "location": "JM McDonald Sports Complex",
+    "locationUrl": "https://maps.apple.com/?q=JM+McDonald+Sports+Complex"
   },
   {
     "day": "Sa",
@@ -160,7 +164,8 @@
     "home": false,
     "section": "III",
     "result": "W 6-3",
-    "location": "JM McDonald Sports Complex"
+    "location": "JM McDonald Sports Complex",
+    "locationUrl": "https://maps.apple.com/?q=JM+McDonald+Sports+Complex"
   },
   {
     "day": "Fri",
@@ -171,7 +176,8 @@
     "home": false,
     "section": "II",
     "result": "W 6-0",
-    "location": "Albany County Hockey Training Facility"
+    "location": "Albany County Hockey Facility",
+    "locationUrl": "https://maps.apple.com/?q=Albany+County+Hockey+Facility"
   },
   {
     "day": "Sa",
@@ -217,7 +223,8 @@
     "home": false,
     "section": "II",
     "result": "L 2-5",
-    "location": "Bethlehem Area YMCA"
+    "location": "Bethlehem Area YMCA",
+    "locationUrl": "https://maps.apple.com/?q=Bethlehem+YMCA"
   },
   {
     "day": "Sa",
@@ -240,7 +247,8 @@
     "home": false,
     "section": "II",
     "result": "L 1-3",
-    "location": "Albany County Hockey Training Facility"
+    "location": "Albany County Hockey Facility",
+    "locationUrl": "https://maps.apple.com/?q=Albany+County+Hockey+Facility"
   },
   {
     "day": "W",
@@ -275,7 +283,8 @@
     "home": false,
     "section": "II",
     "result": "W 2-1",
-    "location": "Glens Falls Recreational Center"
+    "location": "Glens Falls Recreation Ice Center",
+    "locationUrl": "https://maps.apple.com/?q=Glens+Falls+Recreation+Ice+Cente"
   },
   {
     "day": "Sa",
@@ -286,7 +295,8 @@
     "home": false,
     "section": "II",
     "result": "L 0-4",
-    "location": "Weibel Ave Rink (Saratoga)"
+    "location": "Vernon Ice Rink",
+    "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink"
   },
   {
     "day": "Fri",
@@ -321,6 +331,7 @@
     "home": false,
     "section": "II",
     "result": "L 0-3",
-    "location": "Weibel Ave Rink (Saratoga)"
+    "location": "Vernon Ice Rink",
+    "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink"
   }
 ]
