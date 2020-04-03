@@ -12,7 +12,10 @@ export class ScheduleItem extends Component<IScheduleItemProps> {
                     <div>{this.props.day} {this.props.time}</div>
                 </Col>
                 <Col className="col-7 px-1 my-auto">
-                    <div>{this.props.opponent}</div>
+                    <div>
+                        <span className={this.props.home ? "font-weight-bold": ""}>{this.props.opponent}</span>
+                        <span className="section-text">{this.props.section} </span>
+                    </div>
                     <div className="small">
                         <a className="btn-link" href={this.props.locationUrl}>{this.props.location}</a>
                     </div>
