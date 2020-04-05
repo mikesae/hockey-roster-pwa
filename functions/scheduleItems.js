@@ -2,7 +2,7 @@ exports.handler = async event => {
     const subject = event.queryStringParameters.name || 'ScheduleItems';
     return {
         statusCode: 200,
-        body:
+        body: JSON.stringify(
             [
                 {
                     "day": "W",
@@ -340,5 +340,6 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink&address=30+Weibel+Ave+12866"
                 }
             ]
+        )
     }
 };

@@ -2,7 +2,7 @@ exports.handler = async event => {
     const subject = event.queryStringParameters.name || 'Players';
     return {
         statusCode: 200,
-        body:
+        body: JSON.stringify(
             [
                 {
                     "uniformNumber": 1,
@@ -490,5 +490,6 @@ exports.handler = async event => {
                     "parents": "Kevin and Katherine"
                 }
             ]
+        )
     }
 };
