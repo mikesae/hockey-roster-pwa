@@ -1,4 +1,4 @@
-import players from './functions/data/players.json';
+import players from './data/players.json';
 
 exports.handler = async event => {
     const subject = event.queryStringParameters.name || 'Players';

@@ -1,4 +1,4 @@
-import scheduleItems from './functions/data/scheduleItems.json';
+import scheduleItems from './data/scheduleItems.json';
 
 exports.handler = async event => {
     const subject = event.queryStringParameters.name || 'ScheduleItems';
