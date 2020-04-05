@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './PlayerDetail.scss';
-import players from './players.json';
+import players from './functions/data/players.json';
 import Container from "react-bootstrap/Container";
 import Image from 'react-bootstrap/Image';
 import FormGroup from "react-bootstrap/esm/FormGroup";
