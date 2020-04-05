@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Roster.scss';
-import players from './functions/data/players.json';
+import players from './data/players.json';
 import {PlayerSummary} from "./PlayerSummary";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

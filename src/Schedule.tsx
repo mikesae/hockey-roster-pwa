@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Schedule.scss';
-import scheduleItems from './functions/data/scheduleItems.json';
+import scheduleItems from './data/scheduleItems.json';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
