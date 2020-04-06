@@ -84,7 +84,7 @@ exports.handler = async event => {
                     "type": "Tournament",
                     "home": true,
                     "section": "I",
-                    "result": "W 1-5",
+                    "result": "W 5-1",
                     "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
@@ -108,7 +108,7 @@ exports.handler = async event => {
                     "type": "Game",
                     "home": false,
                     "section": "D2",
-                    "result": "L 2-4",
+                    "result": "L 4-2",
                     "location": "Glens Falls Recreation Ice Center",
                     "locationUrl": "https://maps.apple.com/?q=Glens+Falls+Recreational+Ice+Center&address=Fire+Rd+12801"
                 },
@@ -215,7 +215,7 @@ exports.handler = async event => {
                     "type": "Game",
                     "home": true,
                     "section": "II",
-                    "result": "W 0-4",
+                    "result": "W 4-0",
                     "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
@@ -227,7 +227,7 @@ exports.handler = async event => {
                     "type": "Game",
                     "home": false,
                     "section": "II",
-                    "result": "L 2-5",
+                    "result": "L 5-2",
                     "location": "Bethlehem Area YMCA",
                     "locationUrl": "https://maps.apple.com/?q=Bethlehem+YMCA&address=900+Delaware+Ave+12054"
                 },
@@ -251,7 +251,7 @@ exports.handler = async event => {
                     "type": "Game",
                     "home": false,
                     "section": "II",
-                    "result": "L 1-3",
+                    "result": "L 3-1",
                     "location": "Albany County Hockey Facility",
                     "locationUrl": "https://maps.apple.com/?q=Albany+County+Hockey+Facility"
                 },
@@ -275,7 +275,7 @@ exports.handler = async event => {
                     "type": "Game",
                     "home": true,
                     "section": "II",
-                    "result": "W 1-4",
+                    "result": "W 4-1",
                     "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
@@ -299,7 +299,7 @@ exports.handler = async event => {
                     "type": "Game",
                     "home": false,
                     "section": "II",
-                    "result": "L 0-4",
+                    "result": "L 4-0",
                     "location": "Vernon Ice Rink",
                     "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink&address=30+Weibel+Ave+12866"
                 },
@@ -323,7 +323,7 @@ exports.handler = async event => {
                     "type": "Game",
                     "home": true,
                     "section": "II",
-                    "result": "W 2-8",
+                    "result": "W 8-2",
                     "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
@@ -335,7 +335,7 @@ exports.handler = async event => {
                     "type": "Sectional",
                     "home": false,
                     "section": "II",
-                    "result": "L 0-3",
+                    "result": "L 3-0",
                     "location": "Vernon Ice Rink",
                     "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink&address=30+Weibel+Ave+12866"
                 }
