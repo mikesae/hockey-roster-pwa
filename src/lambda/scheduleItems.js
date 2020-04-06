@@ -12,7 +12,7 @@ exports.handler = async event => {
                     "type": "Scrimmage",
                     "home": true,
                     "section": "II",
-                    "result": "",
+                    "result": "N/A",
                     "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
@@ -24,7 +24,7 @@ exports.handler = async event => {
                     "type": "Scrimmage",
                     "home": true,
                     "section": "II",
-                    "result": "",
+                    "result": "N/A",
                     "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
@@ -36,7 +36,7 @@ exports.handler = async event => {
                     "type": "Jamboree",
                     "home": false,
                     "section": "II",
-                    "result": "",
+                    "result": "N/A",
                     "location": "Union College",
                     "locationUrl": "https://maps.apple.com/?q=Frank+L+Messa+Rink"
                 },
@@ -48,7 +48,7 @@ exports.handler = async event => {
                     "type": "Jamboree",
                     "home": false,
                     "section": "II",
-                    "result": "",
+                    "result": "N/A",
                     "location": "Union College",
                     "locationUrl": "https://maps.apple.com/?q=Frank+L+Messa+Rink"
                 },
@@ -60,7 +60,7 @@ exports.handler = async event => {
                     "type": "Jamboree",
                     "home": false,
                     "section": "II",
-                    "result": "",
+                    "result": "N/A",
                     "location": "Union College",
                     "locationUrl": "https://maps.apple.com/?q=Frank+L+Messa+Rink"
                 },
