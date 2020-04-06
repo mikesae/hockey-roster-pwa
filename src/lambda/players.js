@@ -1,5 +1,5 @@
 exports.handler = async event => {
-    const subject = event.queryStringParameters.name || 'Players';
+    //const uniformNumber = event.queryStringParameters.name || '';
     return {
         statusCode: 200,
         body: JSON.stringify(

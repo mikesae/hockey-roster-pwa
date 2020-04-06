@@ -5,7 +5,7 @@ const getPlayers = () => {
 };
 
 const getScheduleItems = () => {
-    return fetch('/.netlify/functions/scheduleitems').then((response) => {
+    return fetch('/.netlify/functions/scheduleItems').then((response) => {
         return response.json()
     })
 };

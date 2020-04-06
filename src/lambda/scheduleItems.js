@@ -1,5 +1,5 @@
 exports.handler = async event => {
-    const subject = event.queryStringParameters.name || 'ScheduleItems';
+    //const date = event.queryStringParameters.name || 'date';
     return {
         statusCode: 200,
         body: JSON.stringify(
