@@ -1,5 +1,4 @@
 exports.handler = async event => {
-    //const date = event.queryStringParameters.name || 'date';
     return {
         statusCode: 200,
         body: JSON.stringify(
@@ -72,7 +71,7 @@ exports.handler = async event => {
                     "type": "Scrimmage",
                     "home": false,
                     "section": "II",
-                    "result": "",
+                    "result": "N/A",
                     "location": "Picotte Field House",
                     "locationUrl": "https://maps.apple.com/?q=Picotte+Field+House&address=135+Academy+Road+12208"
                 },
