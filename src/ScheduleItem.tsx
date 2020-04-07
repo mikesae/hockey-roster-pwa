@@ -6,14 +6,15 @@ import {IScheduleItemProps} from "./IScheduleItemProps";
 export class ScheduleItem extends Component<IScheduleItemProps> {
     render() {
         return (
-            <Row>
+            <Row className="schedule-item">
                 <Col className="col-3 px-0 my-auto">
                     <div>{this.props.date}</div>
                     <div>{this.props.day} {this.props.time}</div>
                 </Col>
                 <Col className="col-7 px-1 my-auto">
                     <div>
-                        <span className={this.props.home ? "font-weight-bold": ""}>{this.props.opponent}</span>
+                        {this.props.logoUrl && <img src={this.props.logoUrl} alt={this.props.opponent}/>}
+                        <span className={this.props.home ? "font-weight-bold" : ""}>{this.props.opponent}</span>
                         <span className="section-text">{this.props.section} </span>
                     </div>
                     <div className="small">
