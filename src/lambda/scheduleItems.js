@@ -73,6 +73,7 @@ exports.handler = async event => {
                     "date": "11/27/19",
                     "time": "12:15 PM",
                     "opponent": "Albany Academy",
+                    "logoUrl": "/images/team-logos/albany-academy-logo.png",
                     "type": "Scrimmage",
                     "home": false,
                     "section": "II",
