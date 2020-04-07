@@ -15,7 +15,7 @@ export class ScheduleItem extends Component<IScheduleItemProps> {
                     <div>
                         {this.props.logoUrl && <img src={this.props.logoUrl} alt={this.props.opponent}/>}
                         <span className={this.props.home ? "font-weight-bold" : ""}>{this.props.opponent}</span>
-                        <span className="section-text">{this.props.section} </span>
+                        {this.props.section !== "II" && <span className="section-text">({this.props.section})</span>}
                     </div>
                     <div className="small">
                         <a className="btn-link" href={this.props.locationUrl}>{this.props.location}</a>
