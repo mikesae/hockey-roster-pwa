@@ -86,6 +86,7 @@ exports.handler = async event => {
                     "date": "12/6/19",
                     "time": "8:00 PM",
                     "opponent": "Mamaroneck",
+                    "logoUrl": "/images/team-logos/mamaroneck-logo.png",
                     "type": "Tournament",
                     "home": true,
                     "section": "I",
