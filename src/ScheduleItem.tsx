@@ -8,8 +8,8 @@ export class ScheduleItem extends Component<IScheduleItemProps> {
         return (
             <Row className="schedule-item">
                 <Col className="col-3 px-0 my-auto">
-                    <div className="small">{this.props.date}</div>
-                    <div className="small">{this.props.day} {this.props.time}</div>
+                    <div className="small">{this.props.day} {this.props.date}</div>
+                    <div className="small">{this.props.time}</div>
                 </Col>
                 <Col className="col-7 px-0 my-auto">
                     <div className="media">
