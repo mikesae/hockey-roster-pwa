@@ -4,7 +4,7 @@ exports.handler = async event => {
         body: JSON.stringify(
             [
                 {
-                    "day": "W",
+                    "day": "Wed",
                     "date": "11/20/19",
                     "time": "3:30 PM",
                     "opponent": "G/M/S/S/V",
@@ -12,7 +12,7 @@ exports.handler = async event => {
                     "type": "Scrimmage",
                     "home": true,
                     "section": "II",
-                    "result": "N/A",
+                    "result": "--",
                     "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
@@ -25,12 +25,12 @@ exports.handler = async event => {
                     "type": "Scrimmage",
                     "home": true,
                     "section": "II",
-                    "result": "N/A",
+                    "result": "--",
                     "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "11/23/19",
                     "time": "7:35 PM",
                     "opponent": "Saratoga",
@@ -38,12 +38,12 @@ exports.handler = async event => {
                     "type": "Jamboree",
                     "home": false,
                     "section": "II",
-                    "result": "N/A",
+                    "result": "--",
                     "location": "Union College",
                     "locationUrl": "https://maps.apple.com/?q=Frank+L+Messa+Rink"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "11/23/19",
                     "time": "8:55 PM",
                     "opponent": "CBA",
@@ -51,12 +51,12 @@ exports.handler = async event => {
                     "type": "Jamboree",
                     "home": false,
                     "section": "II",
-                    "result": "N/A",
+                    "result": "--",
                     "location": "Union College",
                     "locationUrl": "https://maps.apple.com/?q=Frank+L+Messa+Rink"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "11/23/19",
                     "time": "9:30 PM",
                     "opponent": "BHBL/BS",
@@ -64,12 +64,12 @@ exports.handler = async event => {
                     "type": "Jamboree",
                     "home": false,
                     "section": "II",
-                    "result": "N/A",
+                    "result": "--",
                     "location": "Union College",
                     "locationUrl": "https://maps.apple.com/?q=Frank+L+Messa+Rink"
                 },
                 {
-                    "day": "W",
+                    "day": "Wed",
                     "date": "11/27/19",
                     "time": "12:15 PM",
                     "opponent": "Albany Academy",
@@ -77,7 +77,7 @@ exports.handler = async event => {
                     "type": "Scrimmage",
                     "home": false,
                     "section": "II",
-                    "result": "N/A",
+                    "result": "--",
                     "location": "Picotte Field House",
                     "locationUrl": "https://maps.apple.com/?q=Picotte+Field+House&address=135+Academy+Road+12208"
                 },
@@ -95,7 +95,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "12/7/19",
                     "time": "12:45 PM",
                     "opponent": "Williamsville North",
@@ -108,7 +108,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Vernon+Ice+Rink&address=30+Weibel+Ave+12866"
                 },
                 {
-                    "day": "W",
+                    "day": "Wed",
                     "date": "12/11/19",
                     "time": "5:15 PM",
                     "opponent": "Queensbury",
@@ -134,7 +134,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
                 {
-                    "day": "W",
+                    "day": "Wed",
                     "date": "12/18/19",
                     "time": "7:30 PM",
                     "opponent": "Saratoga",
@@ -173,7 +173,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=JM+McDonald+Sports+Complex"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "12/28/19",
                     "time": "1:00 PM",
                     "opponent": "Cortland Homer",
@@ -199,7 +199,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Albany+County+Hockey+Facility"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "1/4/20",
                     "time": "5:45 PM",
                     "opponent": "N/S/A",
@@ -211,7 +211,7 @@ exports.handler = async event => {
                     "location": "Union College"
                 },
                 {
-                    "day": "W",
+                    "day": "Wed",
                     "date": "1/8/20",
                     "time": "7:30 PM",
                     "opponent": "G/M/S/S/V",
@@ -250,7 +250,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Bethlehem+YMCA&address=900+Delaware+Ave+12054"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "1/18/20",
                     "time": "3:45 PM",
                     "opponent": "Ithaca",
@@ -263,7 +263,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "1/25/20",
                     "time": "4:10 PM",
                     "opponent": "CBA",
@@ -276,7 +276,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Albany+County+Hockey+Facility"
                 },
                 {
-                    "day": "W",
+                    "day": "Wed",
                     "date": "1/29/20",
                     "time": "7:30 PM",
                     "opponent": "Albany Academy",
@@ -302,7 +302,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
                 {
-                    "day": "W",
+                    "day": "Wed",
                     "date": "2/5/20",
                     "time": "7:40 PM",
                     "opponent": "Adirondack",
@@ -315,7 +315,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Glens+Falls+Recreational+Ice+Center&address=Fire+Rd+12801"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "2/8/20",
                     "time": "7:00 PM",
                     "opponent": "Saratoga",
@@ -341,7 +341,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
                 {
-                    "day": "Sa",
+                    "day": "Sat",
                     "date": "2/22/20",
                     "time": "7:15 PM",
                     "opponent": "CD Jets",
@@ -354,7 +354,7 @@ exports.handler = async event => {
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
                 {
-                    "day": "W",
+                    "day": "Wed",
                     "date": "2/26/20",
                     "time": "6:45 PM",
                     "opponent": "Saratoga",
