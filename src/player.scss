@@ -1,6 +1,6 @@
 $shen-green: #00400e;
 
-.roster-container, .schedule-container {
+.roster-container, .schedule-container, .standings-container {
   .row:first-child {
     background-color: #CCCCCC !important;
     font-weight: bold;
@@ -51,7 +51,7 @@ h3, h4 {
 }
 
 @media (prefers-color-scheme: dark) {
-  .roster-container, .schedule-container {
+  .roster-container, .schedule-container .standings-container {
     .row:first-child {
       background-color: #333333 !important;
       font-weight: bold;
