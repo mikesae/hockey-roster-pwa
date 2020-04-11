@@ -36,16 +36,21 @@ export default class Standings extends Component {
         return pts.replace(".5", "\u00bd")
     }
 
+    streak(streak:string) {
+        return streak.replace("Won", "W").replace("Lost", "L")
+    }
+
     htmlStanding(standing: IStanding) {
         return (
             <Row className="standing-row" key={standing.team}>
-                <Col className="col-3 my-auto px-1 text-left">{standing.team}</Col>
+                <Col className="col-3-5 my-auto px-1 text-left">{standing.team}</Col>
                 <Col className="col-1 my-auto px-0 text-left">{standing.conferenceGamesPlayed}</Col>
-                <Col className="col-2 my-auto px-0 text-left">{standing.conferenceRecord}</Col>
+                <Col className="col-1-5 my-auto px-0 text-left">{standing.conferenceRecord}</Col>
                 <Col className="col-1 my-auto px-0 text-left">{this.renderPoints(standing.conferencePoints)}</Col>
-                <Col className="col-2 my-auto px-0 text-left">{standing.goalsFor}/{standing.goalsAgainst}</Col>
-                <Col className="col-2 my-auto px-0 text-left">{standing.lastSix}</Col>
-                <Col className="col-1 my-auto px-0 text-left">{standing.winPercentage}</Col>
+                <Col className="col-1-5 my-auto px-0 text-left">{standing.overallRecord}</Col>
+                <Col className="col-1-5 my-auto px-0 text-left">{standing.goalsFor}/{standing.goalsAgainst}</Col>
+                <Col className="col-1 my-auto px-0 text-left">{this.streak(standing.streak)}</Col>
+                <Col className="col-0-5 my-auto px-0 text-left">{standing.winPercentage}</Col>
             </Row>
         );
     }
@@ -65,25 +70,28 @@ export default class Standings extends Component {
                 <div className="spacer-for-header"/>
                 <Container className="standings-container">
                     <Row className="header-row fixed-top">
-                        <Col className="col-3 my-auto px-1 text-left">
+                        <Col className="col-3-5 my-auto px-1 text-left">
                             <div className="btn">Team</div>
                         </Col>
                         <Col className="col-1 my-auto px-0 text-left">
                             <div className="btn">GP</div>
                         </Col>
-                        <Col className="col-2 my-auto px-0 text-left">
-                            <div className="btn">W-L</div>
+                        <Col className="col-1-5 my-auto px-0 text-left">
+                            <div className="btn">Sec</div>
                         </Col>
                         <Col className="col-1 my-auto px-0 text-left">
                             <div className="btn">Pts</div>
                         </Col>
-                        <Col className="col-2 my-auto px-0 text-left">
-                            <div className="btn">F/A</div>
+                        <Col className="col-1-5 my-auto px-0 text-left">
+                            <div className="btn">Ovl</div>
                         </Col>
-                        <Col className="col-2 my-auto px-0 text-left">
-                            <div className="btn">L6</div>
+                        <Col className="col-1-5 my-auto px-0 text-left">
+                            <div className="btn">GF/A</div>
                         </Col>
                         <Col className="col-1 my-auto px-0 text-left">
+                            <div className="btn">Str</div>
+                        </Col>
+                        <Col className="col-0-5 my-auto px-0 text-left">
                             <div className="btn">%</div>
                         </Col>
                     </Row>

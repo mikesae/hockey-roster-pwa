@@ -1,6 +1,6 @@
 .standings-container {
   .standing-row {
-    font-size: 0.75em;
+    font-size: 0.8em;
   }
 
   .header-row {
@@ -9,5 +9,20 @@
 
   .row {
     padding: 0;
+  }
+
+  .col-1-5 {
+    flex-basis: 12.5%;
+    max-width: 12.5%;
+  }
+
+  .col-3-5 {
+    flex-basis: 29.2%;
+    max-width: 29.2%;
+  }
+
+  .col-0-5 {
+    flex-basis: 4%;
+    max-widtH: 4%;
   }
 }
