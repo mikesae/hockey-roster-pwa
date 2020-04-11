@@ -4,9 +4,10 @@ import Image from 'react-bootstrap/Image';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router-dom";
 import {IPlayerProps} from "./IPlayerProps";
+import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
+import { faInfo } from '@fortawesome/free-solid-svg-icons/faInfo';
 
 export class PlayerSummary extends Component<IPlayerProps> {
     private YearMap = new Map([
@@ -25,7 +26,7 @@ export class PlayerSummary extends Component<IPlayerProps> {
                     </Link>
                 </Col>
                 <Col className="col-1 px-0 my-auto">{this.props.uniformNumber}</Col>
-                <Col className="col-5 px-0 my-auto">
+                <Col className="col-4 px-0 my-auto">
                     <Link to={{pathname: `/player/${this.props.uniformNumber}`}}>
                         {this.props.name}
                     </Link>
@@ -34,7 +35,12 @@ export class PlayerSummary extends Component<IPlayerProps> {
                 <Col className="col-1 px-0 my-auto">{this.YearMap.get(this.props.year as string)}</Col>
                 <Col className="col-1 px-0 my-auto">
                     <Link to={{pathname: `/player/${this.props.uniformNumber}`}}>
-                        <FontAwesomeIcon icon={faChevronRight}/>
+                        <FontAwesomeIcon icon={faUser}/>
+                    </Link>
+                </Col>
+                <Col className="col-1 px-0 my-auto">
+                    <Link to={{pathname: `/player-stat-sheet/${this.props.uniformNumber}`}}>
+                        <FontAwesomeIcon icon={faInfo}/>
                     </Link>
                 </Col>
             </Row>

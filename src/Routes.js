@@ -1,5 +1,6 @@
 import React from "react";
 import {Route, withRouter} from "react-router-dom";
+import PlayerStatSheet from "./PlayerStatSheet";
 import Standings from "./Standings";
 import {AnimatedSwitch} from "./AnimatedSwitch";
 import Credits from './credits';
@@ -19,6 +20,10 @@ const routes = [
     {
         component: PlayerDetail,
         path: "/player/:number"
+    },
+    {
+        component: PlayerStatSheet,
+        path: "/player-stat-sheet/:number"
     },
     {
         component: Schedule,

@@ -1,0 +1,34 @@
+@import 'theme';
+
+.header-row {
+  top: $navbar-height;
+  margin: 0;
+  height: $header-height;
+
+  .btn {
+    padding: 0 0.5em;
+    background: none;
+  }
+}
+
+.player-stats-container {
+  font-size: 0.9em;
+}
+
+// All landscape
+@media only screen and (orientation: landscape)  {
+  .player-stats-container {
+    max-width: 100%;
+  }
+}
+
+// iPad
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation: portrait)
+{
+  .player-stats-container {
+    max-width: 100%;
+  }
+}
