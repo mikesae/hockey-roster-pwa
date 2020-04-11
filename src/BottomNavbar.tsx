@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 import './BottomNavbar.scss';
 import { faFilm } from '@fortawesome/free-solid-svg-icons/faFilm';
 import { faUsers } from '@fortawesome/free-solid-svg-icons/faUsers';
+import { faPollH } from '@fortawesome/free-solid-svg-icons/faPollH';
 
 export default class BottomNavbar extends Component {
     render() {
@@ -43,6 +44,23 @@ export default class BottomNavbar extends Component {
                         <div className="btn">
                             <FontAwesomeIcon className="link-icon" icon={faCalendarAlt}/>
                             <div className="icon-label">Schedule</div>
+                        </div>
+                    </NavLink>
+                </NavItem>
+                <NavItem className="text-center">
+                    <NavLink
+                        to="/standings"
+                        isActive={match => {
+                            if (!match) {
+                                return false;
+                            }
+                            return match.isExact;
+                        }}
+                        activeClassName="active"
+                    >
+                        <div className="btn">
+                            <FontAwesomeIcon className="link-icon" icon={faPollH}/>
+                            <div className="icon-label">Standings</div>
                         </div>
                     </NavLink>
                 </NavItem>

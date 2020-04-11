@@ -1,6 +1,6 @@
 {
   "name": "hockey-roster-pwa",
-  "version": "2.0.3",
+  "version": "3.0.1",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
@@ -26,6 +26,7 @@
     "react-pose": "^4.0.10",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "tabletojson": "^2.0.4",
     "typescript": "~3.7.2"
   },
   "scripts": {
