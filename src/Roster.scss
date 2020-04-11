@@ -14,7 +14,7 @@
 
 // All landscape
 @media only screen and (orientation: landscape)  {
-  .roster-container, .schedule-container .standings-container {
+  .roster-container, .schedule-container, .standings-container {
     max-width: 100%;
   }
 }
@@ -25,7 +25,7 @@
   and (max-device-width : 1024px)
   and (orientation: portrait)
 {
-  .roster-container, .schedule-container .standings-container {
+  .roster-container, .schedule-container, .standings-container {
     max-width: 100%;
   }
 }
