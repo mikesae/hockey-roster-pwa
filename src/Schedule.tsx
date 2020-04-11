@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './Schedule.scss';
-import scheduleItems from './data/2019-20-Schedule.json';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -8,11 +7,21 @@ import TopNavbar from './TopNavbar';
 import {ScheduleItem} from './ScheduleItem';
 import {IScheduleItemProps} from './IScheduleItemProps';
 import moment from 'moment';
+import api from './utils/api';
 
-export default class Schedule extends Component<any, any> {
-    constructor(props: any) {
-        super(props);
-        this.state = {sortColumn: 'Date', sortDescending: true};
+export default class Schedule extends Component {
+    state = {
+        scheduleItems: [],
+        sortColumn: 'Date',
+        sortDescending: true
+    };
+
+    componentDidMount() {
+        api.getScheduleItems().then(scheduleItems => {
+            this.setState({
+                scheduleItems: scheduleItems
+            })
+        })
     }
 
     sortBy(sortColumn: string) {
@@ -57,7 +66,7 @@ export default class Schedule extends Component<any, any> {
 
     render() {
         const schedule: any[] = [];
-        const sortedItems = this.sortItems(scheduleItems);
+        const sortedItems = this.sortItems(this.state.scheduleItems);
 
         sortedItems.forEach(item => {
             schedule.push(<ScheduleItem {...item} key={item.date + item.time}/>);

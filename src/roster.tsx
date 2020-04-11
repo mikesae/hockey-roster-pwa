@@ -1,16 +1,26 @@
 import React, {Component} from 'react';
 import './Roster.scss';
-import players from './players.json';
 import {PlayerSummary} from "./PlayerSummary";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
+import api from "./utils/api";
+import { IPlayerProps } from './IPlayerProps';
 
-export default class Roster extends Component<any, any> {
-    constructor(props:any) {
-        super(props);
-        this.state = { sortColumn: 'Number', sortDescending: true };
+export default class Roster extends Component {
+    state = {
+        players: [],
+        sortColumn: 'Number',
+        sortDescending: true
+    };
+
+    componentDidMount() {
+        api.getPlayers().then(players => {
+            this.setState({
+                players: players
+            })
+        })
     }
 
     sortBy(sortColumn:string) {
@@ -22,7 +32,7 @@ export default class Roster extends Component<any, any> {
         this.setState({ sortColumn: sortColumn, sortDescending: sortDescending});
     }
 
-    sortPlayers() {
+    sortPlayers(players: IPlayerProps[]) {
         let result = players;
         switch (this.state.sortColumn) {
             case 'Number':
@@ -47,7 +57,7 @@ export default class Roster extends Component<any, any> {
     render() {
         let roster: any[] = [];
 
-        const sortedPlayers = this.sortPlayers();
+        const sortedPlayers = this.sortPlayers(this.state.players);
         sortedPlayers.forEach(player => {
             if (player.uniformNumber) {
                 roster.push(<PlayerSummary {...player} key={player.uniformNumber}/>);
@@ -60,7 +70,7 @@ export default class Roster extends Component<any, any> {
                 <div className="spacer-for-header"/>
                 <Container className="roster-container">
                     <Row className="header-row fixed-top">
-                        <Col className="col-2 my-auto px-0"></Col>
+                        <Col className="col-2 my-auto px-0"/>
                         <Col className="col-1 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Number')}>#</div>
                         </Col>

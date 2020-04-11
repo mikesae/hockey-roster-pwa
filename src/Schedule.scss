@@ -6,7 +6,15 @@
   }
 
   span.section-text {
-    margin-left: 1em;
+    margin-left: 0.25em;
     font-family: Georgia, serif;
+    opacity: 0.50;
+  }
+
+  .schedule-item {
+    img {
+      height: 3em;
+      width: 3em;
+    }
   }
 }

@@ -3,6 +3,7 @@ export interface IScheduleItemProps {
     date: string,
     time: string,
     opponent: string,
+    logoUrl?: string,
     type: string,
     home: boolean,
     section: string,
