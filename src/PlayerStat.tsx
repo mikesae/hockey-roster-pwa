@@ -24,7 +24,7 @@ export class PlayerStat extends Component<IPlayerStatProps> {
 
     render() {
         return (
-            <Row>
+            <Row key={this.props.GameDate+this.props.Opponent}>
                 <Col className="col-3 px-0 my-auto">{this.props.GameDate}</Col>
                 <Col className="col-4 px-0 my-auto">{this.formatOpponent(this.props.Opponent)}</Col>
                 <Col className="col-1 px-0 my-auto text-right">{this.props.Goals}</Col>
