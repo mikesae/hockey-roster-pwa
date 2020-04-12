@@ -16,8 +16,15 @@ const getStandings = () => {
     })
 };
 
+const getPlayerStatistics = playerId => {
+    return fetch('.netlify/functions/playerStatistics?playerId=' + playerId).then(response => {
+        return response.json()
+    })
+};
+
 export default {
     getPlayers: getPlayers,
     getScheduleItems: getScheduleItems,
-    getStandings: getStandings
+    getStandings: getStandings,
+    getPlayerStatistics: getPlayerStatistics
 }

@@ -5,6 +5,7 @@ exports.handler = async event => {
         body: JSON.stringify(
             [
                 {
+                    "playerId": "572467",
                     "uniformNumber": 1,
                     "name": "John Sassone",
                     "position": "G",
@@ -26,6 +27,7 @@ exports.handler = async event => {
                     "parents": "Art and Andrea"
                 },
                 {
+                    "playerId": "613254",
                     "uniformNumber": 2,
                     "name": "Anthony Sassone",
                     "position": "F",
@@ -45,6 +47,7 @@ exports.handler = async event => {
                     "parents": "Art and Andrea"
                 },
                 {
+                    "playerId": "613258",
                     "uniformNumber": 3,
                     "name": "Lucas Lasher",
                     "position": "G",
@@ -66,6 +69,7 @@ exports.handler = async event => {
                     "parents": "Christina and Steven"
                 },
                 {
+                    "playerId": "1574044110081",
                     "uniformNumber": 4,
                     "name": "Marty Magaletta",
                     "position": "D",
@@ -87,6 +91,7 @@ exports.handler = async event => {
                     "parents": "Sue and Kevin"
                 },
                 {
+                    "playerId": "1573918659067",
                     "uniformNumber": 5,
                     "name": "Austin Haldane",
                     "position": "F",
@@ -108,6 +113,7 @@ exports.handler = async event => {
                     "parents": "Greg and Tricia"
                 },
                 {
+                    "playerId": "613259",
                     "uniformNumber": 6,
                     "name": "Justin Mayo",
                     "position": "F",
@@ -130,6 +136,7 @@ exports.handler = async event => {
                     "parents": "Heide and Scott"
                 },
                 {
+                    "playerId": "613255",
                     "uniformNumber": 8,
                     "name": "Tyler Sullivan",
                     "position": "F",
@@ -152,6 +159,7 @@ exports.handler = async event => {
                     "parents": "Tom and Danielle"
                 },
                 {
+                    "playerId": "647949",
                     "uniformNumber": 9,
                     "name": "Justin Miazga",
                     "position": "F/D",
@@ -173,6 +181,7 @@ exports.handler = async event => {
                     "parents": "Barbara and Justin"
                 },
                 {
+                    "playerId": "572406",
                     "uniformNumber": 10,
                     "name": "Cole Haldane",
                     "position": "F",
@@ -195,6 +204,7 @@ exports.handler = async event => {
                     "parents": "Greg and Tricia"
                 },
                 {
+                    "playerId": "647948",
                     "uniformNumber": 12,
                     "name": "Jack Christian",
                     "position": "F",
@@ -215,6 +225,7 @@ exports.handler = async event => {
                     "wordsOfGratitude": ""
                 },
                 {
+                    "playerId": "572529",
                     "uniformNumber": 14,
                     "name": "Jacob Mayo",
                     "position": "F",
@@ -236,6 +247,7 @@ exports.handler = async event => {
                     "parents": "Heide and Scott"
                 },
                 {
+                    "playerId": "647952",
                     "uniformNumber": 16,
                     "name": "Ryan Haug",
                     "position": "F",
@@ -258,6 +270,7 @@ exports.handler = async event => {
                     "parents": "Greg and Jeanne"
                 },
                 {
+                    "playerId": "647947",
                     "uniformNumber": 17,
                     "name": "Ryan Saelens",
                     "position": "F",
@@ -280,6 +293,7 @@ exports.handler = async event => {
                     "parents": "Amy and Michael"
                 },
                 {
+                    "playerId": "647951",
                     "uniformNumber": 19,
                     "name": "David Feygin",
                     "position": "F",
@@ -301,6 +315,7 @@ exports.handler = async event => {
                     "parents": "Ruslan and Irina"
                 },
                 {
+                    "playerId": "1574044187540",
                     "uniformNumber": 21,
                     "name": "Nolan Sullivan",
                     "position": "F",
@@ -322,6 +337,7 @@ exports.handler = async event => {
                     "parents": "Jim and Gina"
                 },
                 {
+                    "playerId": "647954",
                     "uniformNumber": 22,
                     "name": "Joe Celtruda",
                     "position": "D",
@@ -344,6 +360,7 @@ exports.handler = async event => {
                     "parents": "Patty and Joe"
                 },
                 {
+                    "playerId": "647950",
                     "uniformNumber": 23,
                     "name": "Calvin Hicks",
                     "position": "D",
@@ -365,6 +382,7 @@ exports.handler = async event => {
                     "parents": "Steve and Jenny"
                 },
                 {
+                    "playerId": "572407",
                     "uniformNumber": 24,
                     "name": "Chris Lasher",
                     "position": "D",
@@ -386,6 +404,7 @@ exports.handler = async event => {
                     "parents": "Steve and Christina"
                 },
                 {
+                    "playerId": "613260",
                     "uniformNumber": 25,
                     "name": "Colin Palmer",
                     "position": "D",
@@ -407,6 +426,7 @@ exports.handler = async event => {
                     "parents": "Tim and Melinda"
                 },
                 {
+                    "playerId": "647953",
                     "uniformNumber": 26,
                     "name": "Nick Rex",
                     "position": "F",
@@ -428,6 +448,7 @@ exports.handler = async event => {
                     "parents": "Brian and Lisa"
                 },
                 {
+                    "playerId": "1574044339899",
                     "uniformNumber": 27,
                     "name": "Nate Hutchens",
                     "position": "D",
@@ -449,6 +470,7 @@ exports.handler = async event => {
                     "parents": "Mike and Sarita"
                 },
                 {
+                    "playerId": "613257",
                     "uniformNumber": 30,
                     "name": "Leo Coons",
                     "position": "G",
@@ -470,6 +492,7 @@ exports.handler = async event => {
                     "parents": "Sarah and Brian"
                 },
                 {
+                    "playerId": "572532",
                     "uniformNumber": 31,
                     "name": "Kent Leighton",
                     "position": "G",

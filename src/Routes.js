@@ -23,7 +23,7 @@ const routes = [
     },
     {
         component: PlayerStatSheet,
-        path: "/player-stat-sheet/:number"
+        path: "/player-stat-sheet/:playerId"
     },
     {
         component: Schedule,

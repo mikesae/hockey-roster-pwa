@@ -1,17 +1,45 @@
 import React, {Component} from 'react';
 import './Roster.scss';
-import stats from './data/PlayerStats17.json';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
 import { PlayerStat } from './PlayerStat';
 import './PlayerStatSheet.scss';
+import api from './utils/api';
+import { IPlayerStatProps } from './IPlayerStatProps';
 
-export default class PlayerStatSheet extends Component<any, any> {
+interface IPlayerStatSheetProps {
+    playerId: string;
+}
+
+interface IPlayerStatSheetState {
+    stats: IPlayerStatProps[];
+    sortColumn: string;
+    sortDescending: boolean;
+}
+
+export default class PlayerStatSheet extends Component<any, IPlayerStatSheetState> {
+
+    private readonly playerId: string;
+
     constructor(props:any) {
         super(props);
-        this.state = { sortColumn: 'Date', sortDescending: true };
+        this.playerId = props.match.params.playerId;
+
+        this.state = {
+            stats: [],
+            sortColumn: 'Date',
+            sortDescending: true
+        };
+    }
+
+    componentDidMount() {
+        api.getPlayerStatistics(this.playerId).then(stats => {
+            this.setState({
+                stats: stats
+            })
+        })
     }
 
     sortBy(sortColumn:string) {
@@ -23,8 +51,8 @@ export default class PlayerStatSheet extends Component<any, any> {
         this.setState({ sortColumn: sortColumn, sortDescending: sortDescending});
     }
 
-    sort() {
-        let result = stats[0];
+    sort(stats:IPlayerStatProps[]) {
+        let result = stats;
         switch (this.state.sortColumn) {
             case 'Date':
                 //result = stats.sort((a, b) => a.GameDate - b.GameDate);
@@ -51,7 +79,7 @@ export default class PlayerStatSheet extends Component<any, any> {
     render() {
         let roster: any[] = [];
 
-        const sortedStats = this.sort();
+        const sortedStats = this.sort(this.state.stats);
         sortedStats.forEach(stat => {
             if (stat.GameDate) {
                 roster.push(<PlayerStat {...stat}/>);

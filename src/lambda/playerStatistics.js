@@ -1,32 +1,28 @@
 const tabletojson = require('tabletojson').Tabletojson;
-const standingsUrl = 'https://www.section2hockey.com/teams/default.asp?u=CDHSHL&s=hockey';
+const url = 'https://www.section2hockey.com/teams/default.asp?t=&s=hockey&u=CDHSHL&p=profile&sportsHQ=SEC2PLAINSMEN';
 
 exports.handler = async event => {
-    const season = event.queryStringParameters.season || 'Winter_2019%2F2020';
-
-    const streak = (value) =>
-        value.replace("Won ", "W").replace("Lost ", "L");
+    const playerId = event.queryStringParameters.playerID;
 
     return await new Promise(resolve => {
         tabletojson.convertUrl(
-            `${standingsUrl}&p=standings&viewseas=${season}`,
+            `${url}&playerID=${playerId}&viewseas=Winter_2019%2F2020&t=print`,
             tablesAsJson => {
-                const rows = tablesAsJson[8].slice(3);
+                const rows = tablesAsJson[2];
                 let result = [];
                 rows.forEach(row => {
                     result.push(
                     {
-                        team: row["0"],
-                        conferenceGamesPlayed: row["1"],
-                        conferenceRecord: row["2"],
-                        conferencePoints: row["3"],
-                        overallGamesPlayed: row["4"],
-                        overallRecord: row["5"],
-                        goalsFor: row["6"],
-                        goalsAgainst: row["7"],
-                        lastSix: row["8"],
-                        streak: streak(row["9"]),
-                        winPercentage: row["10"]
+                        GameDate: row["0"],
+                        Opponent: row["2"],
+                        Result: row["3"],
+                        Goals: row["5"],
+                        Assists: row["6"],
+                        Points: row["7"],
+                        PPG: row["8"],
+                        GWG: row["9"],
+                        GTG: row["10"],
+                        PlusMinus: row["11"]
                     });
                 });
 

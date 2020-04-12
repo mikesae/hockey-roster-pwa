@@ -39,7 +39,7 @@ export class PlayerSummary extends Component<IPlayerProps> {
                     </Link>
                 </Col>
                 <Col className="col-1 px-0 my-auto">
-                    <Link to={{pathname: `/player-stat-sheet/${this.props.uniformNumber}`}}>
+                    <Link to={{pathname: `/player-stat-sheet/${this.props.playerId}`}}>
                         <FontAwesomeIcon icon={faInfo}/>
                     </Link>
                 </Col>
