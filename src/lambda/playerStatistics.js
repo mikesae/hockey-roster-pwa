@@ -9,21 +9,21 @@ exports.handler = async event => {
         tabletojson.convertUrl(
             `${url}&viewseas=${season}&playerId=${playerId}`,
             tablesAsJson => {
-                const rows = tablesAsJson[9];
+                const rows = tablesAsJson[9].slice(1);
                 let result = [];
                 rows.forEach(row => {
                     result.push(
                     {
                         GameDate: row["0"],
                         Opponent: row["2"],
-                        Result: row["3"],
-                        Goals: row["5"],
-                        Assists: row["6"],
-                        Points: row["7"],
-                        PPG: row["8"],
-                        GWG: row["9"],
-                        GTG: row["10"],
-                        PlusMinus: row["11"]
+                        Result: parseInt(row["3"]),
+                        Goals: parseInt(row["5"]),
+                        Assists: parseInt(row["6"]),
+                        Points: parseInt(row["7"]),
+                        PPG: parseInt(row["8"]),
+                        GWG: parseInt(row["9"]),
+                        GTG: parseInt(row["10"]),
+                        PlusMinus: parseInt(row["11"])
                     });
                 });
 

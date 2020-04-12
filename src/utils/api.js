@@ -17,7 +17,7 @@ const getStandings = () => {
 };
 
 const getPlayerStatistics = playerId => {
-    return fetch('.netlify/functions/playerStatistics?playerId=' + playerId).then(response => {
+    return fetch('/.netlify/functions/playerStatistics?playerId=' + playerId).then(response => {
         return response.json()
     })
 };

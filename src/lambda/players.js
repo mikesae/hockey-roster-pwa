@@ -69,7 +69,7 @@ exports.handler = async event => {
                     "parents": "Christina and Steven"
                 },
                 {
-                    "playerId": "1574044110081",
+                    "playerId": "683453",
                     "uniformNumber": 4,
                     "name": "Marty Magaletta",
                     "position": "D",
