@@ -1,14 +1,15 @@
 const tabletojson = require('tabletojson').Tabletojson;
-const url = 'https://www.section2hockey.com/teams/default.asp?t=&s=hockey&u=CDHSHL&p=profile&sportsHQ=SEC2PLAINSMEN';
+const url = 'https://www.section2hockey.com/teams/default.asp?s=hockey&u=CDHSHL&p=profile&sportsHQ=SEC2PLAINSMEN';
 
 exports.handler = async event => {
-    const playerId = event.queryStringParameters.playerID;
+    const playerId = event.queryStringParameters.playerId;
+    const season = event.queryStringParameters.season || 'Winter_2019%2F2020';
 
     return await new Promise(resolve => {
         tabletojson.convertUrl(
-            `${url}&playerID=${playerId}&viewseas=Winter_2019%2F2020&t=print`,
+            `${url}&viewseas=${season}&playerId=${playerId}`,
             tablesAsJson => {
-                const rows = tablesAsJson[2];
+                const rows = tablesAsJson[9];
                 let result = [];
                 rows.forEach(row => {
                     result.push(
