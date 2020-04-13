@@ -18,13 +18,13 @@ exports.handler = async event => {
                         GameDate: row["Date"],
                         Opponent: row["Opponent"],
                         Result: row["Result"],
-                        Goals: parseInt(row["G"]),
-                        Assists: parseInt(row["A"]),
-                        Points: parseInt(row["Pts"]),
+                        Goals: parseInt(row["G"] || 0),
+                        Assists: parseInt(row["A"] || 0),
+                        Points: parseInt(row["Pts"] || 0),
                         PPG: parseInt(row["PPG"]),
                         GWG: parseInt(row["GWG"]),
                         GTG: parseInt(row["GTG"]),
-                        PlusMinus: parseInt(row["+/-"])
+                        PlusMinus: parseInt(row["+/-"] || 0)
                     });
                 });
 

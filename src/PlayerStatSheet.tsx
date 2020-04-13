@@ -9,10 +9,6 @@ import './PlayerStatSheet.scss';
 import api from './utils/api';
 import { IPlayerStatProps } from './IPlayerStatProps';
 
-interface IPlayerStatSheetProps {
-    playerId: string;
-}
-
 interface IPlayerStatSheetState {
     stats: IPlayerStatProps[];
     sortColumn: string;
@@ -77,12 +73,12 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
     }
 
     render() {
-        let roster: any[] = [];
+        let statistics: any[] = [];
 
         const sortedStats = this.sort(this.state.stats);
         sortedStats.forEach(stat => {
             if (stat.GameDate) {
-                roster.push(<PlayerStat {...stat}/>);
+                statistics.push(<PlayerStat {...stat}/>);
             }
         });
 
@@ -111,7 +107,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
                             <div className="btn" onClick={() => this.sortBy('PlusMinus')}>+/-</div>
                         </Col>
                     </Row>
-                    {roster}
+                    {statistics}
                     <div className="spacer"/>
                 </Container>
             </div>

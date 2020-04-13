@@ -91,7 +91,7 @@ exports.handler = async event => {
                     "parents": "Sue and Kevin"
                 },
                 {
-                    "playerId": "1573918659067",
+                    "playerId": "683257",
                     "uniformNumber": 5,
                     "name": "Austin Haldane",
                     "position": "F",
@@ -315,7 +315,7 @@ exports.handler = async event => {
                     "parents": "Ruslan and Irina"
                 },
                 {
-                    "playerId": "1574044187540",
+                    "playerId": "683454",
                     "uniformNumber": 21,
                     "name": "Nolan Sullivan",
                     "position": "F",
@@ -448,7 +448,7 @@ exports.handler = async event => {
                     "parents": "Brian and Lisa"
                 },
                 {
-                    "playerId": "1574044339899",
+                    "playerId": "683455",
                     "uniformNumber": 27,
                     "name": "Nate Hutchens",
                     "position": "D",
