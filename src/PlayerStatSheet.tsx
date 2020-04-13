@@ -4,23 +4,19 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
-import { PlayerStat } from './PlayerStat';
+import {PlayerStat} from './PlayerStat';
 import './PlayerStatSheet.scss';
 import api from './utils/api';
-import { IPlayerStatProps } from './IPlayerStatProps';
+import {IPlayerStatProps} from './IPlayerStatProps';
 import moment from 'moment';
-
-interface IPlayerStatSheetState {
-    stats: IPlayerStatProps[];
-    sortColumn: string;
-    sortDescending: boolean;
-}
+import players from './data/players.json';
+import {IPlayerStatSheetState} from "./IPlayerStatSheetState";
 
 export default class PlayerStatSheet extends Component<any, IPlayerStatSheetState> {
 
     private readonly playerId: string;
 
-    constructor(props:any) {
+    constructor(props: any) {
         super(props);
         this.playerId = props.match.params.playerId;
 
@@ -89,6 +85,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
     render() {
         let statistics: any[] = [];
 
+        const player: any = players.find(p => p.playerId === this.playerId);
         const sortedStats = this.sort(this.state.stats);
         sortedStats.forEach(stat => {
             if (stat.GameDate) {
@@ -98,7 +95,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
 
         return (
             <div className="page">
-                <TopNavbar title="2019-20 Statistics" showBackNav={true}/>
+                <TopNavbar title={`2019-20 ${player.name}`} showBackNav={true}/>
                 <div className="spacer-for-header"/>
                 <Container className="roster-container player-stats-container">
                     <Row className="header-row fixed-top">
@@ -108,16 +105,16 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
                         <Col className="col-4 my-auto px-0 text-left">
                             <div className="btn" onClick={() => this.sortBy('Opponent')}>Opponent</div>
                         </Col>
-                        <Col className="col-1 my-auto px-0 text-left">
+                        <Col className="col-1 my-auto text-left">
                             <div className="btn" onClick={() => this.sortBy('Goals')}>G</div>
                         </Col>
-                        <Col className="col-1 my-auto px-0 text-left">
+                        <Col className="col-1 my-auto text-left">
                             <div className="btn" onClick={() => this.sortBy('Assists')}>A</div>
                         </Col>
-                        <Col className="col-1 my-auto px-0 text-left">
+                        <Col className="col-1 my-auto text-left">
                             <div className="btn" onClick={() => this.sortBy('Points')}>P</div>
                         </Col>
-                        <Col className="col-1 my-auto px-0 text-left">
+                        <Col className="col-1 my-auto text-left">
                             <div className="btn" onClick={() => this.sortBy('PlusMinus')}>+/-</div>
                         </Col>
                     </Row>
