@@ -25,6 +25,10 @@ export default class Credits extends Component {
                             Team Sports Photos</a></div>
                     </FormGroup>
                     <FormGroup>
+                        <div className="form-label">Statistics and Standings</div>
+                        <div><a className="btn-link" href="https://www.section2hockey.com">section2hockey.com</a></div>
+                    </FormGroup>
+                    <FormGroup>
                         <div className="form-label">Deployment and Hosting</div>
                         <div><a className="btn-link" href="https://www.netlify.com">Netlify</a></div>
                     </FormGroup>

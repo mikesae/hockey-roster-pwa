@@ -8,6 +8,7 @@ import { PlayerStat } from './PlayerStat';
 import './PlayerStatSheet.scss';
 import api from './utils/api';
 import { IPlayerStatProps } from './IPlayerStatProps';
+import moment from 'moment';
 
 interface IPlayerStatSheetState {
     stats: IPlayerStatProps[];
@@ -47,11 +48,20 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
         this.setState({ sortColumn: sortColumn, sortDescending: sortDescending});
     }
 
+    getMoment(date: string) {
+        return moment(`${date}`, 'MM/DD/YY');
+    }
+
     sort(stats:IPlayerStatProps[]) {
         let result = stats;
         switch (this.state.sortColumn) {
             case 'Date':
-                //result = stats.sort((a, b) => a.GameDate - b.GameDate);
+                result = result.sort(
+                    (a, b) => {
+                        const aMoment = this.getMoment(a.GameDate);
+                        const bMoment = this.getMoment(b.GameDate);
+                        return aMoment.diff(bMoment);
+                    });
                 break;
             case 'Opponent':
                 result = result.sort((a, b) => a.Opponent.localeCompare(b.Opponent));
@@ -62,6 +72,10 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
             case 'Assists':
                 result = result.sort((a, b) => a.Assists - b.Assists);
                 break;
+            case 'Points':
+                result = result.sort((a, b) => (a.Goals + a.Assists) - (b.Goals + b.Assists));
+                break;
+
             case 'PlusMinus':
                 result = result.sort((a, b) => a.PlusMinus - b.PlusMinus);
                 break;
@@ -78,7 +92,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
         const sortedStats = this.sort(this.state.stats);
         sortedStats.forEach(stat => {
             if (stat.GameDate) {
-                statistics.push(<PlayerStat {...stat}/>);
+                statistics.push(<PlayerStat  key={stat.Opponent+stat.GameDate} {...stat}/>);
             }
         });
 
