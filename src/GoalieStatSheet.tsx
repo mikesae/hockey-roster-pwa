@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
-import './PlayerStatSheet.scss';
+import './StatSheet.scss';
 import api from './utils/api';
 import moment from 'moment';
 import players from './data/players.json';
@@ -28,7 +28,7 @@ export default class GoalieStatSheet extends Component<any, IGoalieStatSheetStat
     }
 
     componentDidMount() {
-        api.getPlayerStatistics(this.playerId).then(stats => {
+        api.getGoalieStatistics(this.playerId).then(stats => {
             this.setState({
                 stats: stats
             })
@@ -99,25 +99,25 @@ export default class GoalieStatSheet extends Component<any, IGoalieStatSheetStat
                 <div className="spacer-for-header"/>
                 <Container className="roster-container player-stats-container">
                     <Row className="header-row fixed-top">
-                        <Col className="col-3 my-auto px-0 text-left">
+                        <Col className="col-2 my-auto px-0 text-left">
                             <div className="btn" onClick={() => this.sortBy('Date')}>Date</div>
                         </Col>
                         <Col className="col-3 my-auto px-0 text-left">
                             <div className="btn" onClick={() => this.sortBy('Opponent')}>Opponent</div>
                         </Col>
-                        <Col className="col-2 my-auto px-0  text-left">
+                        <Col className="col-3 my-auto text-left">
                             <div className="btn" onClick={() => this.sortBy('Result')}>Result</div>
                         </Col>
-                        <Col className="col-1 my-auto px-0  text-left">
+                        <Col className="col-1 my-auto px-0 text-right">
                             <div className="btn" onClick={() => this.sortBy('Min')}>Min</div>
                         </Col>
-                        <Col className="col-1 my-auto px-0  text-left">
-                            <div className="btn" onClick={() => this.sortBy('GA')}>+/-</div>
+                        <Col className="col-1 my-auto px-0 text-right">
+                            <div className="btn" onClick={() => this.sortBy('GA')}>GA</div>
                         </Col>
-                        <Col className="col-1 my-auto px-0  text-left">
-                            <div className="btn" onClick={() => this.sortBy('Saves')}>Saves</div>
+                        <Col className="col-1 my-auto px-0 text-right">
+                            <div className="btn" onClick={() => this.sortBy('Saves')}>S</div>
                         </Col>
-                        <Col className="col-1 my-auto px-0  text-left">
+                        <Col className="col-1 my-auto px-0 text-left">
                             <div className="btn" onClick={() => this.sortBy('Pct')}>%</div>
                         </Col>
                     </Row>

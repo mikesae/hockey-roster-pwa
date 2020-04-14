@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
 import {PlayerStat} from './PlayerStat';
-import './PlayerStatSheet.scss';
+import './StatSheet.scss';
 import api from './utils/api';
 import {IPlayerStatProps} from './IPlayerStatProps';
 import moment from 'moment';

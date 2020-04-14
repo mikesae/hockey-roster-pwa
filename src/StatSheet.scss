@@ -11,8 +11,23 @@
   }
 }
 
+.col-1-5 {
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+
+.col-2-5 {
+  flex: 0 0 20.83%;
+  max-width: 20.83%;
+}
+
+.col-3-5 {
+  flex: 0 0 29.1%;
+  max-width: 29.1%;
+}
+
 // All landscape
-@media only screen and (orientation: landscape)  {
+@media only screen and (orientation: landscape) {
   .player-stats-container {
     max-width: 100%;
   }

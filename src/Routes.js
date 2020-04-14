@@ -7,6 +7,7 @@ import Credits from './credits';
 import {PlayerDetail} from './PlayerDetail';
 import Roster from './roster';
 import Schedule from './Schedule';
+import GoalieStatSheet from "./GoalieStatSheet";
 
 const routes = [
     {
@@ -24,6 +25,10 @@ const routes = [
     {
         component: PlayerStatSheet,
         path: "/player-stat-sheet/:playerId"
+    },
+    {
+        component: GoalieStatSheet,
+        path: "/goalie-stat-sheet/:playerId"
     },
     {
         component: Schedule,
