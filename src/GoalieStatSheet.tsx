@@ -4,15 +4,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
-import {PlayerStat} from './PlayerStat';
 import './StatSheet.scss';
 import api from './utils/api';
-import {IPlayerStatProps} from './IPlayerStatProps';
 import moment from 'moment';
 import players from './data/players.json';
-import {IPlayerStatSheetState} from "./IPlayerStatSheetState";
+import {IGoalieStatSheetState} from "./IGoalieStatSheetState";
+import {IGoalieStatProps} from "./IGoalieStatProps";
+import {GoalieStat} from "./GoalieStat";
 
-export default class PlayerStatSheet extends Component<any, IPlayerStatSheetState> {
+export default class GoalieStatSheet extends Component<any, IGoalieStatSheetState> {
 
     private readonly playerId: string;
 
@@ -28,27 +28,27 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
     }
 
     componentDidMount() {
-        api.getPlayerStatistics(this.playerId).then(stats => {
+        api.getGoalieStatistics(this.playerId).then(stats => {
             this.setState({
                 stats: stats
             })
         })
     }
 
-    sortBy(sortColumn:string) {
+    sortBy(sortColumn: string) {
         let sortDescending = this.state.sortDescending;
 
         if (sortColumn === this.state.sortColumn) {
             sortDescending = !this.state.sortDescending;
         }
-        this.setState({ sortColumn: sortColumn, sortDescending: sortDescending});
+        this.setState({sortColumn: sortColumn, sortDescending: sortDescending});
     }
 
     getMoment(date: string) {
         return moment(`${date}`, 'MM/DD/YY');
     }
 
-    sort(stats:IPlayerStatProps[]) {
+    sort(stats: IGoalieStatProps[]) {
         let result = stats;
         switch (this.state.sortColumn) {
             case 'Date':
@@ -62,18 +62,18 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
             case 'Opponent':
                 result = result.sort((a, b) => a.Opponent.localeCompare(b.Opponent));
                 break;
-            case 'Goals':
-                result = result.sort((a, b) => a.Goals - b.Goals);
+            case 'Result':
+                result = result.sort((a, b) => a.Result.localeCompare(b.Result));
                 break;
-            case 'Assists':
-                result = result.sort((a, b) => a.Assists - b.Assists);
+            case 'Minutes':
+                result = result.sort((a, b) => a.Minutes - b.Minutes);
                 break;
-            case 'Points':
-                result = result.sort((a, b) => (a.Goals + a.Assists) - (b.Goals + b.Assists));
+            case 'Saves':
+                result = result.sort((a, b) => a.Saves - b.Saves);
                 break;
 
-            case 'PlusMinus':
-                result = result.sort((a, b) => a.PlusMinus - b.PlusMinus);
+            case 'Percentage':
+                result = result.sort((a, b) => a.Percentage - b.Percentage);
                 break;
         }
         if (!this.state.sortDescending) {
@@ -89,7 +89,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
         const sortedStats = this.sort(this.state.stats);
         sortedStats.forEach(stat => {
             if (stat.GameDate) {
-                statistics.push(<PlayerStat  key={stat.Opponent+stat.GameDate} {...stat}/>);
+                statistics.push(<GoalieStat key={stat.Opponent + stat.GameDate} {...stat}/>);
             }
         });
 
@@ -99,23 +99,26 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
                 <div className="spacer-for-header"/>
                 <Container className="roster-container player-stats-container">
                     <Row className="header-row fixed-top">
-                        <Col className="col-3 my-auto px-0 text-left">
+                        <Col className="col-2 my-auto px-0 text-left">
                             <div className="btn" onClick={() => this.sortBy('Date')}>Date</div>
                         </Col>
-                        <Col className="col-4 my-auto px-0 text-left">
+                        <Col className="col-3 my-auto px-0 text-left">
                             <div className="btn" onClick={() => this.sortBy('Opponent')}>Opponent</div>
                         </Col>
-                        <Col className="col-1 my-auto text-left">
-                            <div className="btn" onClick={() => this.sortBy('Goals')}>G</div>
+                        <Col className="col-3 my-auto text-left">
+                            <div className="btn" onClick={() => this.sortBy('Result')}>Result</div>
                         </Col>
-                        <Col className="col-1 my-auto text-left">
-                            <div className="btn" onClick={() => this.sortBy('Assists')}>A</div>
+                        <Col className="col-1 my-auto px-0 text-right">
+                            <div className="btn" onClick={() => this.sortBy('Min')}>Min</div>
                         </Col>
-                        <Col className="col-1 my-auto text-left">
-                            <div className="btn" onClick={() => this.sortBy('Points')}>P</div>
+                        <Col className="col-1 my-auto px-0 text-right">
+                            <div className="btn" onClick={() => this.sortBy('GA')}>GA</div>
                         </Col>
-                        <Col className="col-1 my-auto text-left">
-                            <div className="btn" onClick={() => this.sortBy('PlusMinus')}>+/-</div>
+                        <Col className="col-1 my-auto px-0 text-right">
+                            <div className="btn" onClick={() => this.sortBy('Saves')}>S</div>
+                        </Col>
+                        <Col className="col-1 my-auto px-0 text-left">
+                            <div className="btn" onClick={() => this.sortBy('Pct')}>%</div>
                         </Col>
                     </Row>
                     {statistics}
