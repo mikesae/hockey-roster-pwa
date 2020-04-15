@@ -95,7 +95,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
 
         return (
             <div className="page">
-                <TopNavbar title={`2019-20 ${player.name}`} showBackNav={true}/>
+                <TopNavbar title={`2019-20 ${player ? player.name : this.playerId}`} showBackNav={true}/>
                 <div className="spacer-for-header"/>
                 <Container className="roster-container player-stats-container">
                     <Row className="header-row fixed-top">
