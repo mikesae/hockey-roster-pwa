@@ -8,7 +8,6 @@ import {Link} from "react-router-dom";
 import {IPlayerProps} from "./IPlayerProps";
 import {faUser} from '@fortawesome/free-solid-svg-icons/faUser';
 import {faHockeyPuck} from "@fortawesome/free-solid-svg-icons/faHockeyPuck";
-import {faMask} from "@fortawesome/free-solid-svg-icons/faMask";
 
 export class PlayerSummary extends Component<IPlayerProps> {
     private YearMap = new Map([
@@ -42,7 +41,7 @@ export class PlayerSummary extends Component<IPlayerProps> {
                 <Col className="col-1 px-0 my-auto">
                     {this.props.position === 'G'
                         ? <Link to={{pathname: `/goalie-stat-sheet/${this.props.playerId}`}}>
-                            <FontAwesomeIcon icon={faMask}/>
+                            <FontAwesomeIcon icon={faHockeyPuck}/>
                         </Link>
                         :
                         <Link to={{pathname: `/player-stat-sheet/${this.props.playerId}`}}>

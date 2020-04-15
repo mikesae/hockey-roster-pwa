@@ -6,12 +6,12 @@ export const formatGameDate = (value: string): string => {
 };
 
 export const formatPercentage = (value: number): string => {
-    const str = value.toString();
+    const str = value >= 1 ? value.toPrecision(4) : value.toPrecision(3);
     if (str.startsWith('0.')) {
         return str.slice(1);
     }
     return str;
-}
+};
 
 export const formatPlusMinus = (data: number): string => {
     if (data > 0) {
@@ -21,7 +21,7 @@ export const formatPlusMinus = (data: number): string => {
         return '0';
     }
     return ` ${data}`;
-}
+};
 
 export const formatOpponent = (opponent: string): string => {
     if (opponent.indexOf('(Sec. I)') > 0) {
@@ -41,4 +41,4 @@ export const formatOpponent = (opponent: string): string => {
     }
 
     return opponent;
-}
+};
