@@ -6,30 +6,33 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
 import api from "./utils/api";
-import { IPlayerProps } from './IPlayerProps';
+import {IPlayerProps} from './IPlayerProps';
+import {ClipLoader, SyncLoader} from "react-spinners";
 
 export default class Roster extends Component {
     state = {
         players: [],
         sortColumn: 'Number',
-        sortDescending: true
+        sortDescending: true,
+        loading: true
     };
 
     componentDidMount() {
         api.getPlayers().then(players => {
             this.setState({
-                players: players
+                players: players,
+                loading: false
             })
         })
     }
 
-    sortBy(sortColumn:string) {
+    sortBy(sortColumn: string) {
         let sortDescending = this.state.sortDescending;
 
         if (sortColumn === this.state.sortColumn) {
             sortDescending = !this.state.sortDescending;
         }
-        this.setState({ sortColumn: sortColumn, sortDescending: sortDescending});
+        this.setState({sortColumn: sortColumn, sortDescending: sortDescending});
     }
 
     sortPlayers(players: IPlayerProps[]) {
@@ -69,22 +72,33 @@ export default class Roster extends Component {
                 <TopNavbar title="2019-20 Roster" showBackNav={false}/>
                 <div className="spacer-for-header"/>
                 <Container className="roster-container">
-                    <Row className="header-row fixed-top">
-                        <Col className="col-2 my-auto px-0"/>
-                        <Col className="col-1 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Number')}>#</div>
-                        </Col>
-                        <Col className="col-4 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Name')}>Name</div>
-                        </Col>
-                        <Col className="col-1-5 my-auto px-0 text-center">
-                            <div className="btn" onClick={() => this.sortBy('Position')}>Pos</div>
-                        </Col>
-                        <Col className="col-1 my-auto px-0 text-center">
-                            <div className="btn" onClick={() => this.sortBy('Year')}>Year</div>
-                        </Col>
-                    </Row>
-                    {roster}
+                    <div className="sweet-loading">
+                        <SyncLoader
+                            size={150}
+                            color={"#00400e"}
+                            loading={this.state.loading}
+                        />
+                    </div>
+                    {!this.state.loading &&
+                    <>
+                        <Row className="header-row fixed-top">
+                            <Col className="col-2 my-auto px-0"/>
+                            <Col className="col-1 my-auto px-0">
+                                <div className="btn" onClick={() => this.sortBy('Number')}>#</div>
+                            </Col>
+                            <Col className="col-4 my-auto px-0">
+                                <div className="btn" onClick={() => this.sortBy('Name')}>Name</div>
+                            </Col>
+                            <Col className="col-1-5 my-auto px-0 text-center">
+                                <div className="btn" onClick={() => this.sortBy('Position')}>Pos</div>
+                            </Col>
+                            <Col className="col-1 my-auto px-0 text-center">
+                                <div className="btn" onClick={() => this.sortBy('Year')}>Year</div>
+                            </Col>
+                        </Row>
+                        {roster}
+                    </>
+                    }
                     <div className="spacer"/>
                 </Container>
             </div>
