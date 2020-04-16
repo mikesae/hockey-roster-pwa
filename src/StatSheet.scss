@@ -1,16 +1,5 @@
 @import 'theme';
 
-.header-row {
-  top: $navbar-height;
-  margin: 0;
-  height: $header-height;
-
-  .btn {
-    padding: 0 0.5em;
-    background: none;
-  }
-}
-
 .col-0-5 {
   flex: 0 0 4.17%;
   max-width: 4.17%;

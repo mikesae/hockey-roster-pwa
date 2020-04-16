@@ -18,6 +18,28 @@ body {
   background-color: white;
 }
 
+.header-row {
+  top: $navbar-height;
+  margin: 0;
+  height: $header-height;
+  background-color: #CCCCCC !important;
+  font-weight: bold;
+
+  .btn {
+    color: $highlight-color;
+    font-weight: bold;
+    padding: 0 0.5em;
+    background: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .header-row {
+    background-color: #333333 !important;
+    font-weight: bold;
+  }
+}
+
 .spacer {
   background-color: white;
   height: $navbar-height;
@@ -48,6 +70,7 @@ a {
       text-decoration: underline;
     }
   }
+
   &:hover {
     color: $highlight-color;
     text-decoration: none;
@@ -70,11 +93,13 @@ a {
   color: black;
   background: none;
   border: none;
+
   &:hover {
     color: white;
     background: black;
   }
 }
+
 
 .page {
   height: 100vh;

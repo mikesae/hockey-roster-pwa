@@ -101,10 +101,10 @@ export default class GoalieStatSheet extends Component<any, IGoalieStatSheetStat
                 <div className="spacer-for-header"/>
                 <SpinnerContainer loading={this.state.loading} className="roster-container player-stats-container">
                     <Row className="header-row fixed-top">
-                        <Col className="col-2 my-auto px-0 text-left">
+                        <Col className="col-2-5 my-auto px-0 text-left">
                             <div className="btn" onClick={() => this.sortBy('Date')}>Date</div>
                         </Col>
-                        <Col className="col-3-5 my-auto px-0 text-left">
+                        <Col className="col-3 my-auto px-0 text-left">
                             <div className="btn" onClick={() => this.sortBy('Opponent')}>Opponent</div>
                         </Col>
                         <Col className="col-1-5 my-auto px-0 text-center">

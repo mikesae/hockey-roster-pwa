@@ -1,17 +1,5 @@
 @import 'theme';
 
-.header-row {
-  top: $navbar-height;
-  margin: 0;
-  height: $header-height;
-
-  .btn {
-    padding: 0 0.5em;
-    background: none;
-  }
-}
-
-
 // All landscape
 @media only screen and (orientation: landscape)  {
   .roster-container, .schedule-container, .standings-container {
