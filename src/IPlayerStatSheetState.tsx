@@ -4,4 +4,5 @@ export interface IPlayerStatSheetState {
     stats: IPlayerStatProps[];
     sortColumn: string;
     sortDescending: boolean;
+    loading: boolean;
 }

@@ -2,24 +2,26 @@ import React, {Component} from 'react';
 import './Schedule.scss';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
 import TopNavbar from './TopNavbar';
 import {ScheduleItem} from './ScheduleItem';
 import {IScheduleItemProps} from './IScheduleItemProps';
 import moment from 'moment';
 import api from './utils/api';
+import SpinnerContainer from "./SpinnerContainer";
 
 export default class Schedule extends Component {
     state = {
         scheduleItems: [],
         sortColumn: 'Date',
-        sortDescending: true
+        sortDescending: true,
+        loading: true
     };
 
     componentDidMount() {
         api.getScheduleItems().then(scheduleItems => {
             this.setState({
-                scheduleItems: scheduleItems
+                scheduleItems: scheduleItems,
+                loading: false
             })
         })
     }
@@ -76,7 +78,7 @@ export default class Schedule extends Component {
             <div className="page">
                 <TopNavbar title="2019-20 Schedule" showBackNav={true}/>
                 <div className="spacer-for-header"/>
-                <Container className="schedule-container">
+                <SpinnerContainer loading={this.state.loading} className="schedule-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-3 my-auto px-0">
                             <div className="btn" onClick={() => this.sortBy('Date')}>Date</div>
@@ -90,7 +92,7 @@ export default class Schedule extends Component {
                     </Row>
                     {schedule}
                     <div className="spacer"/>
-                </Container>
+                </SpinnerContainer>
             </div>
         );
     }

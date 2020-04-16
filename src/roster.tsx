@@ -3,16 +3,11 @@ import './Roster.scss';
 import {PlayerSummary} from "./PlayerSummary";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
 import api from "./utils/api";
 import {IPlayerProps} from './IPlayerProps';
-import {PulseLoader} from "react-spinners";
-import {css} from "@emotion/core";
+import SpinnerContainer from "./SpinnerContainer";
 
-const override = css`
-  margin: 60% auto;
-`;
 
 export default class Roster extends Component {
     state = {
@@ -76,37 +71,25 @@ export default class Roster extends Component {
             <div className="page">
                 <TopNavbar title="2019-20 Roster" showBackNav={false}/>
                 <div className="spacer-for-header"/>
-                <Container className="roster-container">
-                    <div className="spinner-container">
-                        <PulseLoader
-                            css={override}
-                            size={25}
-                            color={"#00400e"}
-                            loading={this.state.loading}
-                        />
-                    </div>
-                    {!this.state.loading &&
-                    <>
-                        <Row className="header-row fixed-top">
-                            <Col className="col-2 my-auto px-0"/>
-                            <Col className="col-1 my-auto px-0">
-                                <div className="btn" onClick={() => this.sortBy('Number')}>#</div>
-                            </Col>
-                            <Col className="col-4 my-auto px-0">
-                                <div className="btn" onClick={() => this.sortBy('Name')}>Name</div>
-                            </Col>
-                            <Col className="col-1-5 my-auto px-0 text-center">
-                                <div className="btn" onClick={() => this.sortBy('Position')}>Pos</div>
-                            </Col>
-                            <Col className="col-1 my-auto px-0 text-center">
-                                <div className="btn" onClick={() => this.sortBy('Year')}>Year</div>
-                            </Col>
-                        </Row>
-                        {roster}
-                    </>
-                    }
+                <SpinnerContainer loading={this.state.loading} className="roster-container">
+                    <Row className="header-row fixed-top">
+                        <Col className="col-2 my-auto px-0"/>
+                        <Col className="col-1 my-auto px-0">
+                            <div className="btn" onClick={() => this.sortBy('Number')}>#</div>
+                        </Col>
+                        <Col className="col-4 my-auto px-0">
+                            <div className="btn" onClick={() => this.sortBy('Name')}>Name</div>
+                        </Col>
+                        <Col className="col-1-5 my-auto px-0 text-center">
+                            <div className="btn" onClick={() => this.sortBy('Position')}>Pos</div>
+                        </Col>
+                        <Col className="col-1 my-auto px-0 text-center">
+                            <div className="btn" onClick={() => this.sortBy('Year')}>Year</div>
+                        </Col>
+                    </Row>
+                    {roster}
                     <div className="spacer"/>
-                </Container>
+                </SpinnerContainer>
             </div>
         );
     }

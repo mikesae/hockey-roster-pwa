@@ -1,4 +1,4 @@
-export interface ISpinnerProps {
+export interface ISpinnerContainerProps {
     loading: boolean;
     className: string;
 }

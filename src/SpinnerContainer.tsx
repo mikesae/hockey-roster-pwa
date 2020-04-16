@@ -1,27 +1,29 @@
 import React, {Component} from 'react';
 import {PulseLoader} from "react-spinners";
 import {css} from "@emotion/core";
-import {ISpinnerProps} from "./ISpinnerProps";
-import Container from "react-bootstrap/Container";
+import {ISpinnerContainerProps} from "./ISpinnerContainerProps";
+import {Container} from "react-bootstrap";
 
 const override = css`
   margin: 60% auto;
 `;
 
-export default class Spinner extends Component<ISpinnerProps> {
+export default class SpinnerContainer extends Component<ISpinnerContainerProps> {
     render() {
         return (
-            <div className={this.props.className}>
-                <PulseLoader
-                    css={override}
-                    size={25}
-                    color={"#00400e"}
-                    loading={this.props.loading}
-                />
-                { !this.props.loading &&
-                    <>{this.props.children}</>
+            <Container className={this.props.className}>
+                <div className="spinner-container">
+                    <PulseLoader
+                        css={override}
+                        size={25}
+                        color={"#00400e"}
+                        loading={this.props.loading}
+                    />
+                </div>
+                {!this.props.loading &&
+                <>{this.props.children}</>
                 }
-            </div>
+            </Container>
         )
     }
 }

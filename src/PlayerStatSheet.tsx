@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './Roster.scss';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
 import {PlayerStat} from './PlayerStat';
 import './StatSheet.scss';
@@ -11,6 +10,7 @@ import {IPlayerStatProps} from './IPlayerStatProps';
 import moment from 'moment';
 import players from './data/players.json';
 import {IPlayerStatSheetState} from "./IPlayerStatSheetState";
+import SpinnerContainer from "./SpinnerContainer";
 
 export default class PlayerStatSheet extends Component<any, IPlayerStatSheetState> {
 
@@ -23,14 +23,16 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
         this.state = {
             stats: [],
             sortColumn: 'Date',
-            sortDescending: true
+            sortDescending: true,
+            loading: true
         };
     }
 
     componentDidMount() {
         api.getPlayerStatistics(this.playerId).then(stats => {
             this.setState({
-                stats: stats
+                stats: stats,
+                loading: false
             })
         })
     }
@@ -97,7 +99,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
             <div className="page">
                 <TopNavbar title={`2019-20 ${player ? player.name : this.playerId}`} showBackNav={true}/>
                 <div className="spacer-for-header"/>
-                <Container className="roster-container player-stats-container">
+                <SpinnerContainer loading={this.state.loading} className="roster-container player-stats-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-3 my-auto px-0 text-left">
                             <div className="btn" onClick={() => this.sortBy('Date')}>Date</div>
@@ -120,7 +122,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
                     </Row>
                     {statistics}
                     <div className="spacer"/>
-                </Container>
+                </SpinnerContainer>
             </div>
         );
     }

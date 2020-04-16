@@ -4,7 +4,7 @@ import api from './utils/api';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import TopNavbar from './TopNavbar';
-import Container from 'react-bootstrap/Container';
+import SpinnerContainer from "./SpinnerContainer";
 
 interface IStanding {
     team: string;
@@ -16,27 +16,31 @@ interface IStanding {
     goalsFor: number;
     goalsAgainst: number;
     lastSix: string;
-    streak:  string;
+    streak: string;
     winPercentage: string;
 }
 
 export default class Standings extends Component {
     state = {
-        standings: []
+        standings: [],
+        loading: true
     };
 
     componentDidMount() {
         api.getStandings().then(standings => {
-            this.setState({standings: standings});
+            this.setState({
+                standings: standings,
+                loading: false
+            });
         });
     }
 
-    renderPoints(points:number) {
-        const pts:string = points.toString(points)
+    renderPoints(points: number) {
+        const pts: string = points.toString(points)
         return pts.replace(".5", "\u00bd")
     }
 
-    streak(streak:string) {
+    streak(streak: string) {
         return streak.replace("Won", "W").replace("Lost", "L")
     }
 
@@ -64,11 +68,11 @@ export default class Standings extends Component {
             })
         }
 
-        return(
+        return (
             <div className="page">
                 <TopNavbar title="2019-20 Standings" showBackNav={true}/>
                 <div className="spacer-for-header"/>
-                <Container className="standings-container">
+                <SpinnerContainer loading={this.state.loading} className="standings-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-3-5 my-auto px-1 text-left">
                             <div className="btn">Team</div>
@@ -97,7 +101,7 @@ export default class Standings extends Component {
                     </Row>
                     {renderableStandings}
                     <div className="spacer"/>
-                </Container>
+                </SpinnerContainer>
             </div>
         );
     }

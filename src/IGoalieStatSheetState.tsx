@@ -4,4 +4,5 @@ export interface IGoalieStatSheetState {
     stats: IGoalieStatProps[];
     sortColumn: string;
     sortDescending: boolean;
+    loading: boolean;
 }
