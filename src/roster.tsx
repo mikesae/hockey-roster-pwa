@@ -7,7 +7,12 @@ import Container from "react-bootstrap/Container";
 import TopNavbar from "./TopNavbar";
 import api from "./utils/api";
 import {IPlayerProps} from './IPlayerProps';
-import {ClipLoader, SyncLoader} from "react-spinners";
+import {PulseLoader} from "react-spinners";
+import {css} from "@emotion/core";
+
+const override = css`
+  margin: 60% auto;
+`;
 
 export default class Roster extends Component {
     state = {
@@ -72,9 +77,10 @@ export default class Roster extends Component {
                 <TopNavbar title="2019-20 Roster" showBackNav={false}/>
                 <div className="spacer-for-header"/>
                 <Container className="roster-container">
-                    <div className="sweet-loading">
-                        <SyncLoader
-                            size={150}
+                    <div className="spinner-container">
+                        <PulseLoader
+                            css={override}
+                            size={25}
                             color={"#00400e"}
                             loading={this.state.loading}
                         />
