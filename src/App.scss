@@ -23,10 +23,9 @@ body {
   margin: 0;
   height: $header-height;
   background-color: #CCCCCC !important;
-  font-weight: bold;
 
   .btn {
-    color: $highlight-color;
+    color: black;
     font-weight: bold;
     padding: 0 0.5em;
     background: none;
@@ -36,7 +35,10 @@ body {
 @media (prefers-color-scheme: dark) {
   .header-row {
     background-color: #333333 !important;
-    font-weight: bold;
+
+    .btn {
+      color: white;
+    }
   }
 }
 
