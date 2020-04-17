@@ -13,11 +13,13 @@ export default class Credits extends Component {
                 <Container className="container">
                     <FormGroup>
                         <div className="form-label">App</div>
-                        <div>Mike Saelens</div>
+                        <a className="btn-link" href="mailto:msaelens@gmail.com?subject=Shen Hockey App">Mike
+                            Saelens</a>
                     </FormGroup>
                     <FormGroup>
                         <div className="form-label">Player Photos</div>
-                        <div>Dave Hicks, Mike Saelens</div>
+                        <div>Dave Hicks,&nbsp;<a className="btn-link" href="https://mikes.smugmug.com">Mike Saelens</a>
+                        </div>
                     </FormGroup>
                     <FormGroup>
                         <div className="form-label">Thumbnail Photos</div>
@@ -37,6 +39,7 @@ export default class Credits extends Component {
                         <a className="btn-link" href="https://reactjs.org/">React</a>
                     </FormGroup>
                     <AppInfo/>
+                    <div className="spacer"/>
                 </Container>
             </div>
         );
