@@ -48,7 +48,7 @@ h3, h4 {
 @media (prefers-color-scheme: dark) {
   .roster-container, .schedule-container, .standings-container {
     .row:nth-child(even) {
-      background-color: $shen-green;
+      background-color: $highlight-color-background;
       color: white;
     }
 

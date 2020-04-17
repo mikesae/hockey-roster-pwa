@@ -8,17 +8,17 @@
 
 .nav-item {
   .link-icon, .icon-label {
-    color: rgba(0, 0, 0, 0.40);
+    color: $icon-color;
   }
 
   a.active {
     .link-icon, .icon-label {
       font-weight: bold;
-      color: rgba(0, 0, 0, 1.0);
+      color: $highlight-color;
     }
 
     .btn:hover {
-      color: rgba(255, 255, 255, 1.0);
+      color: $highlight-color;
     }
   }
 }
@@ -35,16 +35,16 @@
 @media (prefers-color-scheme: dark) {
   .nav-item {
     .link-icon, .icon-label {
-      color: rgba(255, 255, 255, 0.40);
+      color: $dark-mode-icon-color;
     }
 
     a.active {
       .link-icon, .icon-label {
-        color: rgba(255, 255, 255, 1.0);
+        color: $highlight-color;
       }
 
       .btn:hover {
-        color: $invert-link-color;
+        color: $highlight-color;
       }
     }
   }
