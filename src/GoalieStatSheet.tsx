@@ -11,6 +11,8 @@ import {IGoalieStatSheetState} from "./IGoalieStatSheetState";
 import {IGoalieStatProps} from "./IGoalieStatProps";
 import {GoalieStat} from "./GoalieStat";
 import SpinnerContainer from "./SpinnerContainer";
+import {faSort} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default class GoalieStatSheet extends Component<any, IGoalieStatSheetState> {
 
@@ -73,7 +75,6 @@ export default class GoalieStatSheet extends Component<any, IGoalieStatSheetStat
             case 'Saves':
                 result = result.sort((a, b) => a.Saves - b.Saves);
                 break;
-
             case 'Percentage':
                 result = result.sort((a, b) => a.Percentage - b.Percentage);
                 break;
@@ -102,25 +103,34 @@ export default class GoalieStatSheet extends Component<any, IGoalieStatSheetStat
                 <SpinnerContainer loading={this.state.loading} className="roster-container player-stats-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-2-5 my-auto px-0 text-left">
-                            <div className="btn" onClick={() => this.sortBy('Date')}>Date</div>
+                            <span className="btn" onClick={() => this.sortBy('Date')}>
+                                Date<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
                         <Col className="col-3 my-auto px-0 text-left">
-                            <div className="btn" onClick={() => this.sortBy('Opponent')}>Opponent</div>
+                            <span className="btn" onClick={() => this.sortBy('Opponent')}>
+                                Opp<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
                         <Col className="col-1-5 my-auto px-0 text-center">
-                            <div className="btn" onClick={() => this.sortBy('Result')}>Score</div>
-                        </Col>
-                        <Col className="col-1 my-auto px-0 text-right">
-                            <div className="btn" onClick={() => this.sortBy('Min')}>Min</div>
-                        </Col>
-                        <Col className="col-1 my-auto px-0 text-right">
-                            <div className="btn" onClick={() => this.sortBy('GA')}>GA</div>
-                        </Col>
-                        <Col className="col-1 my-auto px-0 text-right">
-                            <div className="btn" onClick={() => this.sortBy('Saves')}>S</div>
+                            <span className="btn" onClick={() => this.sortBy('Result')}>
+                                WL<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
                         <Col className="col-1-5 my-auto px-0 text-right">
-                            <div className="btn" onClick={() => this.sortBy('Pct')}>Pct</div>
+                            <span className="btn" onClick={() => this.sortBy('Min')}>
+                                M<FontAwesomeIcon icon={faSort}/>
+                            </span>
+                        </Col>
+                        <Col className="col-2 my-auto px-0 text-right">
+                            <span className="btn" onClick={() => this.sortBy('Goals')}>
+                                G/S<FontAwesomeIcon icon={faSort}/>
+                            </span>
+                        </Col>
+                        <Col className="col my-auto px-0 text-right">
+                            <span className="btn" onClick={() => this.sortBy('Percentage')}>
+                                %<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
                     </Row>
                     {statistics}

@@ -9,12 +9,12 @@ export class PlayerStat extends Component<IPlayerStatProps> {
     render() {
         return (
             <Row>
-                <Col className="col-3 px-0 my-auto">{formatGameDate(this.props.GameDate)}</Col>
-                <Col className="col-4 px-0 my-auto">{formatOpponent(this.props.Opponent)}</Col>
-                <Col className="col-1 px-0 my-auto text-right">{this.props.Goals}</Col>
-                <Col className="col-1 px-0 my-auto text-right">{this.props.Assists}</Col>
-                <Col className="col-1 px-0 my-auto text-right">{this.props.Goals + this.props.Assists}</Col>
-                <Col className="col-1 px-0 my-auto text-right">{formatPlusMinus(this.props.PlusMinus)}</Col>
+                <Col className="col-2-5 px-0 my-auto">{formatGameDate(this.props.GameDate)}</Col>
+                <Col className="col-3-5 px-0 my-auto">{formatOpponent(this.props.Opponent)}</Col>
+                <Col className="col-1-5 px-0 my-auto text-center">{this.props.Goals}</Col>
+                <Col className="col-1-5 px-0 my-auto text-center">{this.props.Assists}</Col>
+                <Col className="col-1-5 px-0 my-auto text-center">{this.props.Goals + this.props.Assists}</Col>
+                <Col className="col-1-5 px-0 my-auto text-center">{formatPlusMinus(this.props.PlusMinus)}</Col>
             </Row>
         );
     }

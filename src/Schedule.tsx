@@ -8,6 +8,8 @@ import {IScheduleItemProps} from './IScheduleItemProps';
 import moment from 'moment';
 import api from './utils/api';
 import SpinnerContainer from "./SpinnerContainer";
+import {faSort} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default class Schedule extends Component {
     state = {
@@ -81,13 +83,19 @@ export default class Schedule extends Component {
                 <SpinnerContainer loading={this.state.loading} className="schedule-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-3 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Date')}>Date</div>
+                            <span className="btn" onClick={() => this.sortBy('Date')}>
+                                Date<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
                         <Col className="col-7 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Opponent')}>Opponent</div>
+                            <span className="btn" onClick={() => this.sortBy('Opponent')}>
+                                Opponent<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
                         <Col className="col-2 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Result')}>Result</div>
+                            <span className="btn" onClick={() => this.sortBy('Result')}>
+                                W/L<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
                     </Row>
                     {schedule}
