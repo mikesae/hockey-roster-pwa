@@ -7,13 +7,6 @@ body {
   -webkit-touch-callout: none;
 }
 
-.container-table {
-  background-image: url('logo.jpg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100%;
-}
-
 .jumbotron-fluid {
   background-color: white;
 }
@@ -29,10 +22,19 @@ body {
     font-weight: bold;
     padding: 0 0.5em 0 0;
     background: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     svg {
       margin-left: 0.25em;
     }
+  }
+}
+
+.container {
+  .col {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -57,8 +59,6 @@ body {
 }
 
 .nav-item {
-  padding: 0 10px;
-
   a {
     color: $icon-color;
   }

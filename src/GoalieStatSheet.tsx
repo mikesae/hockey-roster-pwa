@@ -108,7 +108,7 @@ export default class GoalieStatSheet extends Component<any, IGoalieStatSheetStat
                             <div className="btn" onClick={() => this.sortBy('Opponent')}>Opponent</div>
                         </Col>
                         <Col className="col-1-5 my-auto px-0 text-center">
-                            <div className="btn" onClick={() => this.sortBy('Result')}>Result</div>
+                            <div className="btn" onClick={() => this.sortBy('Result')}>Score</div>
                         </Col>
                         <Col className="col-1 my-auto px-0 text-right">
                             <div className="btn" onClick={() => this.sortBy('Min')}>Min</div>

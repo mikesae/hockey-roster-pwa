@@ -88,7 +88,7 @@ export default class Roster extends Component {
                         </Col>
                         <Col className="col-1-5 my-auto px-0 text-center">
                             <span className="btn" onClick={() => this.sortBy('Position')}>
-                                Po<FontAwesomeIcon icon={faSort}/>
+                                P<FontAwesomeIcon icon={faSort}/>
                             </span>
                         </Col>
                         <Col className="col-2 my-auto px-0 text-left">
