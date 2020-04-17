@@ -25,7 +25,7 @@ export class PlayerSummary extends Component<IPlayerProps> {
                         <Image roundedCircle thumbnail src={this.props.imageUrl} alt={this.props.name}/>
                     </Link>
                 </Col>
-                <Col className="col-1 px-0 my-auto">{this.props.uniformNumber}</Col>
+                <Col className="col-1-5 px-0 my-auto">{this.props.uniformNumber}</Col>
                 <Col className="col-4 px-0 my-auto">
                     <Link to={{pathname: `/player/${this.props.uniformNumber}`}}>
                         {this.props.name}

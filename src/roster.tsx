@@ -7,6 +7,8 @@ import TopNavbar from "./TopNavbar";
 import api from "./utils/api";
 import {IPlayerProps} from './IPlayerProps';
 import SpinnerContainer from "./SpinnerContainer";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faSort} from "@fortawesome/free-solid-svg-icons";
 
 
 export default class Roster extends Component {
@@ -74,17 +76,25 @@ export default class Roster extends Component {
                 <SpinnerContainer loading={this.state.loading} className="roster-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-2 my-auto px-0"/>
-                        <Col className="col-1 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Number')}>#</div>
+                        <Col className="col-1-5 my-auto px-0">
+                            <span className="btn" onClick={() => this.sortBy('Number')}>
+                                #<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
-                        <Col className="col-4 my-auto px-0">
-                            <div className="btn" onClick={() => this.sortBy('Name')}>Name</div>
+                        <Col className="col-4 my-auto px-0 text-left">
+                            <span className="btn" onClick={() => this.sortBy('Name')}>
+                                Name<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
                         <Col className="col-1-5 my-auto px-0 text-center">
-                            <div className="btn" onClick={() => this.sortBy('Position')}>Pos</div>
+                            <span className="btn" onClick={() => this.sortBy('Position')}>
+                                Po<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
-                        <Col className="col-1 my-auto px-0 text-center">
-                            <div className="btn" onClick={() => this.sortBy('Year')}>Year</div>
+                        <Col className="col-2 my-auto px-0 text-left">
+                            <span className="btn" onClick={() => this.sortBy('Year')}>
+                                Yr<FontAwesomeIcon icon={faSort}/>
+                            </span>
                         </Col>
                     </Row>
                     {roster}
