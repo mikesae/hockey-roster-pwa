@@ -2,8 +2,9 @@ const tabletojson = require('tabletojson').Tabletojson;
 const url = 'https://www.section2hockey.com/teams/default.asp?s=hockey&u=CDHSHL&p=profile&sportsHQ=SEC2PLAINSMEN';
 
 exports.handler = async event => {
-    const playerId = event.queryStringParameters.playerId;
-    const season = event.queryStringParameters.season || 'Winter_2019%2F2020';
+    const parameters = event.queryStringParameters;
+    const playerId = parameters.playerId;
+    const season = parameters.season || 'Winter_2019%2F2020';
 
     return await new Promise(resolve => {
         tabletojson.convertUrl(
