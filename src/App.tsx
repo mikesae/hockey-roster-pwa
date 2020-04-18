@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import BottomNavbar from './BottomNavbar';
-import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import Roster from './roster';
 import Credits from './credits';
 import Schedule from './Schedule';
@@ -11,6 +10,7 @@ import { PlayerDetail } from './PlayerDetail';
 import PlayerStatSheet from './PlayerStatSheet';
 import GoalieStatSheet from './GoalieStatSheet';
 import './transitions.scss';
+import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 
 export default class App extends Component {
     render() {
@@ -18,7 +18,7 @@ export default class App extends Component {
             <BrowserRouter>
                 <Route
                     render={({location}) => (
-                        <ReactCSSTransitionReplace
+                        <CSSTransitionGroup
                             transitionName="cross-fade"
                             transitionEnterTimeout={1000}
                             transitionLeaveTimeout={1000}
@@ -34,7 +34,7 @@ export default class App extends Component {
                                     <Route path="/goalie-stat-sheet/:playerId" component={GoalieStatSheet}/>
                                 </Switch>
                             </div>
-                        </ReactCSSTransitionReplace>
+                        </CSSTransitionGroup>
                     )}
                 />
                 <BottomNavbar/>
