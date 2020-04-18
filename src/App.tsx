@@ -26,9 +26,9 @@ export default class App extends Component {
                             <div key={location.pathname}>
                                 <Switch location={location}>
                                     <Route path="/" exact component={Roster}/>
-                                    <Route path="/Credits" component={Credits}/>
-                                    <Route path="/Schedule" component={Schedule}/>
-                                    <Route path="/Standings" component={Standings}/>
+                                    <Route path="/credits" component={Credits}/>
+                                    <Route path="/schedule" component={Schedule}/>
+                                    <Route path="/standings" component={Standings}/>
                                     <Route path="/player/:number" component={PlayerDetail}/>
                                     <Route path="/player-stat-sheet/:playerId" component={PlayerStatSheet}/>
                                     <Route path="/goalie-stat-sheet/:playerId" component={GoalieStatSheet}/>
