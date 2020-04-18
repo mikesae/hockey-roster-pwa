@@ -1,6 +1,6 @@
 {
   "name": "hockey-roster-pwa",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.28",
@@ -13,6 +13,7 @@
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
+    "@types/react-css-transition-replace": "^2.1.3",
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.3",
     "bootstrap": "^4.4.1",
@@ -22,6 +23,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0-beta.16",
+    "react-css-transition-replace": "^4.0.2",
     "react-dom": "^16.12.0",
     "react-moment": "^0.9.7",
     "react-pose": "^4.0.10",
