@@ -20,8 +20,8 @@ export default class App extends Component {
                     render={({location}) => (
                         <ReactCSSTransitionReplace
                             transitionName="cross-fade"
-                            transitionEnterTimeout={800}
-                            transitionLeaveTimeout={800}
+                            transitionEnterTimeout={1000}
+                            transitionLeaveTimeout={1000}
                         >
                             <div key={location.pathname}>
                                 <Switch location={location}>
