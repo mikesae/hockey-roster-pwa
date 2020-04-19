@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-router-dom";
 import {IPlayerProps} from "./IPlayerProps";
 import {faUser} from '@fortawesome/free-solid-svg-icons/faUser';
-import {faHockeyPuck} from "@fortawesome/free-solid-svg-icons/faHockeyPuck";
+import {faChartBar} from "@fortawesome/free-solid-svg-icons/faChartBar";
 
 export class PlayerSummary extends Component<IPlayerProps> {
     private YearMap = new Map([
@@ -25,7 +25,7 @@ export class PlayerSummary extends Component<IPlayerProps> {
                         <Image roundedCircle thumbnail src={this.props.imageUrl} alt={this.props.name}/>
                     </Link>
                 </Col>
-                <Col className="col-1-5 px-0 my-auto">{this.props.uniformNumber}</Col>
+                <Col className="col-1-5 px-1 my-auto"><b>{this.props.uniformNumber}</b></Col>
                 <Col className="col-4 px-0 my-auto">
                     <Link to={{pathname: `/player/${this.props.uniformNumber}`}}>
                         {this.props.name}
@@ -41,11 +41,11 @@ export class PlayerSummary extends Component<IPlayerProps> {
                 <Col className="col-1 px-0 my-auto">
                     {this.props.position === 'G'
                         ? <Link to={{pathname: `/goalie-stat-sheet/${this.props.playerId}`}}>
-                            <FontAwesomeIcon icon={faHockeyPuck}/>
+                            <FontAwesomeIcon icon={faChartBar}/>
                         </Link>
                         :
                         <Link to={{pathname: `/player-stat-sheet/${this.props.playerId}`}}>
-                            <FontAwesomeIcon icon={faHockeyPuck}/>
+                            <FontAwesomeIcon icon={faChartBar}/>
                         </Link>
                     }
                 </Col>

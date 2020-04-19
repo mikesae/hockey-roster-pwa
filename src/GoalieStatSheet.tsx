@@ -100,7 +100,7 @@ export default class GoalieStatSheet extends Component<any, IGoalieStatSheetStat
             <div className="page">
                 <TopNavbar title={`2019-20 ${player.name}`} showBackNav={true}/>
                 <div className="spacer-for-header"/>
-                <SpinnerContainer loading={this.state.loading} className="roster-container player-stats-container">
+                <SpinnerContainer loading={this.state.loading} className="player-stats-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-2-5 my-auto px-0 text-left">
                             <span className="btn" onClick={() => this.sortBy('Date')}>

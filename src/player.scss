@@ -1,6 +1,10 @@
 @import 'theme';
 
-.roster-container, .schedule-container, .standings-container {
+.container {
+  .row:not(:first-child) {
+    padding: 0.2em;
+  }
+
   .row:nth-child(even) {
     background-color: #E2EFD9;
   }
@@ -46,7 +50,7 @@ h3, h4 {
 }
 
 @media (prefers-color-scheme: dark) {
-  .roster-container, .schedule-container, .standings-container {
+  .container {
     .row:nth-child(even) {
       background-color: $highlight-color-background;
       color: white;

@@ -1,19 +1,5 @@
-@import 'theme';
-
-// All landscape
-@media only screen and (orientation: landscape)  {
-  .roster-container, .schedule-container, .standings-container {
-    max-width: 100%;
-  }
-}
-
- // iPad
-@media only screen
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px)
-  and (orientation: portrait)
-{
-  .roster-container, .schedule-container, .standings-container {
-    max-width: 100%;
+.roster-container {
+  .row:not(:first-child) {
+    padding: 0.25em 0.5em;
   }
 }

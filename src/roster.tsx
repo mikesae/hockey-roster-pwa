@@ -76,7 +76,7 @@ export default class Roster extends Component {
                 <SpinnerContainer loading={this.state.loading} className="roster-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-2 my-auto px-0"/>
-                        <Col className="col-1-5 my-auto px-0">
+                        <Col className="col-1-5 my-auto px-1 text-left">
                             <span className="btn" onClick={() => this.sortBy('Number')}>
                                 #<FontAwesomeIcon icon={faSort}/>
                             </span>
@@ -86,12 +86,12 @@ export default class Roster extends Component {
                                 Name<FontAwesomeIcon icon={faSort}/>
                             </span>
                         </Col>
-                        <Col className="col-1-5 my-auto px-0 text-center">
+                        <Col className="col-1-5 my-auto px-0 text-right">
                             <span className="btn" onClick={() => this.sortBy('Position')}>
                                 P<FontAwesomeIcon icon={faSort}/>
                             </span>
                         </Col>
-                        <Col className="col-2 my-auto px-0 text-left">
+                        <Col className="col-2 my-auto px-0 text-center">
                             <span className="btn" onClick={() => this.sortBy('Year')}>
                                 Yr<FontAwesomeIcon icon={faSort}/>
                             </span>

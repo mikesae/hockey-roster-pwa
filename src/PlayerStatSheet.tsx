@@ -101,7 +101,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
             <div className="page">
                 <TopNavbar title={`2019-20 ${player ? player.name : this.playerId}`} showBackNav={true}/>
                 <div className="spacer-for-header"/>
-                <SpinnerContainer loading={this.state.loading} className="roster-container player-stats-container">
+                <SpinnerContainer loading={this.state.loading} className="player-stats-container">
                     <Row className="header-row fixed-top">
                         <Col className="col-2-5 my-auto px-0">
                             <span className="btn" onClick={() => this.sortBy('Date')}>
