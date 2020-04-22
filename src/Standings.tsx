@@ -52,9 +52,12 @@ export default class Standings extends Component {
                 <Col className="col-1-5 my-auto px-0 text-left">{standing.conferenceRecord}</Col>
                 <Col className="col-1 my-auto px-0 text-left">{this.renderPoints(standing.conferencePoints)}</Col>
                 <Col className="col-1-5 my-auto px-0 text-left">{standing.overallRecord}</Col>
-                <Col className="col-1-5 my-auto px-0 text-left">{standing.goalsFor}/{standing.goalsAgainst}</Col>
+                <Col className="col-1 my-auto px-0 text-left">
+                    <div css="display: block;">{standing.goalsFor}</div>
+                    <div>{standing.goalsAgainst}</div>
+                </Col>
                 <Col className="col-1 my-auto px-0 text-left">{this.streak(standing.streak)}</Col>
-                <Col className="col-0-5 my-auto px-0 text-left">{standing.winPercentage}</Col>
+                <Col className="col-1 my-auto px-0 text-left">{standing.winPercentage}</Col>
             </Row>
         );
     }
@@ -89,13 +92,13 @@ export default class Standings extends Component {
                         <Col className="col-1-5 my-auto px-0 text-left">
                             <div className="btn">Ovl</div>
                         </Col>
-                        <Col className="col-1-5 my-auto px-0 text-left">
-                            <div className="btn">GF/A</div>
+                        <Col className="col-1 my-auto px-0 text-left">
+                            <div className="btn">F/A</div>
                         </Col>
                         <Col className="col-1 my-auto px-0 text-left">
                             <div className="btn">Str</div>
                         </Col>
-                        <Col className="col-0-5 my-auto px-0 text-left">
+                        <Col className="col-1 my-auto px-0 text-left">
                             <div className="btn">%</div>
                         </Col>
                     </Row>
