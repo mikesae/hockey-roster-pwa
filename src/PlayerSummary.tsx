@@ -11,10 +11,10 @@ import {faChartBar} from "@fortawesome/free-solid-svg-icons/faChartBar";
 
 export class PlayerSummary extends Component<IPlayerProps> {
     private YearMap = new Map([
-        ['2020', 'Sr.'],
-        ['2021', 'Jr.'],
-        ['2022', 'So.'],
-        ['2023', 'Fr.']
+        ['2021', 'Sr.'],
+        ['2022', 'Jr.'],
+        ['2023', 'So.'],
+        ['2024', 'Fr.']
     ]);
 
     render() {

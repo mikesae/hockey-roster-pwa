@@ -73,7 +73,7 @@ export default class Standings extends Component {
 
         return (
             <div className="page">
-                <TopNavbar title="2019-20 Standings" showBackNav={true}/>
+                <TopNavbar title="2020-21 Standings" showBackNav={true}/>
                 <div className="spacer-for-header"/>
                 <SpinnerContainer loading={this.state.loading} className="standings-container">
                     <Row className="header-row fixed-top">

@@ -78,7 +78,7 @@ export default class Schedule extends Component {
 
         return (
             <div className="page">
-                <TopNavbar title="2019-20 Schedule" showBackNav={true}/>
+                <TopNavbar title="2020-21 Schedule" showBackNav={true}/>
                 <div className="spacer-for-header"/>
                 <SpinnerContainer loading={this.state.loading} className="schedule-container">
                     <Row className="header-row fixed-top">
