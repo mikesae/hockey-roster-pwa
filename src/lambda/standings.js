@@ -2,7 +2,7 @@ const tabletojson = require('tabletojson').Tabletojson;
 const standingsUrl = 'https://www.section2hockey.com/teams/default.asp?u=CDHSHL&s=hockey';
 
 exports.handler = async event => {
-    const season = event.queryStringParameters.season || 'Winter_2019%2F2020';
+    const season = event.queryStringParameters.season || 'Winter_2020%2F2021';
 
     const streak = (value) =>
         value.replace("Won ", "W").replace("Lost ", "L");

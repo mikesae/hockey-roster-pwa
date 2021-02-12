@@ -10,10 +10,10 @@ import {faMusic} from "@fortawesome/free-solid-svg-icons/faMusic";
 
 export class PlayerDetail extends Component {
     private YearMap = new Map([
-        ['2020', 'Senior'],
-        ['2021', 'Junior'],
-        ['2022', 'Sophomore'],
-        ['2023', 'Freshman']
+        ['2021', 'Senior'],
+        ['2022', 'Junior'],
+        ['2023', 'Sophomore'],
+        ['2024', 'Freshman']
     ]);
 
     private PositionMap = new Map([

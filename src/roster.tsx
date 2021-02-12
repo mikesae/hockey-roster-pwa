@@ -71,7 +71,7 @@ export default class Roster extends Component {
 
         return (
             <div className="page">
-                <TopNavbar title="2019-20 Roster" showBackNav={false}/>
+                <TopNavbar title="2020-21 Roster" showBackNav={false}/>
                 <div className="spacer-for-header"/>
                 <SpinnerContainer loading={this.state.loading} className="roster-container">
                     <Row className="header-row fixed-top">
