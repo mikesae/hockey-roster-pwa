@@ -98,7 +98,7 @@ export default class GoalieStatSheet extends Component<any, IGoalieStatSheetStat
 
         return (
             <div className="page">
-                <TopNavbar title={`2020-21 ${player.name}`} showBackNav={true}/>
+                <TopNavbar title={`2019-20 ${player.name}`} showBackNav={true}/>
                 <div className="spacer-for-header"/>
                 <SpinnerContainer loading={this.state.loading} className="player-stats-container">
                     <Row className="header-row fixed-top">
