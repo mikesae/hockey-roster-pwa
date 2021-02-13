@@ -12,8 +12,8 @@ exports.handler = async () => {
                     "type": "Game",
                     "home": true,
                     "section": "II",
-                    "result": "",
-                    "location": "Clifton Park Arena",
+                    "result": "W 3-1",
+                    "location": "Capital Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena",
                     "liveFeedUrl:": "https://www.livebarn.com/en/videon?mode=live&sid=409"
                 },
@@ -41,7 +41,7 @@ exports.handler = async () => {
                     "home": true,
                     "section": "II",
                     "result": "",
-                    "location": "Clifton Park Arena",
+                    "location": "Capital Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena",
                     "liveFeedUrl:": "https://www.livebarn.com/en/videon?mode=live&sid=409"
                 },
@@ -85,6 +85,33 @@ exports.handler = async () => {
                     "result": "",
                     "location": "Schenectady County Rec Facility",
                     "locationUrl": "https://maps.apple.com/?q=SCRF",
+                    "liveFeedUrl:": "https://www.livebarn.com/en/videon/?mode=live&sid=354"
+                },               {
+                    "day": "Fri",
+                    "date": "2/26/21",
+                    "time": "3:30 PM",
+                    "opponent": "Adirondack",
+                    "logoUrl": "/images/team-logos/adirondack.png",
+                    "type": "Away",
+                    "home": false,
+                    "section": "II",
+                    "result": "",
+                    "location": "Glens Falls Rec Center",
+                    "locationUrl": "https://maps.apple.com/?q=Glens+Falls+Rec+Center",
+                    "liveFeedUrl:": "https://www.livebarn.com/en/videon?mode=live&sid=409"
+                },
+                {
+                    "day": "Sat",
+                    "date": "2/27/21",
+                    "time": "7:00 PM",
+                    "opponent": "Adirondack",
+                    "logoUrl": "/images/team-logos/adirondack.png",
+                    "type": "Home",
+                    "home": true,
+                    "section": "II",
+                    "result": "",
+                    "location": "Capital Arena",
+                    "locationUrl": "https://maps.apple.com/?q=Capital+Arena",
                     "liveFeedUrl:": "https://www.livebarn.com/en/videon/?mode=live&sid=354"
                 }
             ]
