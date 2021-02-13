@@ -10,23 +10,26 @@ exports.handler = async event => {
             `${url}&viewseas=${season}&playerId=${playerId}`,
             { useFirstRowForHeadings: true },
             tablesAsJson => {
-                const rows = tablesAsJson[9].slice(1);
                 let result = [];
-                rows.forEach(row => {
-                    result.push(
-                    {
-                        GameDate: row["Date"],
-                        Opponent: row["Opponent"],
-                        Result: row["Result"],
-                        Goals: parseInt(row["G"] || 0),
-                        Assists: parseInt(row["A"] || 0),
-                        Points: parseInt(row["Pts"] || 0),
-                        PPG: parseInt(row["PPG"]),
-                        GWG: parseInt(row["GWG"]),
-                        GTG: parseInt(row["GTG"]),
-                        PlusMinus: parseInt(row["+/-"] || 0)
+                if (tablesAsJson != null && tablesAsJson.length > 8) {
+                    const rows = tablesAsJson[9].slice(1);
+
+                    rows.forEach(row => {
+                        result.push(
+                            {
+                                GameDate: row["Date"],
+                                Opponent: row["Opponent"],
+                                Result: row["Result"],
+                                Goals: parseInt(row["G"] || 0),
+                                Assists: parseInt(row["A"] || 0),
+                                Points: parseInt(row["Pts"] || 0),
+                                PPG: parseInt(row["PPG"]),
+                                GWG: parseInt(row["GWG"]),
+                                GTG: parseInt(row["GTG"]),
+                                PlusMinus: parseInt(row["+/-"] || 0)
+                            });
                     });
-                });
+                }
 
                 resolve({
                     statusCode: 200,

@@ -35,7 +35,12 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
             this.setState({
                 stats: stats,
                 loading: false
-            })
+            });
+        }).catch(reason => {
+            this.setState({
+                stats: [],
+                loading: false
+            });
         })
     }
 
@@ -99,7 +104,7 @@ export default class PlayerStatSheet extends Component<any, IPlayerStatSheetStat
 
         return (
             <div className="page">
-                <TopNavbar title={`2020-21 ${player ? player.name : this.playerId}`} showBackNav={true}/>
+                <TopNavbar title={`2019-20 ${player ? player.name : this.playerId}`} showBackNav={true}/>
                 <div className="spacer-for-header"/>
                 <SpinnerContainer loading={this.state.loading} className="player-stats-container">
                     <Row className="header-row fixed-top">
