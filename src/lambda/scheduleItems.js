@@ -48,7 +48,7 @@ exports.handler = async () => {
                 {
                     "day": "Wed",
                     "date": "2/17/21",
-                    "time": "8?30 PM",
+                    "time": "8:30 PM",
                     "opponent": "Saratoga",
                     "logoUrl": "/images/team-logos/saratoga.png",
                     "type": "Away",
