@@ -49,6 +49,11 @@ h3, h4 {
   text-align: center;
 }
 
+a.disabled-link {
+  pointer-events: none;
+  color: gray;
+}
+
 @media (prefers-color-scheme: dark) {
   .container {
     .row:nth-child(even) {
@@ -66,5 +71,4 @@ h3, h4 {
     background: black !important;
     border-color: black !important;
   }
-
 }

@@ -5,4 +5,5 @@ export interface IPlayerProps {
     position: string;
     year: string;
     imageUrl?: string;
+    noStatistics?: boolean;
 }

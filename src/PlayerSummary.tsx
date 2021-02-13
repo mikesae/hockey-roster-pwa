@@ -39,12 +39,13 @@ export class PlayerSummary extends Component<IPlayerProps> {
                     </Link>
                 </Col>
                 <Col className="col-1 px-0 my-auto">
-                    {this.props.position === 'G'
-                        ? <Link to={{pathname: `/goalie-stat-sheet/${this.props.playerId}`}}>
+                    {
+                        this.props.position === 'G'
+                        ? <Link className={this.props.noStatistics ? 'disabled-link' : ''} to={{pathname: `/goalie-stat-sheet/${this.props.playerId}`}}>
                             <FontAwesomeIcon icon={faChartBar}/>
                         </Link>
                         :
-                        <Link to={{pathname: `/player-stat-sheet/${this.props.playerId}`}}>
+                        <Link className={this.props.noStatistics ? 'disabled-link' : ''} to={{pathname: `/player-stat-sheet/${this.props.playerId}`}}>
                             <FontAwesomeIcon icon={faChartBar}/>
                         </Link>
                     }
