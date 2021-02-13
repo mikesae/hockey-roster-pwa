@@ -106,6 +106,36 @@ export class PlayerDetail extends Component {
                             <div>{player.parents}</div>
                         </div>
                         }
+                        {player.favoriteSnack &&
+                        <div className="mb-2">
+                            <div className="player-form-label">Favorite Snack</div>
+                            <div>{player.favoriteSnack}</div>
+                        </div>
+                        }
+                        {player.favoriteCartoonCharacter &&
+                        <div className="mb-2">
+                            <div className="player-form-label">Favorite Cartoon Character</div>
+                            <div>{player.favoriteCartoonCharacter}</div>
+                        </div>
+                        }
+                        {player.favoriteMusicalArtist &&
+                        <div className="mb-2">
+                            <div className="player-form-label">Favorite Musical Artist</div>
+                            <div>{player.favoriteMusicalArtist}</div>
+                        </div>
+                        }
+                        {player.hobbyOutsideHockey &&
+                        <div className="mb-2">
+                            <div className="player-form-label">Hobby Outside Hockey</div>
+                            <div>{player.hobbyOutsideHockey}</div>
+                        </div>
+                        }
+                        {player.bestThingYouCanCook &&
+                        <div className="mb-2">
+                            <div className="player-form-label">Best Thing You Can Cook</div>
+                            <div>{player.bestThingYouCanCook}</div>
+                        </div>
+                        }
                         { player.detailImageCredit &&
                             <span className="small">Photo credit: {player.detailImageCredit}</span>
                         }
