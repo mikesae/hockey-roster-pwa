@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './SpinnerContainer.scss';
 import {PulseLoader} from "react-spinners";
 import {css} from "@emotion/core";
 import {ISpinnerContainerProps} from "./ISpinnerContainerProps";
