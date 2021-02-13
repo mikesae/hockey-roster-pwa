@@ -86,12 +86,12 @@ export default class Roster extends Component {
                                 Name<FontAwesomeIcon icon={faSort}/>
                             </span>
                         </Col>
-                        <Col className="col-1-5 my-auto px-0 text-right">
+                        <Col className="col-1-5 my-auto px-0 text-left">
                             <span className="btn" onClick={() => this.sortBy('Position')}>
                                 P<FontAwesomeIcon icon={faSort}/>
                             </span>
                         </Col>
-                        <Col className="col-2 my-auto px-0 text-center">
+                        <Col className="col-2 my-auto px-0 text-left">
                             <span className="btn" onClick={() => this.sortBy('Year')}>
                                 Yr<FontAwesomeIcon icon={faSort}/>
                             </span>
