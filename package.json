@@ -1,6 +1,6 @@
 {
   "name": "hockey-roster-pwa",
-  "version": "3.4.0",
+  "version": "2021.6",
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.28",
