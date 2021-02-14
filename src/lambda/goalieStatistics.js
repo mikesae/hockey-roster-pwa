@@ -4,7 +4,7 @@ const url = 'https://www.section2hockey.com/teams/default.asp?s=hockey&u=CDHSHL&
 exports.handler = async event => {
     const parameters = event.queryStringParameters;
     const playerId = parameters.playerId;
-    const season = parameters.season || 'Winter_2019%2F2020';
+    const season = parameters.season || 'Winter_2020%2F2021';
 
     return await new Promise(resolve => {
         tabletojson.convertUrl(
