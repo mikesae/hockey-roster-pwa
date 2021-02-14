@@ -5,8 +5,6 @@ import Container from "react-bootstrap/Container";
 import Image from 'react-bootstrap/Image';
 import FormGroup from "react-bootstrap/esm/FormGroup";
 import TopNavbar from "./TopNavbar";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMusic} from "@fortawesome/free-solid-svg-icons/faMusic";
 
 export class PlayerDetail extends Component {
     private YearMap = new Map([
@@ -51,61 +49,6 @@ export class PlayerDetail extends Component {
                         <div className="text-center">
                             <span>{this.YearMap.get(player.year)} | {this.PositionMap.get(player.position)} </span>
                         </div>
-                        {player.nickname &&
-                        <div>
-                            <div className="player-form-label">A.K.A.</div>
-                            <div>"{player.nickname}"</div>
-                        </div>
-                        }
-                        {player.pumpUpSong &&
-                        <div>
-                            <div className="player-form-label">Pump-Up Song</div>
-                            <div><q>{player.pumpUpSong}</q> by {player.pumpUpSongArtist}
-                                <a href={player.pumpUpSongUrl}>
-                                    <Image className="image-music" src="/spotify-icon.png"/>
-                                </a>
-                                <a href={player.pumpUpSongItunesUrl}>
-                                    <FontAwesomeIcon className="image-music" icon={faMusic}/>
-                                </a>
-                                </div>
-                            </div>
-                        }
-                        {player.favoriteFood &&
-                            <div>
-                                <div className="player-form-label">Favorite Food</div>
-                                <div>{player.favoriteFood}</div>
-                            </div>
-                        }
-                        { player.favoriteTVShow &&
-                            <div>
-                                <div className="player-form-label">Favorite TV Show/Movie</div>
-                                <div>{player.favoriteTVShow}</div>
-                            </div>
-                        }
-                        {player.spiritAnimal &&
-                            <div>
-                                <div className="player-form-label">Spirit Animal</div>
-                                <div>{player.spiritAnimal}</div>
-                            </div>
-                        }
-                        {player.wordsOfWisdom &&
-                            <div>
-                                <div className="player-form-label">Words of Wisdom</div>
-                                <div><q>{player.wordsOfWisdom}</q> -<i>{player.wordsOfWisdomAttribute}</i></div>
-                            </div>
-                        }
-                        {player.wordsOfGratitude &&
-                            <div>
-                                <div className="player-form-label">Words of Gratitude</div>
-                                <div>{player.wordsOfGratitude}</div>
-                            </div>
-                        }
-                        {player.parents &&
-                        <div className="mb-2">
-                            <div className="player-form-label">Parents' Names</div>
-                            <div>{player.parents}</div>
-                        </div>
-                        }
                         {player.favoriteSnack &&
                         <div className="mb-2">
                             <div className="player-form-label">Favorite Snack</div>
@@ -113,28 +56,28 @@ export class PlayerDetail extends Component {
                         </div>
                         }
                         {player.favoriteCartoonCharacter &&
-                        <div className="mb-2">
-                            <div className="player-form-label">Favorite Cartoon Character</div>
-                            <div>{player.favoriteCartoonCharacter}</div>
-                        </div>
+                            <div className="mb-2">
+                                <div className="player-form-label">Favorite Cartoon Character</div>
+                                <div>{player.favoriteCartoonCharacter}</div>
+                            </div>
                         }
                         {player.favoriteMusicalArtist &&
-                        <div className="mb-2">
-                            <div className="player-form-label">Favorite Musical Artist</div>
-                            <div>{player.favoriteMusicalArtist}</div>
-                        </div>
+                            <div className="mb-2">
+                                <div className="player-form-label">Favorite Musical Artist</div>
+                                <div>{player.favoriteMusicalArtist}</div>
+                            </div>
                         }
                         {player.hobbyOutsideHockey &&
-                        <div className="mb-2">
-                            <div className="player-form-label">Hobby Outside Hockey</div>
-                            <div>{player.hobbyOutsideHockey}</div>
-                        </div>
+                            <div className="mb-2">
+                                <div className="player-form-label">Hobby Outside Hockey</div>
+                                <div>{player.hobbyOutsideHockey}</div>
+                            </div>
                         }
                         {player.bestThingYouCanCook &&
-                        <div className="mb-2">
-                            <div className="player-form-label">Best Thing You Can Cook</div>
-                            <div>{player.bestThingYouCanCook}</div>
-                        </div>
+                            <div className="mb-2">
+                                <div className="player-form-label">Best Thing You Can Cook</div>
+                                <div>{player.bestThingYouCanCook}</div>
+                            </div>
                         }
                         { player.detailImageCredit &&
                             <span className="small">Photo credit: {player.detailImageCredit}</span>
