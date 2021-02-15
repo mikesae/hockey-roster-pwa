@@ -26,7 +26,7 @@ exports.handler = async () => {
                     "type": "Away",
                     "home": false,
                     "section": "II",
-                    "result": "",
+                    "result": "W 2-1",
                     "location": "Schenectady County Rec Facility",
                     "locationUrl": "https://maps.apple.com/?q=SCRF",
                     "liveFeedUrl:": "https://www.livebarn.com/en/videon/?mode=live&sid=354"
