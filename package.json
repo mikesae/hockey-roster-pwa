@@ -50,12 +50,14 @@
       "not dead",
       "not op_mini all",
       "ios_saf 10",
-      "ios_saf 9"
+      "ios_saf 9.0-9.3.6"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "ios_saf 10",
+      "ios_saf 9.0-9.3.6"
     ]
   }
 }
