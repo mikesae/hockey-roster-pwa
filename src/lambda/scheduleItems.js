@@ -13,7 +13,7 @@ exports.handler = async () => {
                     "home": true,
                     "section": "II",
                     "result": "W 3-1",
-                    "location": "Capital Arena",
+                    "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena",
                     "liveFeedUrl:": "https://www.livebarn.com/en/videon?mode=live&sid=409"
                 },
@@ -40,8 +40,8 @@ exports.handler = async () => {
                     "type": "Game",
                     "home": true,
                     "section": "II",
-                    "result": "",
-                    "location": "Capital Arena",
+                    "result": "W 3-2",
+                    "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena",
                     "liveFeedUrl:": "https://www.livebarn.com/en/videon?mode=live&sid=409"
                 },
@@ -54,7 +54,7 @@ exports.handler = async () => {
                     "type": "Away",
                     "home": false,
                     "section": "II",
-                    "result": "",
+                    "result": "L 3-0",
                     "location": "Weibel Ave. Rink",
                     "locationUrl": "https://maps.apple.com/?q=Weibel+Ave+Rink",
                     "liveFeedUrl:": ""
@@ -86,7 +86,22 @@ exports.handler = async () => {
                     "location": "Schenectady County Rec Facility",
                     "locationUrl": "https://maps.apple.com/?q=SCRF",
                     "liveFeedUrl:": "https://www.livebarn.com/en/videon/?mode=live&sid=354"
-                },               {
+                },
+                {
+                    "day": "Tue",
+                    "date": "2/23/21",
+                    "time": "5:45 PM",
+                    "opponent": "G/M/S/S/V",
+                    "logoUrl": "/images/team-logos/storm.png",
+                    "type": "Home",
+                    "home": true,
+                    "section": "II",
+                    "result": "",
+                    "location": "Clifton Park Arena",
+                    "locationUrl": "https://maps.apple.com/?q=Capital+Arena",
+                    "liveFeedUrl:": "https://www.livebarn.com/en/videon/?mode=live&sid=354"
+                },
+                {
                     "day": "Fri",
                     "date": "2/26/21",
                     "time": "3:30 PM",
