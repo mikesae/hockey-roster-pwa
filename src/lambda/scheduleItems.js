@@ -68,7 +68,7 @@ exports.handler = async () => {
                     "type": "Game",
                     "home": true,
                     "section": "II",
-                    "result": "",
+                    "result": "W 5-2",
                     "location": "Clifton Park Arena",
                     "locationUrl": "https://maps.apple.com/?q=Capital+Arena",
                     "liveFeedUrl:": "https://www.livebarn.com/en/videon?mode=live&sid=409"
