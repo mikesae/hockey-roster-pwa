@@ -28,8 +28,7 @@ exports.handler = async () => {
                     "section": "II",
                     "result": "W 2-1",
                     "location": "Schenectady County Rec Facility",
-                    "locationUrl": "https://maps.apple.com/?q=SCRF",
-                    "liveFeedUrl:": "https://www.livebarn.com/en/videon/?mode=live&sid=354"
+                    "locationUrl": "https://maps.apple.com/?q=SCRF"
                 },
                 {
                     "day": "Tue",
@@ -42,8 +41,7 @@ exports.handler = async () => {
                     "section": "II",
                     "result": "W 3-2",
                     "location": "Clifton Park Arena",
-                    "locationUrl": "https://maps.apple.com/?q=Capital+Arena",
-                    "liveFeedUrl:": "https://www.livebarn.com/en/videon?mode=live&sid=409"
+                    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 },
                 {
                     "day": "Wed",
