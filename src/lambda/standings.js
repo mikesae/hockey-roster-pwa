@@ -13,7 +13,8 @@ exports.handler = async event => {
         tabletojson.convertUrl(
             `${standingsUrl}&p=standings&viewseas=${season}`,
             tablesAsJson => {
-                const rows = tablesAsJson[8].slice(3);
+                // Standings table is now the 15th one on the page. This can change when they re-do the page.
+                const rows = tablesAsJson[14].slice(3);
                 let result = [];
                 rows.forEach(row => {
                     if (Object.keys(row).length >= 11) {

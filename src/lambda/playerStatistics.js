@@ -11,8 +11,9 @@ exports.handler = async event => {
             { useFirstRowForHeadings: true },
             tablesAsJson => {
                 let result = [];
-                if (tablesAsJson != null && tablesAsJson.length > 8) {
-                    const rows = tablesAsJson[9].slice(1);
+                if (tablesAsJson != null && tablesAsJson.length > 13) {
+                    // Statistics table is now the 15th one on the page. This can change when they re-do the page.
+                    const rows = tablesAsJson[14].slice(1);
 
                     rows.forEach(row => {
                         result.push(
