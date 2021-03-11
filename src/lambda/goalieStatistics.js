@@ -11,7 +11,8 @@ exports.handler = async event => {
             `${url}&viewseas=${season}&playerId=${playerId}`,
             {useFirstRowForHeadings: true},
             tablesAsJson => {
-                const rows = tablesAsJson[9].slice(1);
+                // Statistics table is now the 15th one on the page. This can change when they re-do the page.
+                const rows = tablesAsJson[14].slice(1);
                 let result = [];
                 rows.forEach(row => {
                     result.push(
