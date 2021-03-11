@@ -122,7 +122,7 @@ exports.handler = async () => {
                     "type": "Away",
                     "home": false,
                     "section": "II",
-                    "result": "",
+                    "result": "W 6-1",
                     "location": "Schenectady County Rec Facility",
                     "locationUrl": "https://maps.apple.com/?q=SCRF",
                     "liveFeedUrl:": "https://www.livebarn.com/en/videon/?mode=live&sid=354"
@@ -136,10 +136,22 @@ exports.handler = async () => {
                     "type": "Home",
                     "home": true,
                     "section": "II",
-                    "result": "",
+                    "result": "W 5-2",
                     "location": "Capital Arena",
-                    "locationUrl": "https://maps.apple.com/?q=Capital+Arena",
-                    "liveFeedUrl:": "https://www.livebarn.com/en/videon/?mode=live&sid=354"
+                    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
+                },
+                {
+                    "day": "Wed",
+                    "date": "3/10/21",
+                    "time": "3:45 PM",
+                    "opponent": "CD Jets",
+                    "logoUrl": "/images/team-logos/cd-jets.png",
+                    "type": "Home",
+                    "home": true,
+                    "section": "II",
+                    "result": "W 7-2",
+                    "location": "Capital Arena",
+                    "locationUrl": "https://maps.apple.com/?q=Capital+Arena"
                 }
             ]
         )
