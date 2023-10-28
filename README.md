@@ -8,7 +8,7 @@ This is progressive web app that runs and looks great on most, if not, all mobil
 
 ## Environment
 
-This project was built for and is hosted on netlify, an awesome cloud-based development platform. Simply click on https://shenhockey.netlify.app in a mobile browser and you can download it right to your device. On iPhones/iPads, it'll get it's own icon on your homescreen, and you launch it just like you would a native applications.
+This project was built for and is hosted on netlify, an awesome cloud-based development platform. Simply click on https://shenhockey.netlify.app in a mobile browser and you can download it right to your device. On iPhones/iPads, it'll get it's own icon on your homescreen, and you launch it just like you would a native applications. See [here](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DiOS) for how to do this.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
